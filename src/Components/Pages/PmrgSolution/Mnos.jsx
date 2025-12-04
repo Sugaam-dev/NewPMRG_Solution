@@ -1,12 +1,10 @@
 import React from "react";
-import "./mnos.css";
-import sunset from "../../../assets/sunset.jpg";
+import sunset from "../../../assets/mnos.jpg";
 
 /* ============================= */
 /*  INLINE SVG ICON COMPONENTS   */
 /* ============================= */
 
-// Icon 1 — Full Technology Support (your uploaded icon style)
 const IconTech = () => (
   <svg
     width="36"
@@ -29,7 +27,6 @@ const IconTech = () => (
   </svg>
 );
 
-// Icon 2 — Operational Efficiency
 const IconEfficiency = () => (
   <svg
     width="36"
@@ -46,7 +43,6 @@ const IconEfficiency = () => (
   </svg>
 );
 
-// Icon 3 — Product Innovation Speed
 const IconSpeed = () => (
   <svg
     width="36"
@@ -62,77 +58,90 @@ const IconSpeed = () => (
   </svg>
 );
 
+/* ===================================================== */
+/*                 ⭐ MAIN PAGE – TAILWIND                */
+/* ===================================================== */
+
 export default function Mnos() {
   return (
-    <main className="cm-page">
+    <main className="bg-white w-full">
 
       {/* ================================ */}
-      {/* REPLACE LEGACY SYSTEMS SECTION   */}
+      {/*   REPLACE LEGACY SYSTEMS SECTION */}
       {/* ================================ */}
 
-      <section className="cm-section">
-        <div className="cm-section-inner">
-          
-          <div className="cm-centered">
-            <h2 className="cm-section-title">Replace Legacy Systems</h2>
+      <section className="w-full py-16 px-4">
+        <div className="max-w-[1200px] mx-auto">
 
-            <p className="cm-paragraph cm-section-lead">
-              Many MNOs operate on decades-old BSS platforms with accumulated
-              technical debt, limited flexibility, and high maintenance costs.
-              CleverMobi provides a modern alternative built from scratch.
-              Migrate from legacy systems to gain agility, reduce costs, and
-              enable innovation previously impossible with outdated
-              infrastructure.
+          {/* CENTERED HEADING + PARAGRAPH */}
+          <div className="text-center mb-10">
+            <h2 className="text-[48px] font-bold font-['PST Mail Sans'] text-[#0b2a18] mb-4">
+              Replace Legacy Systems
+            </h2>
+
+            <p className="text-[20px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7] max-w-[950px] mx-auto">
+              Many MNOs operate on decades-old BSS platforms with accumulated technical debt,
+              limited flexibility, and high maintenance costs. CleverMobi provides a modern
+              alternative built from scratch. Migrate from legacy systems to gain agility,
+              reduce costs, and enable innovation previously impossible with outdated infrastructure.
             </p>
           </div>
 
-          {/* =============== FEATURES =============== */}
+          {/* ======================== FEATURES BOX ======================== */}
 
-          <div className="cm-features">
+          <div
+            className="
+              flex flex-col md:flex-row gap-8
+              bg-[#f4f9ed] p-10 rounded-[32px]
+            "
+          >
 
             {/* FEATURE 1 */}
-            <div className="cm-feature">
-              <div className="cm-feature-icon">
+            <div className="flex-1">
+              <div className="mb-3">
                 <IconTech />
               </div>
 
-              <h3 className="cm-feature-title">Full Technology Support</h3>
+              <h3 className="text-[26px] font-bold text-[#0b2a18] mb-3">
+                Full Technology Support
+              </h3>
 
-              <p className="cm-paragraph feature-text">
-                CleverMobi natively supports modern technologies including 5G
-                service plans and billing, VoLTE and advanced voice services,
-                and eSIM provisioning and management. Legacy platforms struggle
-                with these technologies through complex workarounds.
+              <p className="text-[18px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7]">
+                CleverMobi natively supports modern technologies including 5G plans, VoLTE,
+                and eSIM provisioning. Legacy platforms struggle with these technologies
+                through complex workarounds.
               </p>
             </div>
 
             {/* FEATURE 2 */}
-            <div className="cm-feature">
-              <div className="cm-feature-icon">
+            <div className="flex-1">
+              <div className="mb-3">
                 <IconEfficiency />
               </div>
 
-              <h3 className="cm-feature-title">Operational Efficiency</h3>
+              <h3 className="text-[26px] font-bold text-[#0b2a18] mb-3">
+                Operational Efficiency
+              </h3>
 
-              <p className="cm-paragraph feature-text">
-                Modern architecture dramatically improves operational efficiency.
-                Automated workflows reduce manual processes and errors.
-                Self-service capabilities deflect support volume.
+              <p className="text-[18px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7]">
+                Modern architecture dramatically improves operational efficiency. Automated
+                workflows reduce manual work and errors. Self-service tools lower support load.
               </p>
             </div>
 
             {/* FEATURE 3 */}
-            <div className="cm-feature">
-              <div className="cm-feature-icon">
+            <div className="flex-1">
+              <div className="mb-3">
                 <IconSpeed />
               </div>
 
-              <h3 className="cm-feature-title">Product Innovation Speed</h3>
+              <h3 className="text-[26px] font-bold text-[#0b2a18] mb-3">
+                Product Innovation Speed
+              </h3>
 
-              <p className="cm-paragraph feature-text">
-                CleverMobi enables launching new pricing plans, bundled
-                offerings, or promotional campaigns in hours instead of weeks or
-                months.
+              <p className="text-[18px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7]">
+                CleverMobi lets operators launch new pricing plans, bundles, or promotions
+                in hours rather than weeks or months.
               </p>
             </div>
 
@@ -141,30 +150,35 @@ export default function Mnos() {
       </section>
 
       {/* ================================ */}
-      {/*        MIGRATION SUPPORT         */}
+      {/*         MIGRATION SUPPORT        */}
       {/* ================================ */}
 
-      <section className="cm-section">
-        <div className="cm-section-inner migration-grid">
-          
-          <div className="cm-image-card">
-            <img src={sunset} alt="Migration Support" />
+      <section className="w-full py-16 px-4">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+
+          {/* IMAGE */}
+         <div className="w-full">
+            <img
+              src={sunset}
+              alt="Migration Support"
+               className="w-full h-[600px] object-cover rounded-[32px]"
+            />
           </div>
 
-          <div className="cm-right-col">
-            <h3 className="cm-section-title">Migration Support</h3>
+          {/* RIGHT TEXT COLUMN */}
+          <div className="flex flex-col justify-center">
+            <h3 className="text-[48px] font-['PST Mail Sans'] font-bold text-[#0b2a18] mb-6">
+              Migration Support
+            </h3>
 
-            <p className="cm-paragraph">
-              Migrating from legacy BSS platforms is complex but manageable
-              with proper planning and execution. CleverMobi's experienced team
-              supports the entire migration process including detailed planning,
-              risk mitigation, phased migration, data migration, validation, and
-              parallel operation during transition periods ensuring continuity.
+            <p className="text-[20px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7]">
+              Migrating from legacy BSS platforms is complex but manageable with proper planning and execution. CleverMobi’s experienced team supports the entire migration process including detailed planning and risk mitigation, phased migration approaches minimizing disruption, data migration and validation, and parallel operation during transition periods ensuring continuity.
             </p>
           </div>
 
         </div>
       </section>
+
     </main>
   );
 }

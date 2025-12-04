@@ -1,11 +1,19 @@
 import React from "react";
-import "./specialized-markets.css";
 import heroImg from "../../../assets/sunset.jpg";
 import cardImg from "../../../assets/sunset.jpg";
 import mapImg from "../../../assets/sunset.jpg";
 
 const IconIoT = () => (
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8BC34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#8BC34A"
+    strokeWidth="2.2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="3" y="3" width="18" height="18" rx="3" />
     <path d="M8 12h8" />
     <path d="M12 8v8" />
@@ -13,7 +21,16 @@ const IconIoT = () => (
 );
 
 const IconModel = () => (
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8BC34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#8BC34A"
+    strokeWidth="2.2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M3 7h18" />
     <path d="M6 21V7" />
     <path d="M18 21V7" />
@@ -22,7 +39,16 @@ const IconModel = () => (
 );
 
 const IconWholesale = () => (
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#8BC34A" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="36"
+    height="36"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="#8BC34A"
+    strokeWidth="2.2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="3" y="3" width="18" height="18" rx="2" />
     <path d="M7 7h10" />
     <path d="M7 12h10" />
@@ -32,103 +58,142 @@ const IconWholesale = () => (
 
 export default function SpecializedMarkets() {
   return (
-    <main className="sm-page">
+    <main className="font-['Mona_Sans'] bg-white text-[#2d3e36]">
 
-      {/* HERO — green block with blob */}
-      <section className="sm-hero">
-        <div className="sm-hero-inner">
-          <div className="sm-hero-text">
-            <h1 className="sm-hero-heading">Adapted for Unique Requirements</h1>
-            <p className="sm-hero-paragraph">
-              B2B operators, IoT service providers, and mobile operators with specialized requirements need flexible BSS platforms adapting to unique business models. CleverMobi’s modern architecture supports diverse use cases beyond traditional consumer mobile services.
+      {/* HERO SECTION */}
+      <section className="relative bg-[#0b6b2f] text-white px-6 py-14 overflow-visible">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_420px] gap-8 items-center">
+
+          {/* LEFT TEXT */}
+          <div className="py-6">
+            <h1 className="font-['PST_Mail_Sans'] text-[48px] font-bold mb-3 leading-[1.05]">
+              Adapted for Unique Requirements
+            </h1>
+            <p className="text-white text-[16px] opacity-95 max-w-[620px] leading-[1.7]">
+              B2B operators, IoT service providers, and mobile operators with specialized
+              requirements need flexible BSS platforms adapting to unique business models.
+              CleverMobi’s modern architecture supports diverse use cases beyond traditional
+              consumer mobile services.
             </p>
           </div>
 
-          <div className="sm-hero-visual" aria-hidden>
-            {/* decorative rounded image box to the right (keeps screenshot feel) */}
-            <div className="sm-hero-image">
-              <img src={heroImg} alt="Adapted for Unique Requirements" />
+          {/* RIGHT IMAGE + BLOB */}
+          <div className="relative flex justify-end items-center">
+            <div className="w-[340px] rounded-[18px] overflow-hidden shadow-[0_18px_40px_rgba(0,0,0,0.25)]">
+              <img src={heroImg} className="w-full object-cover" />
             </div>
-            <svg className="sm-hero-blob" viewBox="0 0 600 400" preserveAspectRatio="none" aria-hidden>
-              <path d="M600,100 C520,220 480,260 420,300 C360,340 240,380 120,320 C0,260 40,120 120,80 C200,40 360,-10 460,40 C560,90 640,-20 600,100 Z" />
+
+            <svg
+              className="absolute right-[-60px] top-[-20px] w-[420px] h-[220px] pointer-events-none"
+              viewBox="0 0 600 400"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill="rgba(139,195,74,0.18)"
+                d="M600,100 C520,220 480,260 420,300 C360,340 240,380 120,320 C0,260 40,120 120,80 C200,40 360,-10 460,40 C560,90 640,-20 600,100 Z"
+              />
             </svg>
           </div>
         </div>
       </section>
 
-      {/* IMAGE + B2B Mobile Services (image left, text right) */}
-      <section className="sm-b2b">
-        <div className="sm-b2b-inner">
-          <div className="sm-b2b-image">
-            <img src={cardImg} alt="B2B Mobile Services" />
+      {/* B2B SECTION image left / text right */}
+      <section className="px-6 py-16 bg-white">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[360px_1fr] gap-12 items-center">
+          <div className="rounded-[18px] overflow-hidden shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
+            <img src={cardImg} className="w-full h-full object-cover" />
           </div>
 
-          <div className="sm-b2b-copy">
-            <h2 className="sm-title">B2B Mobile Services</h2>
-            <p className="sm-paragraph">
-              Business customers require different capabilities than consumers. CleverMobi handles multi-user corporate accounts, hierarchical organizational structures, customized billing and invoicing, bulk management and provisioning, and corporate-specific reporting. Enterprise sales cycles and contract complexity are supported through flexible configuration matching B2B business models.
+          <div>
+            <h2 className="font-['PST_Mail_Sans'] text-[48px] font-bold mb-4">
+              B2B Mobile Services
+            </h2>
+
+            <p className="text-[20px] leading-[1.7]">
+              Business customers require different capabilities than consumers. CleverMobi
+              handles multi-user corporate accounts, hierarchical organizational structures,
+              customized billing and invoicing, bulk management and provisioning, and
+              corporate-specific reporting. Enterprise sales cycles and contract complexity
+              are supported through flexible configuration matching B2B business models.
             </p>
           </div>
         </div>
       </section>
 
-      {/* DARK band with 3 cards */}
-      <section className="sm-dark-cards">
-        <div className="sm-dark-inner">
-          <div className="sm-logo-row">
-            {/* <div className="sm-logo">CleverMobi</div> */}
-          </div>
+      {/* DARK CARDS SECTION */}
+      <section className="bg-[#0f2b20] text-[#dbeede] px-6 py-8">
+        <div className="max-w-[1200px] mx-auto">
 
-          <div className="sm-cards">
-            <article className="sm-card">
-              <div className="sm-card-icon"><IconIoT /></div>
-              <h3 className="sm-card-title">IoT Connectivity Management</h3>
-              <p className="sm-card-text">
-                IoT services differ fundamentally from consumer mobile. CleverMobi supports millions of low-data device connections, specialized routing for machine-to-machine communication, device lifecycle management, and API-based provisioning for massive deployments.
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            {/* CARD 1 */}
+            <div className="bg-white/5 rounded-[14px] border border-white/5 p-6 min-h-[220px]">
+              <div className="mb-3"><IconIoT /></div>
+              <h3 className="font-['PST_Mail_Sans'] text-[20px] text-white mb-2">
+                IoT Connectivity Management
+              </h3>
+              <p className="text-[15px] text-white/80 leading-[1.6]">
+                CleverMobi supports millions of low-data device connections, specialized routing,
+                device lifecycle management, and API-based provisioning for massive deployments.
               </p>
-            </article>
+            </div>
 
-            <article className="sm-card">
-              <div className="sm-card-icon"><IconModel /></div>
-              <h3 className="sm-card-title">Custom Business Models</h3>
-              <p className="sm-card-text">
-                Specialized operators often have unique business models requiring flexible billing and charging. CleverMobi’s architecture supports custom pricing, partner revenue sharing, reseller models, and non-standard product structures without platform constraints.
+            {/* CARD 2 */}
+            <div className="bg-white/5 rounded-[14px] border border-white/5 p-6 min-h-[220px]">
+              <div className="mb-3"><IconModel /></div>
+              <h3 className="font-['PST_Mail_Sans'] text-[20px] text-white mb-2">
+                Custom Business Models
+              </h3>
+              <p className="text-[15px] text-white/80 leading-[1.6]">
+                CleverMobi supports custom pricing, revenue sharing, reseller models, and
+                non-standard product structures without platform constraints.
               </p>
-            </article>
+            </div>
 
-            <article className="sm-card">
-              <div className="sm-card-icon"><IconWholesale /></div>
-              <h3 className="sm-card-title">Wholesale and MVNO Enablement</h3>
-              <p className="sm-card-text">
-                Some operators provide wholesale services or enable MVNOs on their network. CleverMobi supports these models with partner management, wholesale rating and billing, and multi-tenant operations from a single platform.
+            {/* CARD 3 */}
+            <div className="bg-white/5 rounded-[14px] border border-white/5 p-6 min-h-[220px]">
+              <div className="mb-3"><IconWholesale /></div>
+              <h3 className="font-['PST_Mail_Sans'] text-[20px] text-white mb-2">
+                Wholesale & MVNO Enablement
+              </h3>
+              <p className="text-[15px] text-white/80 leading-[1.6]">
+                Supports partner management, wholesale billing, and multi-tenant operations
+                from one platform.
               </p>
-            </article>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* INTERNATIONAL OPERATIONS (text left, image right) */}
-      <section className="sm-international">
-        <div className="sm-international-inner">
-          <div className="sm-international-copy">
-            <h2 className="sm-title">International Operations</h2>
-            <p className="sm-paragraph">
-              Operating across multiple countries introduces complexity. CleverMobi handles multi-currency billing and payments, country-specific tax and regulatory requirements, localized customer communications, and international roaming management. Expand geographically without rebuilding business support systems for each market.
+      {/* INTERNATIONAL SECTION */}
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_420px] gap-12 items-center">
+
+          <div className="pr-2">
+            <h2 className="font-['PST_Mail_Sans'] text-[48px] font-bold mb-4">
+              International Operations
+            </h2>
+            <p className="text-[20px] leading-[1.7]">
+              CleverMobi handles multi-currency billing, tax compliance, localized comms,
+              and roaming management — enabling smooth international expansion.
             </p>
           </div>
 
-          <div className="sm-international-image">
-            <img src={mapImg} alt="International Operations" />
+          <div className="rounded-[18px] overflow-hidden shadow-[0_14px_36px_rgba(0,0,0,0.08)]">
+            <img src={mapImg} className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
 
-      {/* Integration Flexibility (centered) */}
-      <section className="sm-integration">
-        <div className="sm-integration-inner">
-          <h2 className="sm-integration-title">Integration Flexibility</h2>
-          <p className="sm-paragraph sm-integration-text">
-            Specialized operations often require unique integrations. CleverMobi’s open API architecture connects with industry-specific systems, custom applications, legacy infrastructure requiring continued operation, and partner or supplier systems. Integration flexibility ensures CleverMobi fits your ecosystem rather than forcing ecosystem changes.
+      {/* INTEGRATION FLEXIBILITY */}
+      <section className="px-6 py-28 bg-white text-center">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="font-['PST_Mail_Sans'] text-[32px] font-bold mb-4">
+            Integration Flexibility
+          </h2>
+          <p className="text-[20px] leading-[1.7] text-[#2d3e36]">
+            CleverMobi’s open API architecture connects with industry systems, custom apps,
+            legacy platforms, and partner ecosystems — fitting into your environment rather
+            than forcing you to change.
           </p>
         </div>
       </section>
