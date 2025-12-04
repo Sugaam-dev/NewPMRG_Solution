@@ -1,0 +1,48 @@
+|-- .gitignore
+|-- eslint.config.js
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- public
+    |-- vite.svg
+|-- README.md
+|-- src
+    |-- App.css
+    |-- App.jsx
+    |-- assets
+        |-- sunset.jpg
+    |-- Components
+        |-- CleverWayOfWork
+            |-- developmentphilosophypage.css
+            |-- DevelopmentPhilosophyPage.jsx
+        |-- Pages
+            |-- Careers
+                |-- Careers.jsx
+            |-- Contact
+                |-- Contact.jsx
+            |-- Home
+                |-- home.css
+                |-- Home.jsx
+            |-- PmrgCrew
+                |-- Crew.jsx
+            |-- PmrgSolution
+                |-- clevermobi.css
+                |-- CleverMobiPage.jsx
+                |-- mnos.css
+                |-- Mnos.jsx
+                |-- Solution.jsx
+                |-- specialized-markets.css
+                |-- SpecializedMarkets.jsx
+            |-- WayOfWork
+                |-- WayOfWork.jsx
+            |-- WhoWeServe
+                |-- WhoWeServe.jsx
+        |-- RootLayout
+            |-- Layout
+                |-- Footer.jsx
+                |-- Header.jsx
+            |-- RootLayout.jsx
+            |-- ScroolToTop.jsx
+    |-- index.css
+    |-- main.jsx
+|-- vite.config.js

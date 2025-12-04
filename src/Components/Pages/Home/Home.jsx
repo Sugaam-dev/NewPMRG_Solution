@@ -1,17 +1,21 @@
 import React from 'react'
-import Contact from '../Contact/Contact'
+import HeroSection from '../HeroSection'
 
 function Home() {
   return (
     <>
-  
-    <div className='bg-amber-500 h-dvh' >
-      
+    <HeroSection/>
+      <div className='bg-amber-400 h-dvh' >
+       
       
     </div>
+        <div className='bg-amber-900 h-dvh' >
+       
+      
+    </div>
+    </>
+  
 
-    <Contact/>
-      </>
   )
 }
 

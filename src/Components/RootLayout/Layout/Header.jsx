@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useEffect, useState } from "react";
 import { megaMenuData } from "../../../data/megaMenuData";
-import logo from "../../../assets/PMRGlogo.png";   // adjust path / name
+import logo from "../../../assets/PMRGlogo.png";
 
 import {
   ChevronDown,
@@ -10,6 +10,9 @@ import {
   ArrowLeft,
   Menu,
   X,
+  Linkedin,
+  Instagram,
+  Github,
 } from "lucide-react";
 
 const menuItems = [
@@ -48,10 +51,10 @@ const DropdownItem = ({ item, active, onHover, onClick }) => (
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null);       // desktop which top item
-  const [activeItemId, setActiveItemId] = useState(null); // active inner item
+  const [openMenu, setOpenMenu] = useState(null);
+  const [activeItemId, setActiveItemId] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [mobileSubMenu, setMobileSubMenu] = useState(null); // which section open on mobile
+  const [mobileSubMenu, setMobileSubMenu] = useState(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -76,67 +79,64 @@ const Navbar = () => {
     setDefaultActiveForLabel(label);
   };
 
-const renderMegaContent = (label) => {
-  const config = megaMenuData[label];
-  if (!config) return null;
+  const renderMegaContent = (label) => {
+    const config = megaMenuData[label];
+    if (!config) return null;
 
-  const activeItem =
-    config.items.find((i) => i.id === activeItemId) ||
-    config.items.find((i) => i.active) ||
-    config.items[0];
+    const activeItem =
+      config.items.find((i) => i.id === activeItemId) ||
+      config.items.find((i) => i.active) ||
+      config.items[0];
 
-  return (
-    <div className="flex flex-col md:min-h-[260px] md:flex-row p-3">
-      {/* Left: description */}
-      <div className="w-full border-b border-slate-100 p-6 md:w-[35%] md:border-b-0 md:border-r md:p-8">
-        <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
-          {config.title}
-        </p>
-        <p className="text-sm leading-relaxed text-slate-700">
-          {config.description}
-        </p>
-      </div>
-
-      {/* Middle: list */}
-      <div className="w-full space-y-2 p-6 md:w-[35%] md:p-8">
-        {config.items.map((item) => (
-          <DropdownItem
-            key={item.id}
-            item={item}
-            active={activeItem && activeItem.id === item.id}
-            onHover={() => setActiveItemId(item.id)}
-            onClick={() => {}}
-          />
-        ))}
-      </div>
-
-      {/* Right: image + text */}
-      <div className="flex w-full flex-col md:w-[30%]">
-        <div className="flex-1 overflow-hidden md:rounded-r-3xl">
-          <img
-            src={activeItem.image}
-            alt={activeItem.heading}
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="border-t border-slate-100 bg-white px-6 py-4 md:border-t-0">
-          <h3 className="mb-1 text-base font-semibold text-slate-900">
-            {activeItem.heading}
-          </h3>
-          <p className="text-xs leading-relaxed text-slate-700">
-            {activeItem.text}
+    return (
+      <div className="flex flex-col p-3 md:min-h-[260px] md:flex-row">
+        {/* Left: description */}
+        <div className="w-full border-b border-slate-100 p-6 md:w-[35%] md:border-b-0 md:border-r md:p-8">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
+            {config.title}
           </p>
-          <button className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700">
-            More information <ChevronUp size={14} />
-          </button>
+          <p className="text-sm leading-relaxed text-slate-700">
+            {config.description}
+          </p>
+        </div>
+
+        {/* Middle: list */}
+        <div className="w-full space-y-2 p-6 md:w-[35%] md:p-8">
+          {config.items.map((item) => (
+            <DropdownItem
+              key={item.id}
+              item={item}
+              active={activeItem && activeItem.id === item.id}
+              onHover={() => setActiveItemId(item.id)}
+              onClick={() => {}}
+            />
+          ))}
+        </div>
+
+        {/* Right: image + text */}
+        <div className="flex w-full flex-col md:w-[30%]">
+          <div className="flex-1 overflow-hidden md:rounded-r-3xl">
+            <img
+              src={activeItem.image}
+              alt={activeItem.heading}
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="border-t border-slate-100 bg-white px-6 py-4 md:border-t-0">
+            <h3 className="mb-1 text-base font-semibold text-slate-900">
+              {activeItem.heading}
+            </h3>
+            <p className="text-xs leading-relaxed text-slate-700">
+              {activeItem.text}
+            </p>
+            <button className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700">
+              More information <ChevronUp size={14} />
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-
-
+    );
+  };
 
   return (
     <header
@@ -144,64 +144,91 @@ const renderMegaContent = (label) => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
-     
-      {/* Logo */}
-<div className="flex items-center gap-3">
-  <img
-    src={logo}               // import from top, or use "/logo.svg" from public
-    alt="CleverMobi"
-    className="h-16 w-auto md:h-16"
-  />
-</div>
+      {/* Full-width bar; content centered with max-w-7xl */}
+      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
+        {/* Logo */}
+        <div className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="PMRG Solution"
+            className="h-12 w-auto md:h-16"
+          />
+        </div>
 
+        {/* Desktop nav (center) */}
+        <div className="relative hidden flex-1 items-center justify-center gap-6 text-sm font-medium md:flex">
+          {menuItems.map((item) => {
+            const isOpen = openMenu === item.label;
+            return (
+              <button
+                key={item.label}
+                onClick={() =>
+                  item.hasDropdown ? handleOpenMenu(item.label) : setOpenMenu(null)
+                }
+                className={`flex items-center gap-1 ${
+                  scrolled ? "text-slate-900" : "text-white"
+                }`}
+              >
+                {item.label}
+                {item.hasDropdown &&
+                  (isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />)}
+              </button>
+            );
+          })}
 
-   {/* Desktop nav with click dropdowns */}
-<div className="relative hidden items-center gap-6 text-sm font-medium md:flex">
-  {menuItems.map((item) => {
-    const isOpen = openMenu === item.label;
-    return (
-      <button
-        key={item.label}
-        onClick={() =>
-          item.hasDropdown ? handleOpenMenu(item.label) : setOpenMenu(null)
-        }
-        className={`flex items-center gap-1 ${
-          scrolled ? "text-slate-900" : "text-white"
-        }`}
-      >
-        {item.label}
-        {item.hasDropdown &&
-          (isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />)}
-      </button>
-    );
-  })}
+          {/* Mega dropdown, width follows nav container */}
+          <div className="pointer-events-none absolute left-1/2 top-full w-full max-w-5xl -translate-x-1/2 pt-4 md:pt-8">
+            <div
+              className={`pointer-events-auto origin-top transform rounded-3xl bg-white shadow-2xl transition-all duration-200 ease-out ${
+                openMenu
+                  ? "translate-y-0 scale-100 opacity-100"
+                  : "-translate-y-2 scale-95 opacity-0"
+              }`}
+            >
+              {openMenu && renderMegaContent(openMenu)}
+            </div>
+          </div>
+        </div>
 
-  {/* shared mega dropdown – positioned under nav, smooth animation */}
-  <div className="pointer-events-none absolute left-1/2 top-full pt-16 w-[1100px] max-w-[96vw] -translate-x-1/2">
-    <div
-      className={`pointer-events-auto origin-top transform rounded-3xl bg-white shadow-2xl transition-all duration-200 ease-out ${
-        openMenu
-          ? "scale-100 opacity-100 translate-y-0"
-          : "scale-95 opacity-0 -translate-y-2"
-      }`}
-    >
-      {openMenu && renderMegaContent(openMenu)}
-    </div>
-  </div>
-</div>
-
-
-        {/* Careers button (desktop) */}
-        <button
-          className={`hidden rounded-full px-6 py-2 text-sm font-semibold transition-colors md:inline-flex ${
-            scrolled
-              ? "bg-emerald-500 text-white hover:bg-emerald-600"
-              : "bg-white text-emerald-700 hover:bg-slate-100"
-          }`}
-        >
-          Careers
-        </button>
+        {/* Social icons replace Careers (desktop) */}
+        <div className="hidden items-center gap-3 md:flex">
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-emerald-600 hover:bg-emerald-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Linkedin size={18} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-emerald-600 hover:bg-emerald-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Instagram size={18} />
+          </a>
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-emerald-600 hover:bg-emerald-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Github size={18} />
+          </a>
+        </div>
 
         {/* Mobile hamburger */}
         <button
@@ -216,19 +243,32 @@ const renderMegaContent = (label) => {
           {mobileOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </nav>
-      {/* Mobile full menu overlay */}
+
+      {/* Mobile full menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-white md:hidden overflow-y-auto">
+        <div className="fixed inset-0 z-40 overflow-y-auto bg-white md:hidden">
           {/* Top row inside panel */}
-          <div className="sticky top-0 z-10 flex items-center justify-between bg-white px-4 pt-3 pb-2 border-b border-slate-100">
-           {/* Logo */}
-<div className="flex items-center gap-3">
-  <img
-    src={logo}               // import from top, or use "/logo.svg" from public
-    alt="CleverMobi"
-    className="h-12 w-auto md:h-12"
-  />
-</div>
+          <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-100 bg-white px-4 pb-2 pt-3">
+            <div className="flex items-center gap-3">
+              <img
+                src={logo}
+                alt="PMRG Solution"
+                className="h-10 w-auto"
+              />
+            </div>
+
+            {/* Social icons mobile */}
+            <div className="flex items-center gap-2">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                <Linkedin size={18} className="text-emerald-600" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <Instagram size={18} className="text-emerald-600" />
+              </a>
+              <a href="https://github.com" target="_blank" rel="noreferrer">
+                <Github size={18} className="text-emerald-600" />
+              </a>
+            </div>
 
             <button
               onClick={() => {
@@ -242,7 +282,7 @@ const renderMegaContent = (label) => {
 
           {/* Content area */}
           <div className="px-4 pb-6 pt-3 text-sm font-medium text-slate-900">
-            {/* Main list (first screen) */}
+            {/* Main list */}
             {!mobileSubMenu && (
               <div className="space-y-1">
                 {menuItems.map((item) => (
@@ -254,7 +294,6 @@ const renderMegaContent = (label) => {
                         setMobileSubMenu(item.label);
                         setDefaultActiveForLabel(item.label);
                       } else {
-                        // navigate here if needed
                         setMobileOpen(false);
                       }
                     }}
@@ -278,7 +317,6 @@ const renderMegaContent = (label) => {
 
               return (
                 <div className="pt-2">
-                  {/* Back row */}
                   <button
                     className="mb-4 flex items-center gap-2 text-sm text-slate-700"
                     onClick={() => setMobileSubMenu(null)}
@@ -287,7 +325,6 @@ const renderMegaContent = (label) => {
                     <span className="font-medium">{mobileSubMenu}</span>
                   </button>
 
-                  {/* Title + description */}
                   <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
                     {config.title}
                   </h3>
@@ -295,7 +332,6 @@ const renderMegaContent = (label) => {
                     {config.description}
                   </p>
 
-                  {/* Items list */}
                   <div className="mb-4 space-y-2">
                     {config.items.map((item) => {
                       const isActive = activeItem && activeItem.id === item.id;
@@ -332,7 +368,6 @@ const renderMegaContent = (label) => {
                     })}
                   </div>
 
-                  {/* Image + text card */}
                   <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
                     <img
                       src={activeItem.image}
@@ -357,7 +392,6 @@ const renderMegaContent = (label) => {
           </div>
         </div>
       )}
-
     </header>
   );
 };
