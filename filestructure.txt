@@ -10,16 +10,36 @@
     |-- App.css
     |-- App.jsx
     |-- assets
+        |-- abcd.jpg
+        |-- chris.jpg
         |-- clevermobi.png
         |-- develop.webp
+        |-- geen-foto-mobi.png
+        |-- implement.jpg
         |-- invoicing.png
+        |-- Karsten.jpg
+        |-- Kelly.webp
+        |-- kok.jpg
+        |-- lily.jpg
+        |-- lunchsupport.jpg
+        |-- Maarten.jpg
+        |-- Maina.jpg
         |-- mnos.jpg
+        |-- Morris.jpg
+        |-- Mourad.boustani.jpg
+        |-- ourculture.webp
         |-- PMRGlogo.png
         |-- provisioning.png
+        |-- rob.jpg
+        |-- Ski-foto.jpg
         |-- sunset.jpg
+        |-- tim.jpg
     |-- Components
         |-- CleverWayOfWork
             |-- DevelopmentPhilosophyPage.jsx
+            |-- ImplementationApproach.jsx
+            |-- MVNEConnectivity.jsx
+            |-- TMForumPage.jsx
         |-- Pages
             |-- Careers
                 |-- Careers.jsx
@@ -30,7 +50,9 @@
                 |-- home.css
                 |-- Home.jsx
             |-- PmrgCrew
-                |-- Crew.jsx
+                |-- MilestonesPage.jsx
+                |-- OurTeamPage.jsx
+                |-- TeamCulturePage.jsx
             |-- PmrgSolution
                 |-- CleverMobiPage.jsx
                 |-- Mnos.jsx
@@ -48,7 +70,9 @@
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
     |-- data
+        |-- heroData.js
         |-- megaMenuData.js
+        |-- mnosData.js
     |-- index.css
     |-- main.jsx
 |-- vite.config.js
