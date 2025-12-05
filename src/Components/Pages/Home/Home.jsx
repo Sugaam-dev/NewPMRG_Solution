@@ -1,10 +1,10 @@
 import React from 'react'
 import HeroSection from '../HeroSection'
-
+import heroData  from '../../../data/heroData'
 function Home() {
   return (
     <>
-    <HeroSection/>
+   <HeroSection {...heroData} />
       <div className='bg-amber-400 h-dvh' >
        
       

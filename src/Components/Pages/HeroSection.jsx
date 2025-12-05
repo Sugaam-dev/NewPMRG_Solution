@@ -1,56 +1,190 @@
+// src/components/HeroSection.jsx
 import React from "react";
-import heroImg from "../../assets/clevermobi.png"; // your image
 
-const HeroSection = () => {
+const HeroSection = ({
+  image,
+  title,
+  highlight,
+  description,
+  buttonLabel,
+  buttonHref,
+}) => {
   return (
-    <section className="relative overflow-visible bg-[#0b6b1f]">
-      {/* 100vh hero */}
-      <div className="mx-auto flex h-screen max-w-7xl flex-col items-center gap-10 px-4 py-12 md:grid md:grid-cols-2 md:items-center md:gap-16 md:px-8">
-        {/* Left content */}
-        <div className="text-left text-white">
-          <h1 className="mb-6 text-3xl font-bold leading-tight md:text-5xl lg:text-6xl">
-            Business software for
+    <section
+      className="
+        relative overflow-hidden
+        bg-gradient-to-br from-[#0b1f6b] via-[#020617] to-[#030712]
+        pt-16 md:pt-10
+      "
+    >
+      <style jsx>{`
+        .hero-shapes {
+          position: absolute;
+          width: clamp(280px, 55vw, 640px);
+          height: clamp(220px, 56vw, 420px);
+          right: clamp(-10px, 8vw, 0px);
+          top: clamp(10vh, 18vh, 20vh);
+          z-index: 1;
+        }
+
+        /* base blob – matches section background blues */
+        .shape-bg {
+          background: radial-gradient(
+            circle at 30% 30%,
+            #2563eb,
+            #0b1f6b 55%,
+            #020617 100%
+          );
+          height: 100%;
+          width: 100%;
+          border-top-left-radius: 55%;
+          border-bottom-left-radius: 55%;
+          filter: blur(20px);
+          position: absolute;
+          opacity: 0.85;
+        }
+
+        /* top-right blob – bright blue accent */
+        .shape-float1 {
+          background: radial-gradient(
+            circle at 20% 80%,
+            #60a5fa 0%,
+            #3b82f6 45%,
+            #1d4ed8 100%
+          );
+          width: clamp(150px, 34vw, 280px);
+          height: clamp(150px, 34vw, 280px);
+          border-radius: 50%;
+          position: absolute;
+          top: 0%;
+          right: 10%;
+          filter: blur(22px);
+          animation: float1 5.5s ease-in-out infinite alternate;
+          opacity: 0.9;
+        }
+
+        /* left blob – cyan/blue mix */
+        .shape-float2 {
+          background: radial-gradient(
+            circle at 80% 20%,
+            #38bdf8 0%,
+            #0ea5e9 45%,
+            #1d4ed8 100%
+          );
+          width: clamp(180px, 38vw, 320px);
+          height: clamp(180px, 38vw, 320px);
+          border-radius: 50%;
+          position: absolute;
+          top: 38%;
+          left: 0%;
+          filter: blur(24px);
+          animation: float2 6s ease-in-out infinite alternate-reverse;
+          opacity: 0.9;
+        }
+
+        /* middle organic blob – soft highlight */
+        .shape-float3 {
+          background: linear-gradient(
+            135deg,
+            #e0f2fe 0%,
+            #60a5fa 45%,
+            #1d4ed8 100%
+          );
+          width: clamp(120px, 30vw, 230px);
+          height: clamp(120px, 30vw, 230px);
+          border-radius: 42% 60% 52% 70%;
+          position: absolute;
+          bottom: 10%;
+          right: 30%;
+          filter: blur(19px);
+          animation: pulseFloat 4.8s ease-in-out infinite;
+          opacity: 0.9;
+        }
+
+        @keyframes float1 {
+          0% {
+            transform: translate(0, 0) scale(1);
+          }
+          100% {
+            transform: translate(-12%, 10%) scale(1.1);
+          }
+        }
+
+        @keyframes float2 {
+          0% {
+            transform: translate(0, 0) scale(1);
+          }
+          100% {
+            transform: translate(10%, -10%) scale(1.12);
+          }
+        }
+
+        @keyframes pulseFloat {
+          0%,
+          100% {
+            transform: translate(0, 0) scale(1);
+          }
+          50% {
+            transform: translate(-5%, 4%) scale(1.16);
+          }
+        }
+
+        @media (max-width: 640px) {
+          .hero-shapes {
+            width: clamp(260px, 88vw, 360px);
+            height: clamp(210px, 68vw, 300px);
+            right: 0;
+            top: 8vh;
+          }
+        }
+      `}</style>
+
+      <div
+        className="
+          mx-auto flex min-h-[100vh] max-w-[1440px]
+          flex-col items-center gap-8
+          px-4 py-8
+          md:grid md:min-h-[100vh] md:grid-cols-2 md:items-center md:gap-16 md:px-8 md:py-16
+          relative
+        "
+      >
+        {/* LEFT: text */}
+        <div className="order-2 w-full text-left text-white md:order-1 z-20">
+          <h1 className="mb-4 text-[22px] font-semibold leading-snug md:text-5xl md:leading-tight lg:text-6xl">
+            {title}
             <br />
-            mobile operators
+            {highlight && (
+              <span className="bg-gradient-to-r from-blue-300 via-sky-200 to-cyan-200 bg-clip-text text-transparent">
+                {highlight}
+              </span>
+            )}
           </h1>
-
-          <p className="mb-6 max-w-xl text-base leading-relaxed md:text-lg">
-            CleverMobi introduces a cutting‑edge Business Support System (BSS)
-            built exclusively for mobile operators. It empowers you to launch
-            price plans in minutes, design any discount or campaign, and
-            accelerate growth and innovation.
+          <p className="mb-5 max-w-md text-[13px] leading-relaxed text-slate-100 md:max-w-xl md:text-lg">
+            {description}
           </p>
-
-          <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-emerald-700 shadow-md hover:bg-slate-100">
-            Get started
-          </button>
+          {buttonLabel && buttonHref && (
+            <a href={buttonHref}>
+              <button className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-700 shadow-md transition hover:bg-slate-100">
+                {buttonLabel}
+              </button>
+            </a>
+          )}
         </div>
 
-        {/* Right: foreground image card + SVG background shape */}
-        <div className="relative flex h-[360px] w-full items-center justify-center md:h-[500px]">
-          {/* SVG back layer that overflows below the hero */}
-          <svg
-            className="absolute bottom-[-120px] right-4 h-[300px] w-[85%] md:right-10 md:h-[340px] md:w-[80%]"
-            viewBox="0 0 400 260"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-          >
-            {/* big rounded rectangle; tweak rx, colors, gradients as you like */}
-            <rect
-              x="0"
-              y="0"
-              width="400"
-              height="260"
-              rx="80"
-              fill="#158732"
-            />
-          </svg>
+        {/* RIGHT: image + shapes */}
+        <div className="order-1 relative flex w-full items-center justify-center md:order-2 md:h-[460px]">
+          <div className="hero-shapes">
+            <div className="shape-bg" />
+            <div className="shape-float1" />
+            <div className="shape-float2" />
+            <div className="shape-float3" />
+          </div>
 
-          {/* Front white image card, offset up/left */}
-          <div className="relative z-10 h-[300px] w-[85%] translate-x-[-20px] translate-y-[-20px] overflow-hidden rounded-[60px] bg-white shadow-2xl md:h-[360px] md:w-[80%] md:translate-x-[-30px] md:translate-y-[-30px]">
+          <div className="relative z-30 h-[220px] w-full overflow-hidden rounded-[32px] bg-white shadow-2xl md:h-[440px] md:w-full md:rounded-[56px]">
             <img
-              src={heroImg}
-              alt="People working at computers"
+              src={image}
+              alt={title}
+              loading="lazy"
               className="h-full w-full object-cover"
             />
           </div>

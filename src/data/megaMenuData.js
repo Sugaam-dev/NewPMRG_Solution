@@ -11,6 +11,7 @@ export const megaMenuData = {
         label: "MVNOs",
         icon: "📡",
         active: true,
+                href: "/who-we-serve/mvnos", 
         image:
           "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
         heading: "MVNOs",

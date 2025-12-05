@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { megaMenuData } from "../../../data/megaMenuData";
 import logo from "../../../assets/PMRGlogo.png";
 
@@ -16,12 +17,12 @@ import {
 } from "lucide-react";
 
 const menuItems = [
-  { label: "Home", hasDropdown: false },
+  { label: "Home", hasDropdown: false, href: "/" },
   { label: "Who we serve", hasDropdown: true },
   { label: "CleverSolutions", hasDropdown: true },
   { label: "Clever Way of Work", hasDropdown: true },
   { label: "CleverCrew", hasDropdown: true },
-  { label: "Contact", hasDropdown: false },
+  { label: "Contact", hasDropdown: false, href: "/contact" },
 ];
 
 const DropdownItem = ({ item, active, onHover, onClick }) => (
@@ -56,11 +57,40 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSubMenu, setMobileSubMenu] = useState(null);
 
+  const desktopNavRef = useRef(null);
+  const mobileMenuRef = useRef(null);
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // close desktop mega-menu on outside click
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (desktopNavRef.current && !desktopNavRef.current.contains(e.target)) {
+        setOpenMenu(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  // close mobile menu on outside click
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const handleClick = (e) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+        setMobileOpen(false);
+        setMobileSubMenu(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [mobileOpen]);
 
   const setDefaultActiveForLabel = (label) => {
     const config = megaMenuData[label];
@@ -108,7 +138,12 @@ const Navbar = () => {
               item={item}
               active={activeItem && activeItem.id === item.id}
               onHover={() => setActiveItemId(item.id)}
-              onClick={() => {}}
+              onClick={() => {
+                if (item.href) {
+                  navigate(item.href);
+                  setOpenMenu(null);
+                }
+              }}
             />
           ))}
         </div>
@@ -129,7 +164,15 @@ const Navbar = () => {
             <p className="text-xs leading-relaxed text-slate-700">
               {activeItem.text}
             </p>
-            <button className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700">
+            <button
+              className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700"
+              onClick={() => {
+                if (activeItem?.href) {
+                  navigate(activeItem.href);
+                  setOpenMenu(null);
+                }
+              }}
+            >
               More information <ChevronUp size={14} />
             </button>
           </div>
@@ -144,8 +187,10 @@ const Navbar = () => {
         scrolled ? "bg-white shadow-md" : "bg-transparent"
       }`}
     >
-      {/* Full-width bar; content centered with max-w-7xl */}
-      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4">
+      <nav
+        ref={desktopNavRef}
+        className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4"
+      >
         {/* Logo */}
         <div className="flex items-center gap-3">
           <img
@@ -155,16 +200,21 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Desktop nav (center) */}
-        <div className="relative hidden flex-1 items-center justify-center gap-6 text-sm font-medium md:flex">
+        {/* Desktop nav (≥1024px) */}
+        <div className="relative hidden flex-1 items-center justify-center gap-6 text-sm font-medium lg:flex">
           {menuItems.map((item) => {
             const isOpen = openMenu === item.label;
             return (
               <button
                 key={item.label}
-                onClick={() =>
-                  item.hasDropdown ? handleOpenMenu(item.label) : setOpenMenu(null)
-                }
+                onClick={() => {
+                  if (item.hasDropdown) {
+                    handleOpenMenu(item.label);
+                  } else if (item.href) {
+                    navigate(item.href);
+                    setOpenMenu(null);
+                  }
+                }}
                 className={`flex items-center gap-1 ${
                   scrolled ? "text-slate-900" : "text-white"
                 }`}
@@ -176,7 +226,7 @@ const Navbar = () => {
             );
           })}
 
-          {/* Mega dropdown, width follows nav container */}
+          {/* Mega dropdown */}
           <div className="pointer-events-none absolute left-1/2 top-full w-full max-w-5xl -translate-x-1/2 pt-4 md:pt-8">
             <div
               className={`pointer-events-auto origin-top transform rounded-3xl bg-white shadow-2xl transition-all duration-200 ease-out ${
@@ -190,51 +240,34 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Social icons replace Careers (desktop) */}
-        <div className="hidden items-center gap-3 md:flex">
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noreferrer"
-            className={`rounded-full p-2 transition-colors ${
-              scrolled
-                ? "text-emerald-600 hover:bg-emerald-50"
-                : "text-white hover:bg-white/10"
-            }`}
-          >
-            <Linkedin size={18} />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noreferrer"
-            className={`rounded-full p-2 transition-colors ${
-              scrolled
-                ? "text-emerald-600 hover:bg-emerald-50"
-                : "text-white hover:bg-white/10"
-            }`}
-          >
-            <Instagram size={18} />
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noreferrer"
-            className={`rounded-full p-2 transition-colors ${
-              scrolled
-                ? "text-emerald-600 hover:bg-emerald-50"
-                : "text-white hover:bg-white/10"
-            }`}
-          >
-            <Github size={18} />
-          </a>
+        {/* Desktop social icons (≥1024px) */}
+        <div className="hidden items-center gap-3 lg:flex">
+          {[
+            { Icon: Linkedin, href: "https://www.linkedin.com" },
+            { Icon: Instagram, href: "https://instagram.com" },
+            { Icon: Github, href: "https://github.com" },
+          ].map(({ Icon, href }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noreferrer"
+              className={`rounded-full p-2 transition-colors ${
+                scrolled
+                  ? "text-blue-600 hover:bg-blue-50"
+                  : "text-white hover:bg-white/10"
+              }`}
+            >
+              <Icon size={18} />
+            </a>
+          ))}
         </div>
 
-        {/* Mobile hamburger */}
+        {/* Mobile hamburger (<1024px) */}
         <button
           className={`inline-flex items-center justify-center rounded-md p-2 ${
             scrolled ? "text-slate-900" : "text-white"
-          } md:hidden`}
+          } lg:hidden`}
           onClick={() => {
             setMobileOpen((v) => !v);
             setMobileSubMenu(null);
@@ -244,9 +277,12 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Mobile full menu */}
+      {/* Mobile full menu (<1024px) */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 overflow-y-auto bg-white md:hidden">
+        <div
+          ref={mobileMenuRef}
+          className="fixed inset-0 z-40 overflow-y-auto bg-white lg:hidden"
+        >
           {/* Top row inside panel */}
           <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-100 bg-white px-4 pb-2 pt-3">
             <div className="flex items-center gap-3">
@@ -260,13 +296,13 @@ const Navbar = () => {
             {/* Social icons mobile */}
             <div className="flex items-center gap-2">
               <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
-                <Linkedin size={18} className="text-emerald-600" />
+                <Linkedin size={18} className="text-blue-600" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                <Instagram size={18} className="text-emerald-600" />
+                <Instagram size={18} className="text-blue-600" />
               </a>
               <a href="https://github.com" target="_blank" rel="noreferrer">
-                <Github size={18} className="text-emerald-600" />
+                <Github size={18} className="text-blue-600" />
               </a>
             </div>
 
@@ -282,7 +318,7 @@ const Navbar = () => {
 
           {/* Content area */}
           <div className="px-4 pb-6 pt-3 text-sm font-medium text-slate-900">
-            {/* Main list */}
+            {/* Main list – first tap only opens submenu for dropdowns */}
             {!mobileSubMenu && (
               <div className="space-y-1">
                 {menuItems.map((item) => (
@@ -291,9 +327,10 @@ const Navbar = () => {
                     className="flex w-full items-center justify-between rounded-lg px-1 py-3 text-left hover:bg-slate-50"
                     onClick={() => {
                       if (item.hasDropdown && megaMenuData[item.label]) {
-                        setMobileSubMenu(item.label);
+                        setMobileSubMenu(item.label); // open submenu only
                         setDefaultActiveForLabel(item.label);
-                      } else {
+                      } else if (item.href) {
+                        navigate(item.href); // simple links navigate
                         setMobileOpen(false);
                       }
                     }}
@@ -305,7 +342,7 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Submenu detail view */}
+            {/* Submenu detail view – rows only change preview, More info navigates */}
             {mobileSubMenu && (() => {
               const config = megaMenuData[mobileSubMenu];
               if (!config) return null;
@@ -338,7 +375,10 @@ const Navbar = () => {
                       return (
                         <button
                           key={item.id}
-                          onClick={() => setActiveItemId(item.id)}
+                          onClick={() => {
+                            // only update active item / preview
+                            setActiveItemId(item.id);
+                          }}
                           className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm ${
                             isActive ? "bg-emerald-50" : "hover:bg-slate-50"
                           }`}
@@ -381,7 +421,16 @@ const Navbar = () => {
                       <p className="text-xs leading-relaxed text-slate-700">
                         {activeItem.text}
                       </p>
-                      <button className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700">
+                      <button
+                        className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700"
+                        onClick={() => {
+                          if (activeItem?.href) {
+                            navigate(activeItem.href);
+                            setMobileOpen(false);
+                            setMobileSubMenu(null);
+                          }
+                        }}
+                      >
                         More information <ChevronUp size={14} />
                       </button>
                     </div>
