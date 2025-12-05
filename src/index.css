@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family:  pst;
+    src: url(./fonts/PTSans-Regular.ttf);
+}
+
+h1{
+    /* font-family: pst; */
+}
