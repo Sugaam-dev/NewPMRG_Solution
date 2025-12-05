@@ -12,8 +12,10 @@
     |-- assets
         |-- clevermobi.png
         |-- develop.webp
+        |-- invoicing.png
         |-- mnos.jpg
         |-- PMRGlogo.png
+        |-- provisioning.png
         |-- sunset.jpg
     |-- Components
         |-- CleverWayOfWork
