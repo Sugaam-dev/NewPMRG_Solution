@@ -192,6 +192,7 @@ export const megaMenuData = {
         label: "Our Team",
         icon: Users,
         active: true,
+         href: "/pmrg-crew/our-team",
         image:
           "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg",
         heading: "Our Team",
@@ -202,6 +203,7 @@ export const megaMenuData = {
         label: "Company Highlights",
         icon: Megaphone,
         active: false,
+         href: "pmrg-crew/miles-stone",
         image:
           "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg",
         heading: "Company Highlights",

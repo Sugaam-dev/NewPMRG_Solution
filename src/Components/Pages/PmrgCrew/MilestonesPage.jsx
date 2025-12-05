@@ -1,8 +1,13 @@
 import React from "react";
 import milestoneImg from "../../../assets/provisioning.png"; // replace with your actual image
+import HeroSection from "../HeroSection";
+import milestonedata from "../../../data/milestonedata";
 
 export default function MilestonesPage() {
   return (
+    <>
+
+    <HeroSection {...milestonedata}/>
     <div className="w-full bg-white">
 
       {/* ------------------------- IMAGE + TEXT BLOCK (FIXED EXACTLY LIKE DESIGN) ------------------------- */}
@@ -108,5 +113,6 @@ export default function MilestonesPage() {
       </section>
 
     </div>
+    </>
   );
 }

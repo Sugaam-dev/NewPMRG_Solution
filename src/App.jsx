@@ -29,6 +29,8 @@ import Contact from "./Components/Pages/Contact/Contact";
 
 import Mvnos from "./Components/Pages/PmrgSolution/Mvnos";
 import SpecializedMarkets from "./Components/Pages/PmrgSolution/SpecializedMarkets";
+import OurTeamPage from "./Components/Pages/PmrgCrew/OurTeamPage";
+import MilestonesPage from "./Components/Pages/PmrgCrew/MilestonesPage";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
           <Route path="who-we-serve/mnos" element={<Mnos/>}/>
           <Route path="who-we-serve/mvnos" element={<Mvnos/>}/>
           <Route path="who-we-serve/specialized-markets" element={<SpecializedMarkets/>}/>
+          <Route path="pmrg-crew/our-team" element={<OurTeamPage/>}/>
+          <Route path="pmrg-crew/miles-stone" element={<MilestonesPage/>}/>
            <Route path="contact" element={<Contact/>}/>
         </Route>
       </Routes>

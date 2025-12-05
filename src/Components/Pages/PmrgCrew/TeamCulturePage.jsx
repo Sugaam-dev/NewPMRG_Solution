@@ -20,7 +20,7 @@ export default function TeamCulturePage() {
             <img
               src={skiTrip}
               alt="Ski Trip"
-              className="rounded-[32px] w-full h-auto object-cover shadow-lg"
+              className="rounded-[32px] w-full h-100 object-cover shadow-lg"
             />
           </div>
 

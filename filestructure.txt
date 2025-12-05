@@ -4,7 +4,7 @@
 |-- package-lock.json
 |-- package.json
 |-- public
-    |-- vite.svg
+    |-- PMRGlogo.png
 |-- README.md
 |-- src
     |-- App.css
@@ -54,8 +54,8 @@
                 |-- OurTeamPage.jsx
                 |-- TeamCulturePage.jsx
             |-- PmrgSolution
-                |-- CleverMobiPage.jsx
                 |-- Mnos.jsx
+                |-- Mvnos.jsx
                 |-- Solution.jsx
                 |-- SpecializedMarkets.jsx
             |-- WayOfWork
@@ -72,7 +72,17 @@
     |-- data
         |-- heroData.js
         |-- megaMenuData.js
+        |-- milestonedata.js
         |-- mnosData.js
+        |-- mvnosData copy.js
+        |-- ourteamsdata.js
+        |-- specializedData.js
+    |-- fonts
+        |-- OFL.txt
+        |-- PTSans-Bold.ttf
+        |-- PTSans-BoldItalic.ttf
+        |-- PTSans-Italic.ttf
+        |-- PTSans-Regular.ttf
     |-- index.css
     |-- main.jsx
 |-- vite.config.js
