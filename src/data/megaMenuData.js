@@ -66,6 +66,8 @@ export const megaMenuData = {
         label: "Platform Highlights",
         icon: Megaphone,
         active: true,
+        href: "/solution-of-pmrg/platform-highlights",
+       
         image:
           "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
         heading: "Platform Highlights",
@@ -144,6 +146,7 @@ export const megaMenuData = {
         label: "Development Philosophy",
         icon: Code2,
         active: true,
+        href: "/pmrg-way-of-work/developmentphilosophy",
         image:
           "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
         heading: "Development Philosophy",
@@ -154,6 +157,7 @@ export const megaMenuData = {
         label: "MVNE Connectivity",
         icon: Signal,
         active: false,
+        href: "/pmrg-way-of-work/mvne-connectivity",
         image:
           "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
         heading: "MVNE Connectivity",
@@ -164,6 +168,7 @@ export const megaMenuData = {
         label: "Implementation Approach",
         icon: TrendingUp,
         active: false,
+        href: "/pmrg-way-of-work/implementation-approach",
         image:
           "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
         heading: "Implementation Approach",
@@ -174,6 +179,7 @@ export const megaMenuData = {
         label: "TM Forum ODA",
         icon: Blocks,
         active: false,
+         href: "/pmrg-way-of-work/tmforum",
         image:
           "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg",
         heading: "TM Forum ODA",
@@ -214,6 +220,8 @@ export const megaMenuData = {
         label: "Team Culture",
         icon: Heart,
         active: false,
+        href: "pmrg-crew/team-culture",
+        
         image:
           "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
         heading: "Team Culture",

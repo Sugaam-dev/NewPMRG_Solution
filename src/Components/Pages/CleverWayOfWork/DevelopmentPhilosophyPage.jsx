@@ -1,7 +1,11 @@
-import sunset from "../../assets/develop.webp";
+import sunset from "../../../assets/develop.webp";
+import development from "../../../data/development";
+import HeroSection from "../HeroSection";
 
 export default function DevelopmentPhilosophyPage() {
   return (
+    <>
+    <HeroSection {...development}/>
     <main className="w-full overflow-x-hidden bg-white text-[#1a1a1a] font-sans">
 
       {/* Customer-Driven Development Section */}
@@ -131,5 +135,6 @@ export default function DevelopmentPhilosophyPage() {
       </section>
 
     </main>
+    </>
   );
 }

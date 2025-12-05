@@ -31,6 +31,12 @@ import Mvnos from "./Components/Pages/PmrgSolution/Mvnos";
 import SpecializedMarkets from "./Components/Pages/PmrgSolution/SpecializedMarkets";
 import OurTeamPage from "./Components/Pages/PmrgCrew/OurTeamPage";
 import MilestonesPage from "./Components/Pages/PmrgCrew/MilestonesPage";
+import TeamCulturePage from "./Components/Pages/PmrgCrew/TeamCulturePage";
+import DevelopmentPhilosophyPage from "./Components/Pages/CleverWayOfWork/DevelopmentPhilosophyPage";
+import MVNEConnectivity from "./Components/Pages/CleverWayOfWork/MVNEConnectivity";
+import ImplementationApproach from "./Components/Pages/CleverWayOfWork/ImplementationApproach";
+import TMForumPage from "./Components/Pages/CleverWayOfWork/TMForumPage";
+import PlatformHighlights from "./Components/Pages/SolutionOfPMRG/PlatformHighlights";
 
 function App() {
   return (
@@ -43,8 +49,15 @@ function App() {
           <Route path="who-we-serve/mnos" element={<Mnos/>}/>
           <Route path="who-we-serve/mvnos" element={<Mvnos/>}/>
           <Route path="who-we-serve/specialized-markets" element={<SpecializedMarkets/>}/>
+
+          <Route path="solution-of-pmrg/platform-highlights" element={<PlatformHighlights/>}/>
+          <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>
+          <Route path="pmrg-way-of-work/mvne-connectivity" element={<MVNEConnectivity/>}/>
+          <Route path="pmrg-way-of-work/implementation-approach" element={<ImplementationApproach/>}/>
+          <Route path="pmrg-way-of-work/tmforum" element={<TMForumPage/>}/>
           <Route path="pmrg-crew/our-team" element={<OurTeamPage/>}/>
           <Route path="pmrg-crew/miles-stone" element={<MilestonesPage/>}/>
+          <Route path="pmrg-crew/team-culture" element={<TeamCulturePage/>}/>
            <Route path="contact" element={<Contact/>}/>
         </Route>
       </Routes>

@@ -1,10 +1,14 @@
 import React from "react";
 import skiTrip from "../../../assets/Ski-foto.jpg"; // replace with your actual image
 import cultureImg from "../../../assets/ourculture.webp"; // replace with your actual image
+import HeroSection from "../HeroSection";
+import teamculturedata from "../../../data/teamculturedata";
 
 
 export default function TeamCulturePage() {
   return (
+   <>
+   <HeroSection {...teamculturedata}/>
     <main className="w-full bg-white">
 
 
@@ -30,7 +34,7 @@ export default function TeamCulturePage() {
               Annual Ski Trip
             </h2>
 
-            <p className="text-[20px] leading-[1.7] text-gray-700 max-w-xl">
+            <p className="text-[18px] leading-[1.7] text-gray-700 max-w-xl">
               Every year, the CleverMobi team embarks on an annual ski trip to the mountains.
               This week-long adventure combines alpine skiing, team bonding, and relaxation
               away from work pressures. Whether experienced skiers or beginners, everyone
@@ -46,6 +50,20 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* TEAM EVENTS SECTION */}
       {/* --------------------------------------------------------- */}
+      {/* <section className="px-6 md:px-16 lg:px-32 py-10 text-center">
+        <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
+          Team Events
+        </h2>
+
+        <p className="text-[20px] leading-[1.7] max-w-3xl mx-auto text-gray-700">
+          Beyond the annual ski trip, CleverMobi organizes regular social events throughout
+          the year. Team drinks after work celebrate project completions or just provide
+          opportunities to unwind together. Dinners bring the team together for good food
+          and conversation. These events make sure we stay connected with each other and
+          can unwind from time-to-time.
+        </p>
+      </section> */}
+
       <section className="px-6 md:px-16 lg:px-32 py-10 text-center">
         <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
           Team Events
@@ -59,6 +77,7 @@ export default function TeamCulturePage() {
           can unwind from time-to-time.
         </p>
       </section>
+
 
 
       {/* --------------------------------------------------------- */}
@@ -75,7 +94,7 @@ export default function TeamCulturePage() {
               Celebrating Success
             </h3>
 
-            <p className="text-[20px] leading-[1.7] text-gray-700">
+            <p className="text-[16px] leading-[1.7] text-gray-700">
               When CleverMobi achieves milestones or partners succeed, we celebrate together.
               Major operator launches, reaching platform milestones, or technical achievements
               are recognized with team celebrations. These moments acknowledge hard work and
@@ -92,7 +111,7 @@ export default function TeamCulturePage() {
               Work-Life Balance
             </h3>
 
-            <p className="text-[20px] leading-[1.7] text-gray-700">
+            <p className="text-[16px] leading-[1.7] text-gray-700">
               While dedicated to delivering excellent software and service, CleverMobi values
               work-life balance. Team events and fun activities demonstrate that work is important
               but so is enjoying life. Flexible working arrangements accommodate personal needs.
@@ -109,7 +128,7 @@ export default function TeamCulturePage() {
               Collaborative Environment
             </h3>
 
-            <p className="text-[20px] leading-[1.7] text-gray-700">
+            <p className="text-[16px] leading-[1.7] text-gray-700">
               Daily work emphasizes collaboration and mutual support. Team members help each other
               solve problems, share knowledge freely, and celebrate each other’s successes.
               Respectful communication and psychological safety enable honest discussions.
@@ -142,39 +161,41 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* JOIN OUR CULTURE SECTION */}
       {/* --------------------------------------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 py-24">
-        <div className="flex flex-col lg:flex-row items-center gap-14">
+     <section className="px-6 md:px-16 lg:px-32 py-24">
+  <div className="flex flex-col lg:flex-row items-center gap-16">
 
-          {/* TEXT */}
-          <div className="w-full lg:w-1/2">
-            <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
-              Join Our Culture
-            </h2>
+    {/* TEXT BLOCK */}
+    <div className="w-full lg:w-1/2">
+      <h2 className="text-[48px] font-bold tracking-[-0.03em] leading-[1.1] mb-8">
+        Join Our Culture
+      </h2>
 
-            <p className="text-[20px] leading-[1.7] text-gray-700 max-w-xl mb-8">
-              Talented professionals seeking more than just jobs are invited to join CleverMobi.
-              We offer challenging software development work, collaborative team environment,
-              opportunities for growth and learning, and culture that values people and shared
-              experiences. If this resonates, explore our career opportunities!
-            </p>
+      <p className="text-[20px] leading-[1.8] text-gray-700 max-w-[620px] mb-10">
+        Talented professionals seeking more than just jobs are invited to join CleverMobi.
+        We offer challenging software development work, collaborative team environment,
+        opportunities for growth and learning, and culture that values people and shared
+        experiences. If this resonates, explore our career opportunities!
+      </p>
 
-            <button className="bg-[#4CA30D] text-white px-6 py-3 rounded-full text-[18px] font-medium hover:bg-[#3d8a0e] transition">
-              Check out our career opportunities!
-            </button>
-          </div>
+      <button className="bg-[#4CA30D] text-white px-8 py-4 rounded-full text-[18px] font-semibold shadow-md hover:bg-[#3d8a0e] transition">
+        Check out our career opportunities!
+      </button>
+    </div>
 
-          {/* IMAGE */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <img
-              src={cultureImg}
-              alt="Team Culture"
-              className="rounded-[32px] w-full h-auto object-cover shadow-lg"
-            />
-          </div>
+    {/* IMAGE BLOCK */}
+    <div className="w-full lg:w-1/2 flex justify-center">
+      <img
+        src={cultureImg}
+        alt="Team Culture"
+        className="rounded-[40px] w-full max-w-[680px] object-cover shadow-xl"
+      />
+    </div>
 
-        </div>
-      </section>
+  </div>
+</section>
+
 
     </main>
+   </>
   );
 }

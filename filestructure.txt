@@ -12,6 +12,7 @@
     |-- assets
         |-- abcd.jpg
         |-- chris.jpg
+        |-- cleverenable.webp
         |-- clevermobi.png
         |-- develop.webp
         |-- geen-foto-mobi.png
@@ -35,14 +36,14 @@
         |-- sunset.jpg
         |-- tim.jpg
     |-- Components
-        |-- CleverWayOfWork
-            |-- DevelopmentPhilosophyPage.jsx
-            |-- ImplementationApproach.jsx
-            |-- MVNEConnectivity.jsx
-            |-- TMForumPage.jsx
         |-- Pages
             |-- Careers
                 |-- Careers.jsx
+            |-- CleverWayOfWork
+                |-- DevelopmentPhilosophyPage.jsx
+                |-- ImplementationApproach.jsx
+                |-- MVNEConnectivity.jsx
+                |-- TMForumPage.jsx
             |-- Contact
                 |-- Contact.jsx
             |-- HeroSection.jsx
@@ -58,8 +59,8 @@
                 |-- Mvnos.jsx
                 |-- Solution.jsx
                 |-- SpecializedMarkets.jsx
-            |-- WayOfWork
-                |-- WayOfWork.jsx
+            |-- SolutionOfPMRG
+                |-- PlatformHighlights.jsx
             |-- WhoWeServe
                 |-- WhoWeServe.jsx
         |-- RootLayout
@@ -70,13 +71,19 @@
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
     |-- data
+        |-- development.js
         |-- heroData.js
+        |-- implementationapproachdata.js
         |-- megaMenuData.js
         |-- milestonedata.js
         |-- mnosData.js
+        |-- mvneconnectivitydata.js
         |-- mvnosData copy.js
         |-- ourteamsdata.js
+        |-- platformhighlightsdata.js
         |-- specializedData.js
+        |-- teamculturedata.js
+        |-- tmforumdata.js
     |-- fonts
         |-- OFL.txt
         |-- PTSans-Bold.ttf

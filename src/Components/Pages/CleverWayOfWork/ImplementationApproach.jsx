@@ -1,9 +1,14 @@
 import React from "react";
-import implImg1 from "../../assets/implement.jpg";
-import implImg2 from "../../assets/lunchsupport.jpg";
+import implImg1 from "../../../assets/implement.jpg";
+import implImg2 from "../../../assets/lunchsupport.jpg";
+import HeroSection from "../HeroSection";
+import implementationapproachdata from "../../../data/implementationapproachdata";
 
 export default function ImplementationApproach() {
   return (
+    <> 
+    <HeroSection {...implementationapproachdata}/>
+    
     <main className="w-full bg-white text-[#1a1f1c] overflow-hidden">
 
       {/* =============================
@@ -133,6 +138,8 @@ export default function ImplementationApproach() {
         </p>
       </section>
 
-    </main>
+    </main></>
+    
+   
   );
 }
