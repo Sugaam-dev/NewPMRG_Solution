@@ -10,28 +10,29 @@
     |-- App.css
     |-- App.jsx
     |-- assets
+        |-- clevermobi.png
+        |-- develop.webp
+        |-- mnos.jpg
+        |-- PMRGlogo.png
         |-- sunset.jpg
     |-- Components
         |-- CleverWayOfWork
-            |-- developmentphilosophypage.css
             |-- DevelopmentPhilosophyPage.jsx
         |-- Pages
             |-- Careers
                 |-- Careers.jsx
             |-- Contact
                 |-- Contact.jsx
+            |-- HeroSection.jsx
             |-- Home
                 |-- home.css
                 |-- Home.jsx
             |-- PmrgCrew
                 |-- Crew.jsx
             |-- PmrgSolution
-                |-- clevermobi.css
                 |-- CleverMobiPage.jsx
-                |-- mnos.css
                 |-- Mnos.jsx
                 |-- Solution.jsx
-                |-- specialized-markets.css
                 |-- SpecializedMarkets.jsx
             |-- WayOfWork
                 |-- WayOfWork.jsx
@@ -41,8 +42,11 @@
             |-- Layout
                 |-- Footer.jsx
                 |-- Header.jsx
+                |-- Navbar.css
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
+    |-- data
+        |-- megaMenuData.js
     |-- index.css
     |-- main.jsx
 |-- vite.config.js
