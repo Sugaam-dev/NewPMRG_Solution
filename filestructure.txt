@@ -33,7 +33,6 @@
                 |-- CleverMobiPage.jsx
                 |-- Mnos.jsx
                 |-- Solution.jsx
-                |-- specialized-markets.css
                 |-- SpecializedMarkets.jsx
             |-- WayOfWork
                 |-- WayOfWork.jsx
