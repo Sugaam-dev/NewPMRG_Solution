@@ -47,6 +47,7 @@ export const megaMenuData = {
         label: "Specialized Markets",
         icon: Heart,
         active: false,
+             href: "/who-we-serve/specialized-markets",
         image:
           "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
         heading: "Specialized Markets",

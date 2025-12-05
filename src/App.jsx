@@ -27,6 +27,9 @@ import Home from "./Components/Pages/Home/Home";
 import Mnos from "./Components/Pages/PmrgSolution/Mnos";
 import Contact from "./Components/Pages/Contact/Contact";
 
+import Mvnos from "./Components/Pages/PmrgSolution/Mvnos";
+import SpecializedMarkets from "./Components/Pages/PmrgSolution/SpecializedMarkets";
+
 function App() {
   return (
     <BrowserRouter>
@@ -36,6 +39,8 @@ function App() {
           {/* Default page inside RootLayout */}
           <Route index element={<Home />} />
           <Route path="who-we-serve/mnos" element={<Mnos/>}/>
+          <Route path="who-we-serve/mvnos" element={<Mvnos/>}/>
+          <Route path="who-we-serve/specialized-markets" element={<SpecializedMarkets/>}/>
            <Route path="contact" element={<Contact/>}/>
         </Route>
       </Routes>

@@ -1,9 +1,14 @@
 import sunset from "../../../assets/sunset.jpg";
+import mvnosData from "../../../data/mvnosData copy";
+
+import HeroSection from "../HeroSection";
 
 // FINAL VERSION — FEATURES & MVNE SECTION MATCH FIRST-SCREENSHOT DESIGN
 
-export default function CleverMobiPage() {
+export default function Mvnos() {
   return (
+   <>
+   <HeroSection {...mvnosData}/>
     <main className="w-full overflow-x-hidden">
 
       {/* Launch Quickly Section */}
@@ -14,7 +19,7 @@ export default function CleverMobiPage() {
           </h2>
 
           <p className="text-[20px] text-[#666] leading-[1.7]">
-            MVNOs need to reach market fast to compete effectively. CleverMobi enables rapid deployment with
+            MVNOs need to reach market fast to compete effectively. PMRG-Solution enables rapid deployment with
             pre-configured workflows, proven best practices, and seamless MVNE integration. Launch new mobile services
             in weeks instead of months with complete billing and customer management ready from day one.
           </p>
@@ -42,7 +47,7 @@ export default function CleverMobiPage() {
             </h3>
 
             <p className="text-gray-700 leading-relaxed">
-              Consumer MVNO success requires product flexibility and speed. CleverMobi lets you create
+              Consumer MVNO success requires product flexibility and speed. PMRG-Solution lets you create
               new pricing plans in minutes, design powerful discount campaigns effortlessly, and launch
               promotions in hours instead of weeks. Test market responses quickly and adapt offerings
               based on customer feedback without technical barriers.
@@ -64,7 +69,7 @@ export default function CleverMobiPage() {
             </h3>
 
             <p className="text-gray-700 leading-relaxed">
-              Billing complexity can overwhelm growing MVNOs. CleverMobi streamlines operations with
+              Billing complexity can overwhelm growing MVNOs. PMRG-Solution streamlines operations with
               smart invoicing, automated payment handling, and intelligent dunning processes. Near
               real-time usage data ensures transparency, enabling accurate billing while your team
               focuses on growth rather than reconciliation.
@@ -116,7 +121,7 @@ export default function CleverMobiPage() {
             </h2>
 
             <p className="text-[20px] text-[#555] leading-[1.8] mb-12 max-w-[550px]">
-              CleverMobi integrates seamlessly with MVNEs like CleverEnable for complete end-to-end 
+              PMRG-Solution integrates seamlessly with MVNEs like CleverEnable for complete end-to-end 
               operations. Provisioning happens instantly when customers sign up or change plans. 
               Usage data flows continuously from network to billing. This integration eliminates 
               data synchronization headaches common with separate systems.
@@ -152,7 +157,7 @@ export default function CleverMobiPage() {
           </h2>
 
           <p className="text-[20px] text-[#666] leading-[1.7]">
-            As your MVNO grows, CleverMobi scales effortlessly. The platform handles thousands of
+            As your MVNO grows, PMRG-Solution scales effortlessly. The platform handles thousands of
             customers with the same efficiency as hundreds. Automated processes prevent operational
             bottlenecks. Add new products, channels, or markets without platform limitations
             constraining your ambitions.
@@ -161,5 +166,6 @@ export default function CleverMobiPage() {
       </section>
 
     </main>
+   </>
   );
 }
