@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { megaMenuData } from "../../../data/megaMenuData";
 import logo from "../../../assets/PMRGlogo.png";
 
@@ -19,36 +19,44 @@ import {
 const menuItems = [
   { label: "Home", hasDropdown: false, href: "/" },
   { label: "Who we serve", hasDropdown: true },
-  { label: "CleverSolutions", hasDropdown: true },
-  { label: "Clever Way of Work", hasDropdown: true },
-  { label: "CleverCrew", hasDropdown: true },
+  { label: "PmrgSolutions", hasDropdown: true },
+  { label: "Pmrg Way of Work", hasDropdown: true },
+  { label: "PmrgCrew", hasDropdown: true },
   { label: "Contact", hasDropdown: false, href: "/contact" },
 ];
 
-const DropdownItem = ({ item, active, onHover, onClick }) => (
-  <button
-    onMouseEnter={onHover}
-    onClick={onClick}
-    className={`flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm transition-colors ${
-      active ? "bg-emerald-50" : "hover:bg-slate-50"
-    }`}
-  >
-    <div className="flex items-center gap-3">
-      <div
-        className={`flex h-9 w-9 items-center justify-center rounded-full border text-lg ${
-          active
-            ? "border-emerald-500 text-emerald-600"
-            : "border-slate-200 text-slate-500"
-        }`}
-      >
-        {item.icon}
+const DropdownItem = ({ item, active, onHover, onClick }) => {
+  const Icon = item.icon;
+
+  return (
+    <button
+      onMouseEnter={onHover}
+      onClick={onClick}
+      className={`flex w-full items-center justify-between rounded-2xl px-4 py-3 text-left text-sm transition-colors ${
+        active ? "bg-blue-50" : "hover:bg-slate-50"
+      }`}
+    >
+      <div className="flex items-center gap-3">
+        <div
+          className={`flex h-9 w-9 items-center justify-center rounded-full border ${
+            active
+              ? "border-blue-500 text-blue-600"
+              : "border-slate-200 text-slate-500"
+          }`}
+        >
+          {Icon && <Icon size={18} />}
+        </div>
+        <span
+          className={
+            active ? "font-semibold text-slate-900" : "text-slate-800"
+          }
+        >
+          {item.label}
+        </span>
       </div>
-      <span className={active ? "font-semibold text-slate-900" : "text-slate-800"}>
-        {item.label}
-      </span>
-    </div>
-  </button>
-);
+    </button>
+  );
+};
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -122,7 +130,7 @@ const Navbar = () => {
       <div className="flex flex-col p-3 md:min-h-[260px] md:flex-row">
         {/* Left: description */}
         <div className="w-full border-b border-slate-100 p-6 md:w-[35%] md:border-b-0 md:border-r md:p-8">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
+          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
             {config.title}
           </p>
           <p className="text-sm leading-relaxed text-slate-700">
@@ -165,7 +173,7 @@ const Navbar = () => {
               {activeItem.text}
             </p>
             <button
-              className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700"
+              className="mt-3 flex items-center gap-1 text-xs font-semibold text-blue-700"
               onClick={() => {
                 if (activeItem?.href) {
                   navigate(activeItem.href);
@@ -221,7 +229,11 @@ const Navbar = () => {
               >
                 {item.label}
                 {item.hasDropdown &&
-                  (isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />)}
+                  (isOpen ? (
+                    <ChevronUp size={14} />
+                  ) : (
+                    <ChevronDown size={14} />
+                  ))}
               </button>
             );
           })}
@@ -243,11 +255,14 @@ const Navbar = () => {
         {/* Desktop social icons (≥1024px) */}
         <div className="hidden items-center gap-3 lg:flex">
           {[
-            { Icon: Linkedin, href: "https://www.linkedin.com" },
+            {
+              Icon: Linkedin,
+              href: "https://www.linkedin.com/in/pmrg-solution-llp-24532537a/",
+            },
             { Icon: Instagram, href: "https://instagram.com" },
-            { Icon: Github, href: "https://github.com" },
+            { Icon: Github, href: "https://github.com/Sugaam-dev" },
           ].map(({ Icon, href }) => (
-            <a
+            <Link
               key={href}
               href={href}
               target="_blank"
@@ -259,7 +274,7 @@ const Navbar = () => {
               }`}
             >
               <Icon size={18} />
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -295,15 +310,27 @@ const Navbar = () => {
 
             {/* Social icons mobile */}
             <div className="flex items-center gap-2">
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+              <Link
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Linkedin size={18} className="text-blue-600" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              </Link>
+              <Link
+                href="https://instagram.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Instagram size={18} className="text-blue-600" />
-              </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              </Link>
+              <Link
+                href="https://github.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Github size={18} className="text-blue-600" />
-              </a>
+              </Link>
             </div>
 
             <button
@@ -362,7 +389,7 @@ const Navbar = () => {
                     <span className="font-medium">{mobileSubMenu}</span>
                   </button>
 
-                  <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-700">
+                  <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
                     {config.title}
                   </h3>
                   <p className="mb-4 text-sm leading-relaxed text-slate-700">
@@ -372,26 +399,27 @@ const Navbar = () => {
                   <div className="mb-4 space-y-2">
                     {config.items.map((item) => {
                       const isActive = activeItem && activeItem.id === item.id;
+                      const Icon = item.icon;
+
                       return (
                         <button
                           key={item.id}
                           onClick={() => {
-                            // only update active item / preview
                             setActiveItemId(item.id);
                           }}
                           className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm ${
-                            isActive ? "bg-emerald-50" : "hover:bg-slate-50"
+                            isActive ? "bg-blue-50" : "hover:bg-slate-50"
                           }`}
                         >
                           <div className="flex items-center gap-3">
                             <div
-                              className={`flex h-8 w-8 items-center justify-center rounded-full border text-base ${
+                              className={`flex h-8 w-8 items-center justify-center rounded-full border ${
                                 isActive
-                                  ? "border-emerald-500 text-emerald-600"
+                                  ? "border-blue-500 text-blue-600"
                                   : "border-slate-200 text-slate-500"
                               }`}
                             >
-                              {item.icon}
+                              {Icon && <Icon size={16} />}
                             </div>
                             <span
                               className={
@@ -422,7 +450,7 @@ const Navbar = () => {
                         {activeItem.text}
                       </p>
                       <button
-                        className="mt-3 flex items-center gap-1 text-xs font-semibold text-emerald-700"
+                        className="mt-3 flex items-center gap-1 text-xs font-semibold text-blue-700"
                         onClick={() => {
                           if (activeItem?.href) {
                             navigate(activeItem.href);
