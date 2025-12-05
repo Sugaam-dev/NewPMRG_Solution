@@ -23,6 +23,7 @@ export const megaMenuData = {
         label: "MNOs",
         icon: "📡",
         active: false,
+         href: "/who-we-serve/mnos", 
         image:
           "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg",
         heading: "MNOs",

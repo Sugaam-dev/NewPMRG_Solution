@@ -1,5 +1,7 @@
 import React from "react";
 import sunset from "../../../assets/mnos.jpg";
+import HeroSection from "../HeroSection";
+import mnosData from "../../../data/mnosData";
 
 /* ============================= */
 /*  INLINE SVG ICON COMPONENTS   */
@@ -64,11 +66,13 @@ const IconSpeed = () => (
 
 export default function Mnos() {
   return (
-    <main className="bg-white w-full">
+    <main className=" w-full">
 
       {/* ================================ */}
       {/*   REPLACE LEGACY SYSTEMS SECTION */}
       {/* ================================ */}
+
+      <HeroSection {...mnosData}/>
 
       <section className="w-full py-16 px-4">
         <div className="max-w-[1200px] mx-auto">

@@ -24,6 +24,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootLayout from "./Components/RootLayout/RootLayout";
 import Home from "./Components/Pages/Home/Home";
+import Mnos from "./Components/Pages/PmrgSolution/Mnos";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/" element={<RootLayout />}>
           {/* Default page inside RootLayout */}
           <Route index element={<Home />} />
+          <Route path="who-we-serve/mnos" element={<Mnos/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
