@@ -27,7 +27,7 @@ const ContactPage = () => {
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             {/* Phone block */}
             <div className="space-y-2 max-w-md">
-              <div className="flex items-center gap-2 text-[#91bf00] text-sm">
+              <div className="flex items-center gap-2 text-blue-600 text-sm">
                 <Phone className="w-4 h-4" />
                 <span>Phone number</span>
               </div>
@@ -45,7 +45,7 @@ const ContactPage = () => {
 
             {/* Email block */}
             <div className="space-y-2 max-w-md md:ml-auto">
-              <div className="flex items-center gap-2 text-[#91bf00] text-sm">
+              <div className="flex items-center gap-2 text-blue-600 text-sm">
                 <Mail className="w-4 h-4" />
                 <span>E-mail</span>
               </div>
@@ -66,7 +66,7 @@ const ContactPage = () => {
 
               {/* Visitor address */}
               <div className="space-y-2 text-sm leading-relaxed">
-                <div className="flex items-center gap-2 text-[#91bf00] font-medium">
+                <div className="flex items-center gap-2 text-blue-600 font-medium">
                   <MapPin className="w-4 h-4" />
                   <span>Visitor address</span>
                 </div>
@@ -81,7 +81,7 @@ const ContactPage = () => {
 
               {/* Postal address */}
               <div className="space-y-2 text-sm leading-relaxed pt-4">
-                <div className="flex items-center gap-2 text-[#91bf00] font-medium">
+                <div className="flex items-center gap-2 text-blue-600 font-medium">
                   <MapPin className="w-4 h-4" />
                   <span>Postal address</span>
                 </div>
