@@ -89,6 +89,7 @@ export const megaMenuData = {
         label: "Self-Service Tools",
         icon: Heart,
         active: false,
+         href: "/solution-of-pmrg/self-service-tools",
         image:
           "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
         heading: "Self-Service Tools",

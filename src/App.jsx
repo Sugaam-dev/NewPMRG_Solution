@@ -37,6 +37,7 @@ import TMForumPage from "./Components/Pages/PMRGWayOfWork/TMForumPage";
 import OurTeamPage from "./Components/Pages/PmrgCrew/OurTeamPage";
 import MilestonesPage from "./Components/Pages/PmrgCrew/MilestonesPage";
 import TeamCulturePage from "./Components/Pages/PmrgCrew/TeamCulturePage";
+import SelfServiceTools from "./Components/Pages/PmrgSolution/SelfServiceTools";
 
 
 
@@ -56,6 +57,7 @@ function App() {
 
           <Route path="solution-of-pmrg/platform-highlights" element={<PlatformHighlights/>}/>
           <Route path="solution-of-pmrg/customer-experience" element={<CustomerExperience/>}/>
+          <Route path="solution-of-pmrg/self-service-tools" element={<SelfServiceTools/>}/>
 
 
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>

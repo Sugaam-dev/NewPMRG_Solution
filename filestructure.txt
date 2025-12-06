@@ -57,6 +57,7 @@
             |-- PmrgSolution
                 |-- CustomerExperience.jsx
                 |-- PlatformHighlights.jsx
+                |-- SelfServiceTools.jsx
             |-- PMRGWayOfWork
                 |-- DevelopmentPhilosophyPage.jsx
                 |-- ImplementationApproach.jsx
@@ -85,6 +86,7 @@
         |-- mvnosData copy.js
         |-- ourteamsdata.js
         |-- platformhighlightsdata.js
+        |-- selfservicetooldata.js
         |-- specializedData.js
         |-- teamculturedata.js
         |-- tmforumdata.js
