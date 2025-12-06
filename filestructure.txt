@@ -17,8 +17,10 @@
         |-- develop.webp
         |-- geen-foto-mobi.png
         |-- implement.jpg
+        |-- invoiceing.png
         |-- invoicing.png
         |-- Karsten.jpg
+        |-- kelly-quote-services.jpg
         |-- Kelly.webp
         |-- kok.jpg
         |-- lily.jpg
@@ -32,6 +34,7 @@
         |-- PMRGlogo.png
         |-- provisioning.png
         |-- rob.jpg
+        |-- selfcare.png
         |-- Ski-foto.jpg
         |-- sunset.jpg
         |-- tim.jpg
@@ -60,6 +63,7 @@
                 |-- Solution.jsx
                 |-- SpecializedMarkets.jsx
             |-- SolutionOfPMRG
+                |-- CustomerExperience.jsx
                 |-- PlatformHighlights.jsx
             |-- WhoWeServe
                 |-- WhoWeServe.jsx

@@ -78,6 +78,7 @@ export const megaMenuData = {
         label: "Customer Experience",
         icon: Handshake,
         active: false,
+         href: "/solution-of-pmrg/customer-experience",
         image:
           "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
         heading: "Customer Experience",

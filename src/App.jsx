@@ -37,6 +37,7 @@ import MVNEConnectivity from "./Components/Pages/CleverWayOfWork/MVNEConnectivit
 import ImplementationApproach from "./Components/Pages/CleverWayOfWork/ImplementationApproach";
 import TMForumPage from "./Components/Pages/CleverWayOfWork/TMForumPage";
 import PlatformHighlights from "./Components/Pages/SolutionOfPMRG/PlatformHighlights";
+import CustomerExperience from "./Components/Pages/SolutionOfPMRG/CustomerExperience";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="who-we-serve/specialized-markets" element={<SpecializedMarkets/>}/>
 
           <Route path="solution-of-pmrg/platform-highlights" element={<PlatformHighlights/>}/>
+          <Route path="solution-of-pmrg/customer-experience" element={<CustomerExperience/>}/>
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>
           <Route path="pmrg-way-of-work/mvne-connectivity" element={<MVNEConnectivity/>}/>
           <Route path="pmrg-way-of-work/implementation-approach" element={<ImplementationApproach/>}/>
