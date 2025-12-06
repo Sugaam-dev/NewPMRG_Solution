@@ -29,7 +29,7 @@
         |-- Maina.jpg
         |-- mnos.jpg
         |-- Morris.jpg
-        |-- Mourad.boustani.jpg
+        |-- Mouradboustani.jpg
         |-- ourculture.webp
         |-- PMRGlogo.png
         |-- provisioning.png
@@ -42,31 +42,31 @@
         |-- Pages
             |-- Careers
                 |-- Careers.jsx
-            |-- CleverWayOfWork
-                |-- DevelopmentPhilosophyPage.jsx
-                |-- ImplementationApproach.jsx
-                |-- MVNEConnectivity.jsx
-                |-- TMForumPage.jsx
             |-- Contact
                 |-- Contact.jsx
             |-- HeroSection.jsx
             |-- Home
-                |-- home.css
+                |-- BusinessInsights.jsx
+                |-- Crm.jsx
                 |-- Home.jsx
+                |-- PmrgFeaturs.jsx
             |-- PmrgCrew
                 |-- MilestonesPage.jsx
                 |-- OurTeamPage.jsx
                 |-- TeamCulturePage.jsx
             |-- PmrgSolution
-                |-- Mnos.jsx
-                |-- Mvnos.jsx
-                |-- Solution.jsx
-                |-- SpecializedMarkets.jsx
+                |-- PlatformHighlights.jsx
+            |-- PMRGWayOfWork
+                |-- DevelopmentPhilosophyPage.jsx
+                |-- ImplementationApproach.jsx
+                |-- MVNEConnectivity.jsx
+                |-- TMForumPage.jsx
             |-- SolutionOfPMRG
                 |-- CustomerExperience.jsx
-                |-- PlatformHighlights.jsx
             |-- WhoWeServe
-                |-- WhoWeServe.jsx
+                |-- Mnos.jsx
+                |-- Mvnos.jsx
+                |-- SpecializedMarkets.jsx
         |-- RootLayout
             |-- Layout
                 |-- Footer.jsx
