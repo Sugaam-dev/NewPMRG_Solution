@@ -74,6 +74,7 @@
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
     |-- data
+        |-- customerexperiencedata.js
         |-- development.js
         |-- heroData.js
         |-- implementationapproachdata.js
