@@ -1,7 +1,7 @@
 import React from "react";
 
 import chris from "../../../assets/chris.jpg";
-import karsten from "../../../assets/karsten.jpg";
+// import karsten from "../../../assets/karsten.jpg";
 import maarten from "../../../assets/Maarten.jpg";
 import rob from "../../../assets/rob.jpg";
 import tim from "../../../assets/tim.jpg";
@@ -19,7 +19,7 @@ import ourteamsdata from "../../../data/ourteamsdata";
 export default function OurTeamPage() {
   const team = [
     { name: "Chris Jansen", img: chris },
-    { name: "Karsten Nilsen", img: karsten },
+    // { name: "Karsten Nilsen", img: karsten },
     { name: "Maarten Visscher", img: maarten },
     { name: "Rob Pennekamp", img: rob },
     { name: "Tim Goudriaan", img: tim },
