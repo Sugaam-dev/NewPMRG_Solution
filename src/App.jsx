@@ -24,20 +24,22 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootLayout from "./Components/RootLayout/RootLayout";
 import Home from "./Components/Pages/Home/Home";
-import Mnos from "./Components/Pages/PmrgSolution/Mnos";
+import Mnos from "./Components/Pages/WhoWeServe/Mnos";
 import Contact from "./Components/Pages/Contact/Contact";
 
-import Mvnos from "./Components/Pages/PmrgSolution/Mvnos";
-import SpecializedMarkets from "./Components/Pages/PmrgSolution/SpecializedMarkets";
+import Mvnos from "./Components/Pages/WhoWeServe/Mvnos";
+import SpecializedMarkets from "./Components/Pages/WhoWeServe/SpecializedMarkets";
 import OurTeamPage from "./Components/Pages/PmrgCrew/OurTeamPage";
 import MilestonesPage from "./Components/Pages/PmrgCrew/MilestonesPage";
 import TeamCulturePage from "./Components/Pages/PmrgCrew/TeamCulturePage";
+
 import DevelopmentPhilosophyPage from "./Components/Pages/CleverWayOfWork/DevelopmentPhilosophyPage";
 import MVNEConnectivity from "./Components/Pages/CleverWayOfWork/MVNEConnectivity";
 import ImplementationApproach from "./Components/Pages/CleverWayOfWork/ImplementationApproach";
 import TMForumPage from "./Components/Pages/CleverWayOfWork/TMForumPage";
 import PlatformHighlights from "./Components/Pages/SolutionOfPMRG/PlatformHighlights";
 import CustomerExperience from "./Components/Pages/SolutionOfPMRG/CustomerExperience";
+
 
 function App() {
   return (

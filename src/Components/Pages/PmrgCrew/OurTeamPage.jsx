@@ -1,13 +1,13 @@
 import React from "react";
 
 import chris from "../../../assets/chris.jpg";
-import karsten from "../../../assets/karsten.jpg";
+// import karsten from "../../../assets/karsten.jpg";
 import maarten from "../../../assets/Maarten.jpg";
 import rob from "../../../assets/rob.jpg";
 import tim from "../../../assets/tim.jpg";
 import jelle from "../../../assets/kok.jpg";
 import christian from "../../../assets/lunchsupport.jpg";
-import mourad from "../../../assets/mourad.boustani.jpg";
+// import mourad from "../../../assets/mourad.boustani.jpg";
 import vincent from "../../../assets/provisioning.png";
 import morris from "../../../assets/morris.jpg";
 import lily from "../../../assets/lily.jpg";
@@ -19,13 +19,13 @@ import ourteamsdata from "../../../data/ourteamsdata";
 export default function OurTeamPage() {
   const team = [
     { name: "Chris Jansen", img: chris },
-    { name: "Karsten Nilsen", img: karsten },
+    // { name: "Karsten Nilsen", img: karsten },
     { name: "Maarten Visscher", img: maarten },
     { name: "Rob Pennekamp", img: rob },
     { name: "Tim Goudriaan", img: tim },
     { name: "Jelle Raaijmakers", img: jelle },
     { name: "Christian de Kok", img: christian },
-    { name: "Mourad Boustani", img: mourad },
+    // { name: "Mourad Boustani", img: mourad },
     { name: "Vincent Hoogendam", img: vincent },
     { name: "Morris Hannessen", img: morris },
     { name: "Lily Leenders", img: lily },
