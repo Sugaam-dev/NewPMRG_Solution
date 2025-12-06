@@ -7,7 +7,7 @@ import rob from "../../../assets/rob.jpg";
 import tim from "../../../assets/tim.jpg";
 import jelle from "../../../assets/kok.jpg";
 import christian from "../../../assets/lunchsupport.jpg";
-import mourad from "../../../assets/mourad.boustani.jpg";
+// import mourad from "../../../assets/mourad.boustani.jpg";
 import vincent from "../../../assets/provisioning.png";
 import morris from "../../../assets/morris.jpg";
 import lily from "../../../assets/lily.jpg";
@@ -25,7 +25,7 @@ export default function OurTeamPage() {
     { name: "Tim Goudriaan", img: tim },
     { name: "Jelle Raaijmakers", img: jelle },
     { name: "Christian de Kok", img: christian },
-    { name: "Mourad Boustani", img: mourad },
+    // { name: "Mourad Boustani", img: mourad },
     { name: "Vincent Hoogendam", img: vincent },
     { name: "Morris Hannessen", img: morris },
     { name: "Lily Leenders", img: lily },
