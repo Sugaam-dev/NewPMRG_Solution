@@ -55,14 +55,13 @@
                 |-- OurTeamPage.jsx
                 |-- TeamCulturePage.jsx
             |-- PmrgSolution
+                |-- CustomerExperience.jsx
                 |-- PlatformHighlights.jsx
             |-- PMRGWayOfWork
                 |-- DevelopmentPhilosophyPage.jsx
                 |-- ImplementationApproach.jsx
                 |-- MVNEConnectivity.jsx
                 |-- TMForumPage.jsx
-            |-- SolutionOfPMRG
-                |-- CustomerExperience.jsx
             |-- WhoWeServe
                 |-- Mnos.jsx
                 |-- Mvnos.jsx
