@@ -10,7 +10,7 @@ const PmrgFeaturs = () => {
           Automated invoicing &amp; payments
         </h2>
 
-        <p className="mx-auto max-w-xl text-sm text-slate-500">
+        <p className="mx-auto max-w-xl lg:text-lg text-slate-500">
           Streamline billing with smart invoicing, payment handling and automated dunning fees.
         </p>
 
@@ -18,7 +18,7 @@ const PmrgFeaturs = () => {
         <div className="mt-8 rounded-2xl bg-blue-50 px-6 py-6 md:px-10 md:py-8 grid gap-6 md:grid-cols-3 text-left">
           <div>
             <Bell className="h-6 w-6 text-blue-600" />
-            <h3 className="mt-3 text-sm font-semibold text-slate-900">
+            <h3 className="mt-3 lg:text-lg font-semibold text-slate-900">
               Automated Dunning &amp; Communication
             </h3>
             <p className="mt-1 text-xs text-slate-500 leading-relaxed">
@@ -29,7 +29,7 @@ const PmrgFeaturs = () => {
 
           <div>
             <CreditCard className="h-6 w-6 text-blue-600" />
-            <h3 className="mt-3 text-sm font-semibold text-slate-900">
+            <h3 className="mt-3 lg:text-lg font-semibold text-slate-900">
               Seamless Payment Integration
             </h3>
             <p className="mt-1 text-xs text-slate-500 leading-relaxed">
@@ -40,7 +40,7 @@ const PmrgFeaturs = () => {
 
           <div>
             <WalletCards className="h-6 w-6 text-blue-600" />
-            <h3 className="mt-3 text-sm font-semibold text-slate-900">
+            <h3 className="mt-3 lg:text-lg font-semibold text-slate-900">
               Cashback Loyalty Wallet
             </h3>
             <p className="mt-1 text-xs text-slate-500 leading-relaxed">
@@ -60,12 +60,12 @@ const PmrgFeaturs = () => {
                 Seamless, Real-Time Provisioning &amp; Control
               </h2>
 
-              <p className="mt-4 text-sm text-slate-500 max-w-md leading-relaxed">
+              <p className="mt-4 lg:text-lg text-slate-500 max-w-md leading-relaxed">
                 Automated provisioning integrates with your stack to enable instant bundle
                 assignment, balance management, number portability and service toggling.
               </p>
 
-              <p className="mt-2 text-sm text-slate-500 max-w-md leading-relaxed">
+              <p className="mt-2 lg:text-lg text-slate-500 max-w-md leading-relaxed">
                 Real-time usage data and customizable alerts keep every stakeholder informed and in
                 control.
               </p>

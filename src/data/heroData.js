@@ -1,14 +1,9 @@
-// src/data/heroData.js
-import heroImg from "../assets/clevermobi.png";
-
+// heroData.js
 const heroData = {
-  image: heroImg,
+  image: 'https://www.pmrgsolution.com/img/carousel-2.webp',
   title: "Business software for",
   highlight: "mobile operators",
-  description:
-    "CleverMobi introduces a cutting‑edge Business Support System (BSS) built exclusively for mobile operators. It empowers you to launch price plans in minutes, design any discount or campaign, and accelerate growth and innovation.",
-  buttonLabel: "Get started",
-  buttonHref: "/get-started",
+  description: "PMRG Solution introduces a cutting-edge Business Support System (BSS) built exclusively for mobile operators. Free from legacy constraints, it empowers you to launch price plans in minutes, effortlessly design any discount or campaign, and accelerate your growth and innovation.",
+  showAnimation: true  // ✅ Animation ON
 };
-
 export default heroData;

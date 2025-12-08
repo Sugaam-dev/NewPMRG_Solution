@@ -9,10 +9,10 @@ const Crm = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-20 relative">
         {/* TITLE + DESCRIPTION */}
         <header className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-[32px] sm:text-[36px] lg:text-[40px] leading-tight font-semibold tracking-tight text-[#1f2933]">
+          <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">
             Use the best CRM for online marketing
           </h1>
-          <p className="mt-4 text-[14px] sm:text-[15px] leading-relaxed text-[#4b5563]">
+          <p className="mt-4 lg:text-lg  leading-relaxed text-[#4b5563]">
             Combine CleverMobi seamlessly with HubSpot—a CRM purpose‑built for sales and marketing.
             Your data is always in sync. Effortlessly navigate between systems, using intuitive card
             views to switch context instantly.

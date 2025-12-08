@@ -14,7 +14,7 @@ const ContactPage = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-4">
           We'd like to hear from you
         </h1>
-        <p className="max-w-2xl text-sm md:text-base text-slate-200 leading-relaxed px-4">
+        <p className="max-w-2xl lg:text-lg text-slate-200 leading-relaxed px-4">
           Discover how CleverMobi can transform your business. Reach out with your questions or requests,
           and our experts will swiftly assist you.
         </p>
