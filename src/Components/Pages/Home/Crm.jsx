@@ -1,44 +1,86 @@
-import React from 'react';
-
+import React from "react";
+import crm from '../../../assets/crm.svg'
 const Crm = () => {
   return (
-    <section className="relative overflow-hidden bg-white text-[#111827]">
-      {/* BIG LIGHT GREY BACKGROUND BLOB */}
-      <div className="hidden md:block absolute -left-40 bottom-[-120px] w-[520px] h-[320px] rounded-[999px] bg-[#edf0ea]" />
+    <main className="w-full bg-white text-slate-900 pt-24 pb-16">
+      {/* Full-width hero */}
+      <section className="w-full px-6 md:px-8 lg:px-30">
+        <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-600 mb-2">
+              PMRG Solution · CRM Services
+            </p>
+            <h1 className="text-3xl md:text-4xl font-bold mb-3">
+              CRM that puts your customers at the center
+            </h1>
+            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+              PMRG Solution builds CRM platforms that keep all your customer
+              information—leads, deals, emails, calls, and support requests—in
+              one place. Sales, marketing, and service teams see the same 360°
+              view, so every interaction feels consistent and personal.
+            </p>
+          </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-20 relative">
-        {/* TITLE + DESCRIPTION */}
-        <header className="text-center max-w-3xl mx-auto mb-16">
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">
-            Use the best CRM for online marketing
-          </h1>
-          <p className="mt-4 lg:text-lg  leading-relaxed text-[#4b5563]">
-            Combine CleverMobi seamlessly with HubSpot—a CRM purpose‑built for sales and marketing.
-            Your data is always in sync. Effortlessly navigate between systems, using intuitive card
-            views to switch context instantly.
-          </p>
-        </header>
-
-        {/* VISUAL BLOCK */}
-        <div className="relative flex justify-center mt-4">
-          {/* LIGHT AQUA CIRCLE ON LEFT (BEHIND BLACK CARD) */}
-          <div className="hidden md:block absolute -left-24 top-1/2 -translate-y-1/2 w-[250px] h-[250px] rounded-full bg-[#b9f1f3] z-0" />
-
-          {/* BLACK MOCKUP CARD */}
-          <div className="relative w-full max-w-4xl rounded-[32px] overflow-hidden shadow-[0_32px_60px_rgba(15,23,42,0.25)] bg-black z-10">
-            <div className="p-2 bg-black">
-              <div className="rounded-[26px] overflow-hidden bg-white">
-                <img
-                  src="https://wp-api.clevergroup.nl/mobi/wp-content/uploads/sites/3/2024/10/crm-integration.png"
-                  alt="CRM dashboard"
-                  className="w-full h-auto object-cover align-middle"
-                />
-              </div>
-            </div>
+          <div className="rounded-2xl overflow-hidden shadow-md">
+            <img
+            
+              src={crm }
+              alt="CRM dashboard for PMRG Solution client"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* How it works + tracking */}
+      <section className="w-full mt-12 px-4 md:px-6 lg:px-30">
+        <div className="grid gap-8 md:grid-cols-2">
+          <div>
+            <h2 className="text-xl font-semibold mb-2">How our CRM works</h2>
+            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+              We connect your website forms, email, phone, and campaigns into
+              one CRM pipeline. Leads move through stages with clear owners,
+              tasks, and reminders, so your team never loses track of a follow‑up
+              or opportunity.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-xl font-semibold mb-2">
+              What PMRG helps you track
+            </h2>
+            <ul className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+              <li>• Contacts and companies with full interaction history.</li>
+              <li>• Deals and pipelines with values, stages, and probabilities.</li>
+              <li>• Campaign performance and lead sources.</li>
+              <li>• Service tickets and SLAs for existing customers.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="w-full mt-12 px-6 md:px-8 lg:px-30">
+        <h2 className="text-xl font-semibold mb-3">
+          Why PMRG is the right partner for CRM
+        </h2>
+        <div className="grid gap-4 md:grid-cols-3 text-sm">
+          <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
+            Stronger relationships through complete context on every customer
+            and faster, smarter responses.
+          </p>
+          <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
+            More revenue from organized pipelines, automatic reminders, and
+            clear sales priorities.
+          </p>
+          <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
+            Actionable insights with dashboards tailored by PMRG to your
+            goals, teams, and reporting needs.
+          </p>
+        </div>
+      </section>
+    </main>
   );
 };
 

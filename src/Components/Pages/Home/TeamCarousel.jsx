@@ -15,6 +15,7 @@ import shilpa from "../../../assets/TeamsPhoto/Shilpa_A.webp";
 import advait from "../../../assets/TeamsPhoto/advait-tiwari.webp";
 import rohit from "../../../assets/TeamsPhoto/photo_rohit_new.webp";
 import sonal from "../../../assets/TeamsPhoto/sonal-kamble.webp";
+import udesh from "../../../assets/TeamsPhoto/udesh.jpeg";
 
 const members = [
   { name: "Pratima Mishra", img: pratima },
@@ -25,6 +26,7 @@ const members = [
   { name: "Advait Tiwari", img: advait },
   { name: "Rohit Ghosh", img: rohit },
   { name: "Sonal Kamble", img: sonal },
+   { name: "Udesh", img: udesh },
 ];
 
 const TeamCarousel = () => {
@@ -65,7 +67,7 @@ const TeamCarousel = () => {
                   <img
                     src={m.img}
                     alt={m.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                     loading="lazy"
                   />
                 </div>

@@ -51,7 +51,7 @@ const PmrgFeaturs = () => {
       </div>
 
       {/* Bottom area ----------------------------------------------------- */}
-      <div className="px-6 pb-20 md:px-16 lg:px-24">
+      <div className="px-6 pb-5 md:px-16 lg:px-5">
         <div className="mx-auto flex max-w-5xl flex-col items-center gap-10 md:grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           {/* Left text column */}
           <div className="flex h-full items-center">

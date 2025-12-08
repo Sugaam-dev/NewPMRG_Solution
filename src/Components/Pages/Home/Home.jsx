@@ -7,6 +7,7 @@ import BusinessInsights from './BusinessInsights'
 import Teams from './Teams'
 import TestimonialCarousel from './TestimonialCarousel'
 import ProjectsCarousel from './ProjectsCarousel'
+import Erp from './Erp'
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
    <HeroSection {...heroData} />
 <PmrgFeaturs/>
 <Crm/>
+<Erp/>
 <BusinessInsights/>
    <ProjectsCarousel/>
       <Teams/>
