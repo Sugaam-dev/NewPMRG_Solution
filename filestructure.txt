@@ -28,6 +28,16 @@
         |-- Kelly.webp
         |-- kok.jpg
         |-- lily.jpg
+        |-- logos
+            |-- amd-logo.png
+            |-- catchuplogo.webp
+            |-- grunilogo.webp
+            |-- MtcLogo.webp
+            |-- o4orange-logo.png
+            |-- ombreathe.png
+            |-- schoolBuddy.jpeg
+            |-- veselmini.jpg
+            |-- vyakrute-logo.png
         |-- lunchsupport.jpg
         |-- Maarten.jpg
         |-- Maina.jpg
@@ -36,12 +46,28 @@
         |-- Mouradboustani.jpg
         |-- ourculture.webp
         |-- PMRGlogo.png
+        |-- projects
+            |-- project-1.webp
+            |-- project-2.webp
+            |-- project-3.webp
+            |-- project-4.webp
+            |-- project-5.webp
+            |-- project-6.webp
         |-- provisioning.png
         |-- rob.jpg
         |-- security.png
         |-- selfcare.png
         |-- Ski-foto.jpg
         |-- sunset.jpg
+        |-- TeamsPhoto
+            |-- advait-tiwari.webp
+            |-- bhadrayu-panda.webp
+            |-- pamir.webp
+            |-- photo_rohit_new.webp
+            |-- pratima-mishra.webp
+            |-- rekha-ghosh.webp
+            |-- Shilpa_A.webp
+            |-- sonal-kamble.webp
         |-- tim.jpg
     |-- Components
         |-- Pages
@@ -55,6 +81,10 @@
                 |-- Crm.jsx
                 |-- Home.jsx
                 |-- PmrgFeaturs.jsx
+                |-- ProjectsCarousel.jsx
+                |-- TeamCarousel.jsx
+                |-- Teams.jsx
+                |-- TestimonialCarousel.jsx
             |-- PmrgCrew
                 |-- MilestonesPage.jsx
                 |-- OurTeamPage.jsx
@@ -98,10 +128,12 @@
         |-- ourteamsdata.js
         |-- platformhighlightsdata.js
         |-- pmrgenableintegrationdata.js
+        |-- projects.js
         |-- securityanalyticsdata.js
         |-- selfservicetooldata.js
         |-- specializedData.js
         |-- teamculturedata.js
+        |-- testimonial.js
         |-- tmforumdata.js
     |-- fonts
         |-- OFL.txt
