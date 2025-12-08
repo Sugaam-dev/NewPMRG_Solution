@@ -11,9 +11,12 @@
     |-- App.jsx
     |-- assets
         |-- abcd.jpg
+        |-- business.png
+        |-- business1.png
         |-- chris.jpg
         |-- cleverenable.webp
         |-- clevermobi.png
+        |-- crm-integration.png
         |-- develop.webp
         |-- geen-foto-mobi.png
         |-- implement.jpg
@@ -34,6 +37,7 @@
         |-- PMRGlogo.png
         |-- provisioning.png
         |-- rob.jpg
+        |-- security.png
         |-- selfcare.png
         |-- Ski-foto.jpg
         |-- sunset.jpg
@@ -55,8 +59,11 @@
                 |-- OurTeamPage.jsx
                 |-- TeamCulturePage.jsx
             |-- PmrgSolution
+                |-- CompliancePage.jsx
                 |-- CustomerExperience.jsx
+                |-- OperationsIntegrationsPage.jsx
                 |-- PlatformHighlights.jsx
+                |-- SecurityAnalyticsPage.jsx
                 |-- SelfServiceTools.jsx
             |-- PMRGWayOfWork
                 |-- DevelopmentPhilosophyPage.jsx
@@ -84,8 +91,10 @@
         |-- mnosData.js
         |-- mvneconnectivitydata.js
         |-- mvnosData copy.js
+        |-- operationsintegrationdata.js
         |-- ourteamsdata.js
         |-- platformhighlightsdata.js
+        |-- securityanalyticsdata.js
         |-- selfservicetooldata.js
         |-- specializedData.js
         |-- teamculturedata.js

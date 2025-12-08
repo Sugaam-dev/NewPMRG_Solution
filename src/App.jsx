@@ -38,6 +38,9 @@ import OurTeamPage from "./Components/Pages/PmrgCrew/OurTeamPage";
 import MilestonesPage from "./Components/Pages/PmrgCrew/MilestonesPage";
 import TeamCulturePage from "./Components/Pages/PmrgCrew/TeamCulturePage";
 import SelfServiceTools from "./Components/Pages/PmrgSolution/SelfServiceTools";
+import SecurityAnalyticsPage from "./Components/Pages/PmrgSolution/SecurityAnalyticsPage";
+import OperationsIntegrationsPage from "./Components/Pages/PmrgSolution/OperationsIntegrationsPage";
+import CompliancePage from "./Components/Pages/PmrgSolution/CompliancePage";
 
 
 
@@ -58,6 +61,9 @@ function App() {
           <Route path="solution-of-pmrg/platform-highlights" element={<PlatformHighlights/>}/>
           <Route path="solution-of-pmrg/customer-experience" element={<CustomerExperience/>}/>
           <Route path="solution-of-pmrg/self-service-tools" element={<SelfServiceTools/>}/>
+          <Route path="solution-of-pmrg/security-analytics" element={<SecurityAnalyticsPage/>}/>
+          <Route path="solution-of-pmrg/operations-integrations" element={<OperationsIntegrationsPage/>}/>
+          <Route path="solution-of-pmrg/compliance" element={<CompliancePage/>}/>
 
 
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>

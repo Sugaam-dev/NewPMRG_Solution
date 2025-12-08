@@ -3,10 +3,10 @@ import heroImg from "../assets/clevermobi.png";
 
 const platformhighlightsdata = {
   image: heroImg,
-  title: "Business software for",
-  highlight: "mobile operators",
+  title: "Modern OSS/BSS Without Legacy Constraints",
+  // highlight: "mobile operators",
   description:
-    "CleverMobi introduces a cutting‑edge Business Support System (BSS) built exclusively for mobile operators. It empowers you to launch price plans in minutes, design any discount or campaign, and accelerate growth and innovation.",
+    "CleverMobi’s platform is built from the ground up using modern technology and design principles. Without legacy limitations, we deliver speed, flexibility, and capabilities impossible with older BSS platforms adapted from previous generations.",
   buttonLabel: "Get started",
   buttonHref: "/get-started",
 };
