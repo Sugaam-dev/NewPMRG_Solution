@@ -47,9 +47,7 @@ const DropdownItem = ({ item, active, onHover, onClick }) => {
           {Icon && <Icon size={18} />}
         </div>
         <span
-          className={
-            active ? "font-semibold text-slate-900" : "text-slate-800"
-          }
+          className={active ? "font-semibold text-slate-900" : "text-slate-800"}
         >
           {item.label}
         </span>
@@ -201,11 +199,13 @@ const Navbar = () => {
       >
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <img
-            src={logo}
-            alt="PMRG Solution"
-            className="h-12 w-auto md:h-16"
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="PMRG Solution"
+              className="h-12 w-auto md:h-16"
+            />
+          </Link>
         </div>
 
         {/* Desktop nav (≥1024px) */}
@@ -254,28 +254,43 @@ const Navbar = () => {
 
         {/* Desktop social icons (≥1024px) */}
         <div className="hidden items-center gap-3 lg:flex">
-          {[
-            {
-              Icon: Linkedin,
-              href: "https://www.linkedin.com/in/pmrg-solution-llp-24532537a/",
-            },
-            { Icon: Instagram, href: "https://instagram.com" },
-            { Icon: Github, href: "https://github.com/Sugaam-dev" },
-          ].map(({ Icon, href }) => (
-            <Link
-              key={href}
-              href={href}
-              target="_blank"
-              rel="noreferrer"
-              className={`rounded-full p-2 transition-colors ${
-                scrolled
-                  ? "text-blue-600 hover:bg-blue-50"
-                  : "text-white hover:bg-white/10"
-              }`}
-            >
-              <Icon size={18} />
-            </Link>
-          ))}
+          {/* use <a> for true external links */}
+          <a
+            href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-blue-600 hover:bg-blue-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Linkedin size={18} />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-blue-600 hover:bg-blue-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Instagram size={18} />
+          </a>
+          <a
+            href="https://github.com/Sugaam-dev"
+            target="_blank"
+            rel="noreferrer"
+            className={`rounded-full p-2 transition-colors ${
+              scrolled
+                ? "text-blue-600 hover:bg-blue-50"
+                : "text-white hover:bg-white/10"
+            }`}
+          >
+            <Github size={18} />
+          </a>
         </div>
 
         {/* Mobile hamburger (<1024px) */}
@@ -301,36 +316,38 @@ const Navbar = () => {
           {/* Top row inside panel */}
           <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-100 bg-white px-4 pb-2 pt-3">
             <div className="flex items-center gap-3">
-              <img
-                src={logo}
-                alt="PMRG Solution"
-                className="h-10 w-auto"
-              />
+              <Link to="/">
+                <img
+                  src={logo}
+                  alt="PMRG Solution"
+                  className="h-10 w-auto"
+                />
+              </Link>
             </div>
 
-            {/* Social icons mobile */}
+            {/* Social icons mobile (external links as <a>) */}
             <div className="flex items-center gap-2">
-              <Link
-                href="https://www.linkedin.com"
+              <a
+                href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Linkedin size={18} className="text-blue-600" />
-              </Link>
-              <Link
+              </a>
+              <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Instagram size={18} className="text-blue-600" />
-              </Link>
-              <Link
-                href="https://github.com"
+              </a>
+              <a
+                href="https://github.com/Sugaam-dev"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Github size={18} className="text-blue-600" />
-              </Link>
+              </a>
             </div>
 
             <button
@@ -369,103 +386,105 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Submenu detail view – rows only change preview, More info navigates */}
-            {mobileSubMenu && (() => {
-              const config = megaMenuData[mobileSubMenu];
-              if (!config) return null;
+            {/* Submenu detail view */}
+            {mobileSubMenu &&
+              (() => {
+                const config = megaMenuData[mobileSubMenu];
+                if (!config) return null;
 
-              const activeItem =
-                config.items.find((i) => i.id === activeItemId) ||
-                config.items.find((i) => i.active) ||
-                config.items[0];
+                const activeItem =
+                  config.items.find((i) => i.id === activeItemId) ||
+                  config.items.find((i) => i.active) ||
+                  config.items[0];
 
-              return (
-                <div className="pt-2">
-                  <button
-                    className="mb-4 flex items-center gap-2 text-sm text-slate-700"
-                    onClick={() => setMobileSubMenu(null)}
-                  >
-                    <ArrowLeft size={18} />
-                    <span className="font-medium">{mobileSubMenu}</span>
-                  </button>
+                return (
+                  <div className="pt-2">
+                    <button
+                      className="mb-4 flex items-center gap-2 text-sm text-slate-700"
+                      onClick={() => setMobileSubMenu(null)}
+                    >
+                      <ArrowLeft size={18} />
+                      <span className="font-medium">{mobileSubMenu}</span>
+                    </button>
 
-                  <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
-                    {config.title}
-                  </h3>
-                  <p className="mb-4 text-sm leading-relaxed text-slate-700">
-                    {config.description}
-                  </p>
+                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
+                      {config.title}
+                    </h3>
+                    <p className="mb-4 text-sm leading-relaxed text-slate-700">
+                      {config.description}
+                    </p>
 
-                  <div className="mb-4 space-y-2">
-                    {config.items.map((item) => {
-                      const isActive = activeItem && activeItem.id === item.id;
-                      const Icon = item.icon;
+                    <div className="mb-4 space-y-2">
+                      {config.items.map((item) => {
+                        const isActive =
+                          activeItem && activeItem.id === item.id;
+                        const Icon = item.icon;
 
-                      return (
-                        <button
-                          key={item.id}
-                          onClick={() => {
-                            setActiveItemId(item.id);
-                          }}
-                          className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm ${
-                            isActive ? "bg-blue-50" : "hover:bg-slate-50"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3">
-                            <div
-                              className={`flex h-8 w-8 items-center justify-center rounded-full border ${
-                                isActive
-                                  ? "border-blue-500 text-blue-600"
-                                  : "border-slate-200 text-slate-500"
-                              }`}
-                            >
-                              {Icon && <Icon size={16} />}
+                        return (
+                          <button
+                            key={item.id}
+                            onClick={() => {
+                              setActiveItemId(item.id);
+                            }}
+                            className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm ${
+                              isActive ? "bg-blue-50" : "hover:bg-slate-50"
+                            }`}
+                          >
+                            <div className="flex items-center gap-3">
+                              <div
+                                className={`flex h-8 w-8 items-center justify-center rounded-full border ${
+                                  isActive
+                                    ? "border-blue-500 text-blue-600"
+                                    : "border-slate-200 text-slate-500"
+                                }`}
+                              >
+                                {Icon && <Icon size={16} />}
+                              </div>
+                              <span
+                                className={
+                                  isActive
+                                    ? "font-semibold text-slate-900"
+                                    : "text-slate-800"
+                                }
+                              >
+                                {item.label}
+                              </span>
                             </div>
-                            <span
-                              className={
-                                isActive
-                                  ? "font-semibold text-slate-900"
-                                  : "text-slate-800"
-                              }
-                            >
-                              {item.label}
-                            </span>
-                          </div>
-                        </button>
-                      );
-                    })}
-                  </div>
+                          </button>
+                        );
+                      })}
+                    </div>
 
-                  <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
-                    <img
-                      src={activeItem.image}
-                      alt={activeItem.heading}
-                      className="h-48 w-full object-cover"
-                    />
-                    <div className="px-4 py-4">
-                      <h4 className="mb-1 text-base font-semibold text-slate-900">
-                        {activeItem.heading}
-                      </h4>
-                      <p className="text-xs leading-relaxed text-slate-700">
-                        {activeItem.text}
-                      </p>
-                      <button
-                        className="mt-3 flex items-center gap-1 text-xs font-semibold text-blue-700"
-                        onClick={() => {
-                          if (activeItem?.href) {
-                            navigate(activeItem.href);
-                            setMobileOpen(false);
-                            setMobileSubMenu(null);
-                          }
-                        }}
-                      >
-                        More information <ChevronUp size={14} />
-                      </button>
+                    <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-sm">
+                      <img
+                        src={activeItem.image}
+                        alt={activeItem.heading}
+                        className="h-48 w-full object-cover"
+                      />
+                      <div className="px-4 py-4">
+                        <h4 className="mb-1 text-base font-semibold text-slate-900">
+                          {activeItem.heading}
+                        </h4>
+                        <p className="text-xs leading-relaxed text-slate-700">
+                          {activeItem.text}
+                        </p>
+                        <button
+                          className="mt-3 flex items-center gap-1 text-xs font-semibold text-blue-700"
+                          onClick={() => {
+                            if (activeItem?.href) {
+                              navigate(activeItem.href);
+                              setMobileOpen(false);
+                              setMobileSubMenu(null);
+                            }
+                          }}
+                        >
+                          More information <ChevronUp size={14} />
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })()}
+                );
+              })()}
           </div>
         </div>
       )}
