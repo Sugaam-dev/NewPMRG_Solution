@@ -41,6 +41,7 @@ import SelfServiceTools from "./Components/Pages/PmrgSolution/SelfServiceTools";
 import SecurityAnalyticsPage from "./Components/Pages/PmrgSolution/SecurityAnalyticsPage";
 import OperationsIntegrationsPage from "./Components/Pages/PmrgSolution/OperationsIntegrationsPage";
 import CompliancePage from "./Components/Pages/PmrgSolution/CompliancePage";
+import PMRGEnableIntegration from "./Components/Pages/PmrgSolution/PMRGEnableIntegration";
 
 
 
@@ -64,6 +65,7 @@ function App() {
           <Route path="solution-of-pmrg/security-analytics" element={<SecurityAnalyticsPage/>}/>
           <Route path="solution-of-pmrg/operations-integrations" element={<OperationsIntegrationsPage/>}/>
           <Route path="solution-of-pmrg/compliance" element={<CompliancePage/>}/>
+          <Route path="solution-of-pmrg/pmrg-enable-integration" element={<PMRGEnableIntegration/>}/>
 
 
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>

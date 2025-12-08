@@ -16,6 +16,7 @@
         |-- chris.jpg
         |-- cleverenable.webp
         |-- clevermobi.png
+        |-- combined.jpg
         |-- crm-integration.png
         |-- develop.webp
         |-- geen-foto-mobi.png
@@ -63,6 +64,7 @@
                 |-- CustomerExperience.jsx
                 |-- OperationsIntegrationsPage.jsx
                 |-- PlatformHighlights.jsx
+                |-- PMRGEnableIntegration.jsx
                 |-- SecurityAnalyticsPage.jsx
                 |-- SelfServiceTools.jsx
             |-- PMRGWayOfWork
@@ -82,6 +84,7 @@
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
     |-- data
+        |-- compliancedata.js
         |-- customerexperiencedata.js
         |-- development.js
         |-- heroData.js
@@ -94,6 +97,7 @@
         |-- operationsintegrationdata.js
         |-- ourteamsdata.js
         |-- platformhighlightsdata.js
+        |-- pmrgenableintegrationdata.js
         |-- securityanalyticsdata.js
         |-- selfservicetooldata.js
         |-- specializedData.js

@@ -1,9 +1,13 @@
 import React from "react";
 import PortalPhone from "../../../assets/provisioning.png";
+import HeroSection from "../HeroSection";
+import compliancedata from "../../../data/compliancedata";
 
 export default function CompliancePage() {
   return (
 <>
+    <HeroSection {...compliancedata}/>
+    
     <div className="w-full bg-white text-black">
 
       {/* =============================

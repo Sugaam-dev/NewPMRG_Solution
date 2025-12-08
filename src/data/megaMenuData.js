@@ -133,6 +133,7 @@ export const megaMenuData = {
         label: "MVNE Integration",
         icon: Heart,
         active: false,
+         href: "solution-of-pmrg/pmrg-enable-integration",
         image:
           "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
         heading: "MVNE Integration",
