@@ -1,17 +1,17 @@
 import React from "react";
 
 import chris from "../../../assets/chris.jpg";
-// import karsten from "../../../assets/karsten.jpg";
+import karsten from "../../../assets/Karsten.jpg";
 import maarten from "../../../assets/Maarten.jpg";
 import rob from "../../../assets/rob.jpg";
 import tim from "../../../assets/tim.jpg";
 import jelle from "../../../assets/kok.jpg";
 import christian from "../../../assets/lunchsupport.jpg";
-// import mourad from "../../../assets/mourad.boustani.jpg";
+import mourad from "../../../assets/Mouradboustani.jpg";
 import vincent from "../../../assets/provisioning.png";
-import morris from "../../../assets/morris.jpg";
+import morris from "../../../assets/Morris.jpg";
 import lily from "../../../assets/lily.jpg";
-import kelly from "../../../assets/kelly.webp";
+import kelly from "../../../assets/Kelly.webp";
 import maina from "../../../assets/Maina.jpg";
 import HeroSection from "../HeroSection";
 import ourteamsdata from "../../../data/ourteamsdata";
@@ -19,13 +19,13 @@ import ourteamsdata from "../../../data/ourteamsdata";
 export default function OurTeamPage() {
   const team = [
     { name: "Chris Jansen", img: chris },
-    // { name: "Karsten Nilsen", img: karsten },
+    { name: "Karsten Nilsen", img: karsten },
     { name: "Maarten Visscher", img: maarten },
     { name: "Rob Pennekamp", img: rob },
     { name: "Tim Goudriaan", img: tim },
     { name: "Jelle Raaijmakers", img: jelle },
     { name: "Christian de Kok", img: christian },
-    // { name: "Mourad Boustani", img: mourad },
+    { name: "Mourad Boustani", img: mourad },
     { name: "Vincent Hoogendam", img: vincent },
     { name: "Morris Hannessen", img: morris },
     { name: "Lily Leenders", img: lily },
@@ -73,7 +73,7 @@ export default function OurTeamPage() {
 
             {/* Team label + Heading */}
             <div className="mb-10 text-center">
-              <span className="text-[#6ac93d] font-pst uppercase tracking-[0.5px] text-[13px] block mb-2">
+              <span className="text-blue-600 font-pst uppercase tracking-[0.5px] text-[16px] block mb-2">
                 Team
               </span>
 
@@ -106,19 +106,7 @@ export default function OurTeamPage() {
                 </div>
               ))}
 
-              {/* Decorative green block */}
-              <div className="flex flex-col items-start">
-                <div className="rounded-[12px] overflow-hidden bg-[#6ac93d] w-full">
-                  <div className="relative w-full pt-[100%]">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-2/3 h-2/3 bg-white/10 rounded-br-[50%]"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-3 font-pst text-[15px] font-semibold">
-                  Jelle Raaijmakers
-                </div>
-              </div>
+             
 
             </div>
 
@@ -174,7 +162,7 @@ export default function OurTeamPage() {
               to make things smarter. Sounds like a fit? We’d love to get to know you!
             </p>
 
-            <button className="mt-10 bg-[#6ac93d] hover:bg-[#55b22c] text-white px-8 py-4 rounded-full font-semibold text-[18px]">
+            <button className="mt-10 bg-[#0b1c55] hover:bg-[#2a437e] text-white px-8 py-4 rounded-full font-semibold text-[18px]">
               Check out our career opportunities!
             </button>
 
@@ -187,27 +175,13 @@ export default function OurTeamPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
 
-              <div className="rounded-[12px] bg-[#6ac93d] h-28"></div>
-
-              <div className="rounded-[12px] overflow-hidden h-28">
-                <img src={maarten} className="w-full h-full object-cover" />
+{team.map((member)=>(
+<div className="rounded-[12px] overflow-hidden h-28">
+                <img src={member.img} className="w-full h-full object-cover" />
               </div>
-
-              <div className="rounded-[12px] overflow-hidden h-28">
-                <img src={morris} className="w-full h-full object-cover" />
-              </div>
-
-              <div className="rounded-[12px] overflow-hidden h-28">
-                <img src={lily} className="w-full h-full object-cover" />
-              </div>
-
-              <div className="rounded-[12px] overflow-hidden h-28">
-                <img src={kelly} className="w-full h-full object-cover" />
-              </div>
-
-              <div className="rounded-[12px] overflow-hidden h-28">
-                <img src={maina} className="w-full h-full object-cover" />
-              </div>
+)
+)}
+            
 
             </div>
 
