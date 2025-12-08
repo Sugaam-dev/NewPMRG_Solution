@@ -100,6 +100,7 @@ export const megaMenuData = {
         label: "Security & Analytics",
         icon: ShieldCheck,
         active: false,
+        href: "/solution-of-pmrg/security-analytics",
         image:
           "https://images.pexels.com/photos/6476584/pexels-photo-6476584.jpeg",
         heading: "Security & Analytics",
@@ -110,6 +111,7 @@ export const megaMenuData = {
         label: "Operations & Integrations",
         icon: Tag,
         active: false,
+         href: "/solution-of-pmrg/operations-integrations",
         image:
           "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg",
         heading: "Operations & Integrations",
@@ -120,6 +122,7 @@ export const megaMenuData = {
         label: "Compliance",
         icon: Library,
         active: false,
+         href: "/solution-of-pmrg/compliance",
         image:
           "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
         heading: "Compliance",
@@ -130,6 +133,7 @@ export const megaMenuData = {
         label: "MVNE Integration",
         icon: Heart,
         active: false,
+         href: "solution-of-pmrg/pmrg-enable-integration",
         image:
           "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
         heading: "MVNE Integration",
