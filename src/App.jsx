@@ -59,13 +59,13 @@ function App() {
           <Route path="who-we-serve/mvnos" element={<Mvnos/>}/>
           <Route path="who-we-serve/specialized-markets" element={<SpecializedMarkets/>}/>
 
-          <Route path="solution-of-pmrg/platform-highlights" element={<PlatformHighlights/>}/>
-          <Route path="solution-of-pmrg/customer-experience" element={<CustomerExperience/>}/>
-          <Route path="solution-of-pmrg/self-service-tools" element={<SelfServiceTools/>}/>
-          <Route path="solution-of-pmrg/security-analytics" element={<SecurityAnalyticsPage/>}/>
-          <Route path="solution-of-pmrg/operations-integrations" element={<OperationsIntegrationsPage/>}/>
-          <Route path="solution-of-pmrg/compliance" element={<CompliancePage/>}/>
-          <Route path="solution-of-pmrg/pmrg-enable-integration" element={<PMRGEnableIntegration/>}/>
+          <Route path="pmrg-solution/platform-highlights" element={<PlatformHighlights/>}/>
+          <Route path="pmrg-solution/customer-experience" element={<CustomerExperience/>}/>
+          <Route path="pmrg-solution/self-service-tools" element={<SelfServiceTools/>}/>
+          <Route path="pmrg-solution/security-analytics" element={<SecurityAnalyticsPage/>}/>
+          <Route path="pmrg-solution/operations-integrations" element={<OperationsIntegrationsPage/>}/>
+          <Route path="pmrg-solution/compliance" element={<CompliancePage/>}/>
+          <Route path="pmrg-solution/pmrg-enable-integration" element={<PMRGEnableIntegration/>}/>
 
 
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>

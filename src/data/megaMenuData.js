@@ -13,6 +13,22 @@ import {
   Blocks,
   Users,
 } from "lucide-react";
+import mvnos from '../assets/Navbar/mvnos.png'
+import mnos from '../assets/Navbar/mnos.png'
+import markets from '../assets/Navbar/market.png'
+import highlight from '../assets/Navbar/platform.jpeg'
+import experience from '../assets/Navbar/experience.jpeg'
+
+import tool from '../assets/Navbar/tool.jpeg'
+
+import security from '../assets/Navbar/security.jpeg'
+
+import compliance from '../assets/Navbar/compliance.jpeg'
+import mvne from '../assets/Navbar/mvne.png'
+import Approach from '../assets/Navbar/approach.jpeg'
+import tm from '../assets/Navbar/tm.jpeg'
+import operation from '../assets/Navbar/operation.jpeg'
+
 
 export const megaMenuData = {
   "Who we serve": {
@@ -27,7 +43,7 @@ export const megaMenuData = {
         active: true,
         href: "/who-we-serve/mvnos",
         image:
-          "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
+       mvnos,
         heading: "MVNOs",
         text: "Complete OSS/BSS platform for Mobile Virtual Network Operators launching or scaling consumer mobile services.",
       },
@@ -38,7 +54,7 @@ export const megaMenuData = {
         active: false,
         href: "/who-we-serve/mnos",
         image:
-          "https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg",
+     mnos,
         heading: "MNOs",
         text: "Robust OSS/BSS stack tailored for established mobile network operators.",
       },
@@ -49,7 +65,7 @@ export const megaMenuData = {
         active: false,
              href: "/who-we-serve/specialized-markets",
         image:
-          "https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg",
+         markets,
         heading: "Specialized Markets",
         text: "Solutions for B2B, IoT, and niche segments with complex requirements.",
       },
@@ -66,10 +82,10 @@ export const megaMenuData = {
         label: "Platform Highlights",
         icon: Megaphone,
         active: true,
-        href: "/solution-of-pmrg/platform-highlights",
+        href: "/pmrg-solution/platform-highlights",
        
         image:
-          "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
+   highlight,
         heading: "Platform Highlights",
         text: "Built from scratch with automation, flexibility, and speed at its core.",
       },
@@ -78,9 +94,9 @@ export const megaMenuData = {
         label: "Customer Experience",
         icon: Handshake,
         active: false,
-         href: "/solution-of-pmrg/customer-experience",
+         href: "/pmrg-solution/customer-experience",
         image:
-          "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+          experience,
         heading: "Customer Experience",
         text: "Omnichannel customer journeys and personal touchpoints.",
       },
@@ -89,9 +105,9 @@ export const megaMenuData = {
         label: "Self-Service Tools",
         icon: Heart,
         active: false,
-         href: "/solution-of-pmrg/self-service-tools",
+         href: "/pmrg-solution/self-service-tools",
         image:
-          "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+          tool,
         heading: "Self-Service Tools",
         text: "Empower users with intuitive self-management capabilities.",
       },
@@ -100,9 +116,9 @@ export const megaMenuData = {
         label: "Security & Analytics",
         icon: ShieldCheck,
         active: false,
-        href: "/solution-of-pmrg/security-analytics",
+        href: "/pmrg-solution/security-analytics",
         image:
-          "https://images.pexels.com/photos/6476584/pexels-photo-6476584.jpeg",
+          security,
         heading: "Security & Analytics",
         text: "Built‑in monitoring, fraud detection, and advanced analytics.",
       },
@@ -111,9 +127,9 @@ export const megaMenuData = {
         label: "Operations & Integrations",
         icon: Tag,
         active: false,
-         href: "/solution-of-pmrg/operations-integrations",
+         href: "/pmrg-solution/operations-integrations",
         image:
-          "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg",
+       operation,
         heading: "Operations & Integrations",
         text: "Seamlessly integrate with third-party vendors and internal systems.",
       },
@@ -122,9 +138,9 @@ export const megaMenuData = {
         label: "Compliance",
         icon: Library,
         active: false,
-         href: "/solution-of-pmrg/compliance",
+         href: "/pmrg-solution/compliance",
         image:
-          "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+         compliance,
         heading: "Compliance",
         text: "Adhering to global standards and local regulations.",
       },
@@ -133,9 +149,9 @@ export const megaMenuData = {
         label: "MVNE Integration",
         icon: Heart,
         active: false,
-         href: "solution-of-pmrg/pmrg-enable-integration",
+         href: "pmrg-solution/pmrg-enable-integration",
         image:
-          "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
+mvne,
         heading: "MVNE Integration",
         text: "Deep integration capabilities for Mobile Virtual Network Enablers.",
       },
@@ -154,7 +170,7 @@ export const megaMenuData = {
         active: true,
         href: "/pmrg-way-of-work/developmentphilosophy",
         image:
-          "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+         compliance,
         heading: "Development Philosophy",
         text: "Agile, iterative delivery that keeps risk low and feedback loops short.",
       },
@@ -165,7 +181,7 @@ export const megaMenuData = {
         active: false,
         href: "/pmrg-way-of-work/mvne-connectivity",
         image:
-          "https://images.pexels.com/photos/799443/pexels-photo-799443.jpeg",
+    mvne,
         heading: "MVNE Connectivity",
         text: "Connectivity with partner networks and wholesale providers.",
       },
@@ -176,7 +192,7 @@ export const megaMenuData = {
         active: false,
         href: "/pmrg-way-of-work/implementation-approach",
         image:
-          "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg",
+         Approach,
         heading: "Implementation Approach",
         text: "Structured but flexible implementation to launch quickly and smoothly.",
       },
@@ -187,7 +203,7 @@ export const megaMenuData = {
         active: false,
          href: "/pmrg-way-of-work/tmforum",
         image:
-          "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg",
+ tm,
         heading: "TM Forum ODA",
         text: "Aligned with Open Digital Architecture for interoperability and growth.",
       },
@@ -206,7 +222,7 @@ export const megaMenuData = {
         active: true,
          href: "/pmrg-crew/our-team",
         image:
-          "https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg",
+          tm,
         heading: "Our Team",
         text: "Engineers and telecom experts focused on delivering great outcomes.",
       },
@@ -217,7 +233,7 @@ export const megaMenuData = {
         active: false,
          href: "pmrg-crew/miles-stone",
         image:
-          "https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg",
+         highlight,
         heading: "Company Highlights",
         text: "Key milestones, customer wins, and innovation highlights.",
       },
@@ -229,7 +245,7 @@ export const megaMenuData = {
         href: "pmrg-crew/team-culture",
         
         image:
-          "https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg",
+          Approach,
         heading: "Team Culture",
         text: "Collaboration, learning, and enjoying the journey together.",
       },

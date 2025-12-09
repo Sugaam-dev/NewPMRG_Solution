@@ -48,7 +48,7 @@ const Erp = () => {
           </div>
 
           <div>
-            <h2 className="text-xl font-semibold mb-2">What PMRG covers</h2>
+            <h2 className="text-xl font-semibold mb-2">What PMRG Solution covers</h2>
             <ul className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
               <li>• Finance & accounting: invoicing, payments, reporting.</li>
               <li>• Sales & order management: quotes, orders, renewals.</li>
@@ -62,7 +62,7 @@ const Erp = () => {
       {/* Benefits */}
       <section className="w-full mt-12 px-6 md:px-8 lg:px-30">
         <h2 className="text-xl font-semibold mb-3">
-          Why teams choose PMRG for ERP
+          Why teams choose PMRG Solution for ERP
         </h2>
         <div className="grid gap-4 md:grid-cols-3 text-sm text-slate-700">
           <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
@@ -75,7 +75,7 @@ const Erp = () => {
           </p>
           <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
             A scalable architecture so you can start small and extend the
-            system as PMRG helps you grow.
+            system as PMRG Solution helps you grow.
           </p>
         </div>
       </section>

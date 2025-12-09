@@ -34,7 +34,7 @@ const Crm = () => {
       </section>
 
       {/* How it works + tracking */}
-      <section className="w-full mt-12 px-4 md:px-6 lg:px-30">
+      <section className="w-full mt-12 px-6 md:px-8 lg:px-30">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-xl font-semibold mb-2">How our CRM works</h2>
@@ -48,7 +48,7 @@ const Crm = () => {
 
           <div>
             <h2 className="text-xl font-semibold mb-2">
-              What PMRG helps you track
+              What PMRG Solution helps you track
             </h2>
             <ul className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
               <li>• Contacts and companies with full interaction history.</li>
@@ -63,7 +63,7 @@ const Crm = () => {
       {/* Benefits */}
       <section className="w-full mt-12 px-6 md:px-8 lg:px-30">
         <h2 className="text-xl font-semibold mb-3">
-          Why PMRG is the right partner for CRM
+          Why PMRG Solution is the right partner for CRM
         </h2>
         <div className="grid gap-4 md:grid-cols-3 text-sm">
           <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
@@ -75,7 +75,7 @@ const Crm = () => {
             clear sales priorities.
           </p>
           <p className="rounded-xl border border-slate-200 p-3 leading-relaxed">
-            Actionable insights with dashboards tailored by PMRG to your
+            Actionable insights with dashboards tailored by PMRG Solution to your
             goals, teams, and reporting needs.
           </p>
         </div>

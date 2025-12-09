@@ -1,6 +1,6 @@
 import React from 'react'
 import TeamCarousel from './TeamCarousel'
-
+import implement from '../../../assets/implement.jpg'
 function Teams() {
   return (
     <>
@@ -10,7 +10,7 @@ function Teams() {
         <div className="rounded-[32px] overflow-hidden shadow-md">
           <div className="relative w-full pt-[100%] lg:pt-[80%]">
             <img
-              src='https://wp-api.clevergroup.nl/mobi/wp-content/uploads/sites/3/2025/03/foto-bob-marwaan-website.jpg'
+              src={implement}
               alt="Our team at work"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"

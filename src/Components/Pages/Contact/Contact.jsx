@@ -2,7 +2,7 @@ import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-
+import tm from '../../../assets/Navbar/tm.jpeg'
 const ContactPage = () => {
   return (
     <>
@@ -142,7 +142,7 @@ const ContactPage = () => {
             <div className="flex justify-end">
               <div className="w-full max-w-sm rounded-3xl overflow-hidden shadow-md">
                 <img
-                  src="https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg"
+                  src={tm}
                   alt="Team at work"
                   className="w-full h-full object-cover"
                 />

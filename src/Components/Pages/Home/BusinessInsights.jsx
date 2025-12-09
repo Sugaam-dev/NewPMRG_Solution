@@ -1,6 +1,6 @@
 import React from 'react';
 import { TrendingUp } from 'lucide-react';
-
+import business from '../../../assets/business.png'
 const BusinessInsights = () => {
   return (
     <section className="bg-[#021c34] text-white">
@@ -33,7 +33,7 @@ const BusinessInsights = () => {
             {/* image area */}
             <div className="bg-white">
               <img
-                src="https://wp-api.clevergroup.nl/mobi/wp-content/uploads/sites/3/2024/10/business.png"
+                src={business}
                 alt="Business insights dashboard"
                 className="w-full h-auto object-cover align-middle"
               />

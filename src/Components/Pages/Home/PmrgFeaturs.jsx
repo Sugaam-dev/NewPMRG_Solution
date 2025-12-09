@@ -1,6 +1,6 @@
 import React from "react";
 import { Bell, CreditCard, WalletCards } from "lucide-react";
-
+import p from'../../../assets/p.jpeg'
 const PmrgFeaturs = () => {
   return (
  <section className="bg-white text-slate-900">
@@ -75,7 +75,7 @@ const PmrgFeaturs = () => {
           {/* Right image card */}
           <div className="h-[340px] w-full overflow-hidden rounded-3xl shadow-sm md:h-[360px]">
             <img
-              src="https://images.pexels.com/photos/5076515/pexels-photo-5076515.jpeg"
+              src={p}
               alt="Person using phone"
               className="h-full w-full object-cover"
             />
