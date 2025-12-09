@@ -14,7 +14,8 @@ export default function CustomerExperience() {
     <div className="w-full bg-white">
 
       {/* ⭐ PERFECTLY CENTERED MOBILE APP SECTION */}
-     <section className="px-6 lg:px-24 py-32">
+     <section className="px-6 lg:px-24 py-20 md:py-20">
+
   <div className="max-w-screen-xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-16">
 
     {/* IMAGE */}
