@@ -6,7 +6,7 @@ const customerexperiencedata = {
   title: "Superior Customer Journeys",
   // highlight: "mobile operators",
   description:
-    "CleverMobi prioritizes customer experience across all touchpoints. Intuitive interfaces, transparent information, and seamless service delivery create satisfaction and loyalty. Happy customers reduce churn and increase lifetime value for your mobile business.",
+    "PMRG Solution prioritizes customer experience across all touchpoints. Intuitive interfaces, transparent information, and seamless service delivery create satisfaction and loyalty. Happy customers reduce churn and increase lifetime value for your mobile business.",
   buttonLabel: "Get started",
   buttonHref: "/get-started",
 };
