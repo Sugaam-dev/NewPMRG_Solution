@@ -18,7 +18,9 @@
         |-- clevermobi.png
         |-- combined.jpg
         |-- crm-integration.png
+        |-- crm.svg
         |-- develop.webp
+        |-- erp.jpg
         |-- geen-foto-mobi.png
         |-- implement.jpg
         |-- invoiceing.png
@@ -44,7 +46,21 @@
         |-- mnos.jpg
         |-- Morris.jpg
         |-- Mouradboustani.jpg
+        |-- Navbar
+            |-- approach.jpeg
+            |-- compliance.jpeg
+            |-- experience.jpeg
+            |-- market.png
+            |-- mnos.png
+            |-- mvne.png
+            |-- mvnos.png
+            |-- operation.jpeg
+            |-- platform.jpeg
+            |-- security.jpeg
+            |-- tm.jpeg
+            |-- tool.jpeg
         |-- ourculture.webp
+        |-- p.jpeg
         |-- PMRGlogo.png
         |-- projects
             |-- project-1.webp
@@ -68,6 +84,7 @@
             |-- rekha-ghosh.webp
             |-- Shilpa_A.webp
             |-- sonal-kamble.webp
+            |-- udesh.jpeg
         |-- tim.jpg
     |-- Components
         |-- Pages
@@ -79,6 +96,7 @@
             |-- Home
                 |-- BusinessInsights.jsx
                 |-- Crm.jsx
+                |-- Erp.jsx
                 |-- Home.jsx
                 |-- PmrgFeaturs.jsx
                 |-- ProjectsCarousel.jsx

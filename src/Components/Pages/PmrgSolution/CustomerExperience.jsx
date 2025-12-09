@@ -14,45 +14,47 @@ export default function CustomerExperience() {
     <div className="w-full bg-white">
 
       {/* ⭐ PERFECTLY CENTERED MOBILE APP SECTION */}
-      <section className="px-6 lg:px-24 py-32">
-        <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-20">
+     <section className="px-6 lg:px-24 py-32">
+  <div className="max-w-screen-xl mx-auto flex flex-col xl:flex-row items-center justify-center gap-16">
 
-          {/* LEFT IMAGE */}
-          <div className="flex justify-center w-full lg:w-auto">
-            <img
-              src={MobileUI}
-              alt="Mobile UI"
-              className="h-[600px] w-auto object-cover"
-            />
-          </div>
+    {/* IMAGE */}
+    <div className="flex justify-center w-full">
+      <img
+        src={MobileUI}
+        alt="Mobile UI"
+        className="w-full max-w-md object-contain"
+      />
+    </div>
 
-          {/* RIGHT TEXT */}
-          <div className="max-w-2xl text-center lg:text-left flex flex-col justify-center">
-            <h2
-              className="text-[48px] leading-[1.15] font-bold mb-6"
-              style={{ fontFamily: "PST Mail Sans, Helvetica, Arial, sans-serif" }}
-            >
-              Mobile App Integration
-            </h2>
+    {/* TEXT */}
+    <div className="max-w-2xl text-center xl:text-left flex flex-col justify-center">
+      <h2
+        className="text-[48px] leading-[1.15] font-bold mb-6"
+        style={{ fontFamily: "PST Mail Sans, Helvetica, Arial, sans-serif" }}
+      >
+        Mobile App Integration
+      </h2>
 
-            <p
-              className="text-[20px] leading-[1.7]"
-              style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
-            >
-              CleverMobi’s APIs enable rich mobile app experiences. Customers manage 
-              accounts from smartphones with native app functionality. Real-time usage 
-              monitoring, instant plan changes, and mobile payment integration create 
-              seamless experiences matching customer expectations. Mobile-first design 
-              reflects how customers actually interact with services.
-            </p>
-          </div>
+      <p
+        className="text-[20px] leading-[1.7]"
+        style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
+      >
+        CleverMobi’s APIs enable rich mobile app experiences. Customers manage 
+        accounts from smartphones with native app functionality. Real-time usage 
+        monitoring, instant plan changes, and mobile payment integration create 
+        seamless experiences matching customer expectations. Mobile-first design 
+        reflects how customers actually interact with services.
+      </p>
+    </div>
 
-        </div>
-      </section>
+  </div>
+</section>
+
 
       {/* INTUITIVE CUSTOMER PORTAL */}
      {/* INTUITIVE CUSTOMER PORTAL */}
-                <section className="px-6 lg:px-24 py-24 text-center">
+               <section className="px-6 lg:px-24 py-16 md:py-2 text-center">
+
                   <h2
                     className="text-[48px] leading-[1.15] font-bold mb-8"
                     style={{ fontFamily: "PST Mail Sans, Helvetica, Arial, sans-serif" }}
