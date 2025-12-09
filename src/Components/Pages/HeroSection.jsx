@@ -123,7 +123,7 @@ const HeroSection = ({
         )}
 
         {/* TEXT - BOTTOM ON MOBILE, LEFT ON DESKTOP */}
-        <div className="text-section order-2 w-full px-6 text-left text-white lg:order-1 lg:px-12 lg:pl-20 z-20">
+        <div className="text-section order-2 w-full px-6 text-left text-white lg:order-1 lg:px-12 lg:pl-10 z-20">
           <h1 className="mb-4 text-[28px] font-semibold leading-snug lg:text-5xl lg:leading-tight xl:text-6xl">
             {title}
             <br />

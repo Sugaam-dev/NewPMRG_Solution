@@ -19,9 +19,7 @@ const BusinessInsights = () => {
           </h2>
 
           <p className="text-sm sm:text-base leading-relaxed text-slate-200 max-w-xl">
-            Leverage our ready‑to‑use Power BI datasets and reports, or empower your BI experts with
-            direct data access. Effortlessly analyze contract value, customer usage, churn rates,
-            CPA, and optimize purchase strategies.
+      Leverage our ready-to-use Power BI datasets and reports, or empower your BI experts with direct data access. Effortlessly analyze contract value, customer usage, churn rates, CPA, and optimize purchase strategies. Gain real-time visibility into key performance trends and forecast future growth with precision. Make data-driven decisions faster using intuitive dashboards tailored to your business goals.
           </p>
         </div>
 

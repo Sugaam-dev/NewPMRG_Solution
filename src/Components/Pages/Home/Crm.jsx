@@ -2,7 +2,7 @@ import React from "react";
 import crm from '../../../assets/crm.svg'
 const Crm = () => {
   return (
-    <main className="w-full bg-white text-slate-900 pt-24 pb-16">
+    <main className="w-full bg-white text-slate-900 pb-10 pt-6 md:pt-16 lg:pt-16">
       {/* Full-width hero */}
       <section className="w-full px-6 md:px-8 lg:px-30">
         <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] items-center">

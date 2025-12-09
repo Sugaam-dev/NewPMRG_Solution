@@ -8,6 +8,7 @@ import Teams from './Teams'
 import TestimonialCarousel from './TestimonialCarousel'
 import ProjectsCarousel from './ProjectsCarousel'
 import Erp from './Erp'
+import SelfCarePortal from './SelfCarePortal'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
 <PmrgFeaturs/>
 <Crm/>
 <Erp/>
+<SelfCarePortal/>
 <BusinessInsights/>
    <ProjectsCarousel/>
       <Teams/>
