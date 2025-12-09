@@ -21,6 +21,7 @@
         |-- crm.svg
         |-- develop.webp
         |-- erp.jpg
+        |-- experience.jpeg
         |-- geen-foto-mobi.png
         |-- implement.jpg
         |-- invoiceing.png
@@ -72,6 +73,7 @@
         |-- provisioning.png
         |-- rob.jpg
         |-- security.png
+        |-- self.jpeg
         |-- selfcare.png
         |-- Ski-foto.jpg
         |-- sunset.jpg
@@ -100,6 +102,7 @@
                 |-- Home.jsx
                 |-- PmrgFeaturs.jsx
                 |-- ProjectsCarousel.jsx
+                |-- SelfCarePortal.jsx
                 |-- TeamCarousel.jsx
                 |-- Teams.jsx
                 |-- TestimonialCarousel.jsx

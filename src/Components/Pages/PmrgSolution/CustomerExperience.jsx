@@ -1,7 +1,7 @@
 import React from "react";
 
 // 🔥 Import images the correct way
-import MobileUI from "../../../assets/selfcare.png";
+import MobileUI from "../../../assets/experience.jpeg";
 import PortalPhone from "../../../assets/invoiceing.png";
 import SupportAgent from "../../../assets/kelly-quote-services.jpg";
 import HeroSection from "../HeroSection";
@@ -40,7 +40,7 @@ export default function CustomerExperience() {
         className="text-[20px] leading-[1.7]"
         style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
       >
-        CleverMobi’s APIs enable rich mobile app experiences. Customers manage 
+        PMRGSolution’s APIs enable rich mobile app experiences. Customers manage 
         accounts from smartphones with native app functionality. Real-time usage 
         monitoring, instant plan changes, and mobile payment integration create 
         seamless experiences matching customer expectations. Mobile-first design 
