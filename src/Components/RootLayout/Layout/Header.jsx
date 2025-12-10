@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+// src/components/Navbar/Navbar.jsx
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { megaMenuData } from "../../../data/megaMenuData";
@@ -68,7 +68,7 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
-  // double-tap detection for mobile submenu items (MVNOs, MNOs, etc.)
+  // double-tap detection for mobile submenu items
   const lastSubTapRef = useRef({ time: 0, id: null });
 
   useEffect(() => {
@@ -215,29 +215,34 @@ const Navbar = () => {
         <div className="relative hidden flex-1 items-center justify-center gap-6 text-sm font-medium lg:flex">
           {menuItems.map((item) => {
             const isOpen = openMenu === item.label;
+
+            if (item.hasDropdown) {
+              return (
+                <button
+                  key={item.label}
+                  onClick={() => handleOpenMenu(item.label)}
+                  className={`flex items-center gap-1 ${
+                    scrolled ? "text-slate-900" : "text-white"
+                  }`}
+                >
+                  {item.label}
+                  {isOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                </button>
+              );
+            }
+
+            // Non-dropdown items use Link (Home, Contact)
             return (
-              <button
+              <Link
                 key={item.label}
-                onClick={() => {
-                  if (item.hasDropdown) {
-                    handleOpenMenu(item.label);
-                  } else if (item.href) {
-                    navigate(item.href);
-                    setOpenMenu(null);
-                  }
-                }}
+                to={item.href}
                 className={`flex items-center gap-1 ${
                   scrolled ? "text-slate-900" : "text-white"
                 }`}
+                onClick={() => setOpenMenu(null)}
               >
                 {item.label}
-                {item.hasDropdown &&
-                  (isOpen ? (
-                    <ChevronUp size={14} />
-                  ) : (
-                    <ChevronDown size={14} />
-                  ))}
-              </button>
+              </Link>
             );
           })}
 
@@ -257,8 +262,8 @@ const Navbar = () => {
 
         {/* Desktop social icons (≥1024px) */}
         <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
+          <Link
+            to="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
             target="_blank"
             rel="noreferrer"
             className={`rounded-full p-2 transition-colors ${
@@ -268,9 +273,9 @@ const Navbar = () => {
             }`}
           >
             <Linkedin size={18} />
-          </a>
-          <a
-            href="https://instagram.com"
+          </Link>
+          <Link
+            to="https://instagram.com"
             target="_blank"
             rel="noreferrer"
             className={`rounded-full p-2 transition-colors ${
@@ -280,9 +285,9 @@ const Navbar = () => {
             }`}
           >
             <Instagram size={18} />
-          </a>
-          <a
-            href="https://github.com/Sugaam-dev"
+          </Link>
+          <Link
+            to="https://github.com/Sugaam-dev"
             target="_blank"
             rel="noreferrer"
             className={`rounded-full p-2 transition-colors ${
@@ -292,7 +297,7 @@ const Navbar = () => {
             }`}
           >
             <Github size={18} />
-          </a>
+          </Link>
         </div>
 
         {/* Mobile hamburger (<1024px) */}
@@ -318,7 +323,13 @@ const Navbar = () => {
           {/* Top row inside panel */}
           <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-100 bg-white px-4 pb-2 pt-3">
             <div className="flex items-center gap-3">
-              <Link to="/">
+              <Link
+                to="/"
+                onClick={() => {
+                  setMobileOpen(false);
+                  setMobileSubMenu(null);
+                }}
+              >
                 <img
                   src={logo}
                   alt="PMRG Solution"
@@ -329,27 +340,27 @@ const Navbar = () => {
 
             {/* Social icons mobile */}
             <div className="flex items-center gap-2">
-              <a
-                href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
+              <Link
+                to="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Linkedin size={18} className="text-blue-600" />
-              </a>
-              <a
-                href="https://instagram.com"
+              </Link>
+              <Link
+                to="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Instagram size={18} className="text-blue-600" />
-              </a>
-              <a
-                href="https://github.com/Sugaam-dev"
+              </Link>
+              <Link
+                to="https://github.com/Sugaam-dev"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Github size={18} className="text-blue-600" />
-              </a>
+              </Link>
             </div>
 
             <button
@@ -364,7 +375,7 @@ const Navbar = () => {
 
           {/* Content area */}
           <div className="px-4 pb-6 pt-3 text-sm font-medium text-slate-900">
-            {/* Main list – same as before (single tap to open submenu / navigate) */}
+            {/* Main list */}
             {!mobileSubMenu && (
               <div className="space-y-1">
                 {menuItems.map((item) => (
@@ -388,7 +399,7 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Submenu detail view – MVNOs/MNOs double-tap to navigate */}
+            {/* Submenu detail view */}
             {mobileSubMenu &&
               (() => {
                 const config = megaMenuData[mobileSubMenu];

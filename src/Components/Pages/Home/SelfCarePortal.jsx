@@ -33,7 +33,7 @@ const navi=()=>{
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Transform customer support with digital self‑care
             </h1>
-            <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-4">
+            <p className="lg:text-lg text-slate-500  leading-relaxed mb-4">
               Our Self‑Care application lets your customers manage their
               accounts on web and mobile while your teams reduce call‑center
               load, improve satisfaction, and gain real‑time insight into
@@ -64,12 +64,12 @@ const navi=()=>{
             <h2 className="text-xl md:text-2xl font-semibold mb-3">
               Designed for high‑volume service providers
             </h2>
-            <p className="text-sm md:text-base text-slate-700 leading-relaxed mb-3">
+            <p className="lg:text-lg text-slate-500  leading-relaxed mb-3">
               Customers can check balances, recharge, change plans, and raise
               complaints in a few taps, with every action synchronized to your
               billing and CRM systems.
             </p>
-            <ul className="text-sm text-slate-800 space-y-1">
+            <ul className="lg:text-lg text-slate-500  leading-relaxed space-y-1">
               <li>• Balance and usage view, one‑click top‑ups and upgrades.</li>
               <li>• Complaint logging and status tracking without calling support.</li>
               <li>• Notifications for offers, renewals, and service updates.</li>
@@ -79,7 +79,7 @@ const navi=()=>{
 
           <div className="rounded-2xl border border-blue-100 bg-blue-50 p-5 text-sm">
             <h3 className="font-semibold mb-2">Why organizations work with PMRG</h3>
-            <ul className="space-y-2 text-slate-800">
+            <ul className="lg:text-lg text-slate-500 leading-relaxed">
               <li>• Ready‑to‑use modules for fast rollout and lower risk.</li>
               <li>• Architecture that can plug in AI chatbots and new channels.</li>
               <li>• Analytics to understand behavior and optimize journeys.</li>

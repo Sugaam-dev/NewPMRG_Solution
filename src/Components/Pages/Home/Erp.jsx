@@ -14,7 +14,7 @@ const Erp = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-3">
               ERP solutions that connect your entire business
             </h1>
-            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <p className="lg:text-lg text-slate-500  leading-relaxed">
               At PMRG Solution we design and implement ERP systems that bring
               finance, sales, inventory, HR, and projects into a single
               platform. Your teams work on one source of truth, with real‑time
@@ -38,7 +38,7 @@ const Erp = () => {
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-xl font-semibold mb-2">How our ERP works</h2>
-            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <p className="lg:text-lg text-slate-500  leading-relaxed">
               We build modular ERP setups where every module—finance, inventory,
               HR, CRM, or projects—shares the same database. When your team
               books a sale, the system can instantly update stock, revenue,
@@ -49,7 +49,7 @@ const Erp = () => {
 
           <div>
             <h2 className="text-xl font-semibold mb-2">What PMRG Solution covers</h2>
-            <ul className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <ul className="lg:text-lg text-slate-500  leading-relaxed">
               <li>• Finance & accounting: invoicing, payments, reporting.</li>
               <li>• Sales & order management: quotes, orders, renewals.</li>
               <li>• Inventory & procurement: stock, purchasing, suppliers.</li>

@@ -13,7 +13,7 @@ const Crm = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-3">
               CRM that puts your customers at the center
             </h1>
-            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <p className="lg:text-lg text-slate-500  leading-relaxed">
               PMRG Solution builds CRM platforms that keep all your customer
               information—leads, deals, emails, calls, and support requests—in
               one place. Sales, marketing, and service teams see the same 360°
@@ -38,7 +38,7 @@ const Crm = () => {
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-xl font-semibold mb-2">How our CRM works</h2>
-            <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <p className="lg:text-lg text-slate-500  leading-relaxed">
               We connect your website forms, email, phone, and campaigns into
               one CRM pipeline. Leads move through stages with clear owners,
               tasks, and reminders, so your team never loses track of a follow‑up
@@ -50,7 +50,7 @@ const Crm = () => {
             <h2 className="text-xl font-semibold mb-2">
               What PMRG Solution helps you track
             </h2>
-            <ul className="lg:text-lg text-slate-500 max-w-md leading-relaxed">
+            <ul className="lg:text-lg text-slate-500  leading-relaxed">
               <li>• Contacts and companies with full interaction history.</li>
               <li>• Deals and pipelines with values, stages, and probabilities.</li>
               <li>• Campaign performance and lead sources.</li>
