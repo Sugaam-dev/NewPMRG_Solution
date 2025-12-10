@@ -13,8 +13,8 @@ export default function MVNEConnectivity() {
       {/* ============================
           THREE INFO CARDS (LIGHT BG BLOCK)
       ============================= */}
-      <section className="px-6 py-28">
-        <div className="max-w-[1200px] mx-auto bg-[#f5fbe9] rounded-[28px] p-12 md:p-16 shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
+      <section className="px-6 py-5 lg:py-10">
+        <div className="max-w-[1200px] mx-auto bg-[#f5fbe9] rounded-[28px] p-5 lg:p-16 shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 
@@ -28,11 +28,11 @@ export default function MVNEConnectivity() {
                 </svg>
               </div>
 
-              <h3 className="font-['PST_Mail_Sans'] text-[22px] font-bold leading-[1.2] mb-3">
+              <h3 className=" text-[22px] font-bold leading-[1.2] mb-3">
                 New to the Game?
               </h3>
 
-              <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
+              <p className=" text-[16px] leading-[1.7]">
                 Starting a mobile operator business from scratch in the Netherlands? PMRG Solution helps you launch successfully. 
                 We offer our OSS/BSS software exclusively combined with CleverEnable's Mobile Core Network from our sister company.
                 This integrated solution provides everything needed to launch your MVNO quickly and efficiently. 
@@ -52,11 +52,11 @@ export default function MVNEConnectivity() {
                 </svg>
               </div>
 
-              <h3 className="font-['PST_Mail_Sans'] text-[22px] font-bold leading-[1.2] mb-3">
+              <h3 className="text-[22px] font-bold leading-[1.2] mb-3">
                 Looking for a New Software Partner?
               </h3>
 
-              <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
+              <p className=" text-[16px] leading-[1.7]">
                 Already working with an MVNE but want to change your OSS/BSS software partner?
                 PMRG Solution integrates seamlessly with existing network infrastructure. 
                 We can connect our software with KPN's, Vodafone's, or other MVNEs' networks.
@@ -73,11 +73,11 @@ export default function MVNEConnectivity() {
                 </svg>
               </div>
 
-              <h3 className="font-['PST_Mail_Sans'] text-[22px] font-bold leading-[1.2] mb-3">
+              <h3 className=" text-[22px] font-bold leading-[1.2] mb-3">
                 Outside of the Netherlands?
               </h3>
 
-              <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
+              <p className="text-[16px] leading-[1.7]">
                 Based outside the Netherlands? No problem. PMRG Solution integrates with any MVNE regardless of location.
                 Our standard protocols and flexible integration approach support MVNEs across Europe, South America, and beyond.
                 Geographic location doesn't limit our ability to provide excellent OSS/BSS solutions for your mobile operations.
@@ -91,47 +91,47 @@ export default function MVNEConnectivity() {
       {/* ============================
           CLEVERENABLE INTEGRATION (CENTERED)
       ============================= */}
-      <section className="px-6 py-24 text-center">
-        <div className="max-w-[760px] mx-auto">
+      <section className="px-6 lg:px-25 py-5 lg:py-10 text-center">
+        <div className=" mx-auto">
 
-          <h2 className="font-['PST_Mail_Sans'] text-[42px] md:text-[48px] font-bold leading-[1.15] mb-6">
+          <h2 className=" text-[42px] md:text-[48px] font-bold leading-[1.15] mb-6">
             CleverEnable Integration
           </h2>
 
-          <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] text-[#2b2f2c] mb-8">
+          <p className="text-[18px] leading-[1.7] text-[#2b2f2c] mb-8">
             Integration with CleverEnable’s MVNE platform provides the smoothest experience for operators in the Netherlands. 
             Both systems are designed together for seamless operation. Real-time synchronization keeps customer data consistent. 
             Provisioning happens instantly when customers signup or change services. Combined solution eliminates integration headaches
             common with separate vendors.
           </p>
 
-          <button className="bg-[#6ac93d] hover:bg-[#5fba36] transition px-6 py-3 rounded-full font-['Mona_Sans'] text-[16px] font-semibold">
+          {/* <button className="bg-[#6ac93d] hover:bg-[#5fba36] transition px-6 py-3 rounded-full font-['Mona_Sans'] text-[16px] font-semibold">
             CleverEnable MVNE
-          </button>
+          </button> */}
         </div>
       </section>
 
       {/* ============================
           STANDARD MVNE PROTOCOLS — FIXED PERFECT VERSION
       ============================= */}
-      <section className="px-6 py-24">
-        <div className="max-w-[1350px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+      <section className="px-6 lg:px-25 py-5 lg:py-10">
+        <div className="  mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* LEFT IMAGE */}
-          <div className="rounded-[36px] overflow-hidden shadow-[0_25px_80px_rgba(0,0,0,0.12)] h-[520px] md:h-[560px]">
+          <div className="rounded-[36px] overflow-hidden">
             <img
               src={europeImg}
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
 
           {/* RIGHT TEXT */}
-          <div className="pr-6">
-            <h2 className="font-['PST_Mail_Sans'] text-[48px] font-bold leading-[1.15] mb-6">
+          <div className="">
+            <h2 className=" text-[48px] font-bold leading-[1.15] mb-6">
               Standard MVNE<br />Protocols
             </h2>
 
-            <p className="font-['Mona_Sans'] text-[20px] leading-[1.7] tracking-normal text-[#1a1f1c] max-w-[620px]">
+            <p className=" text-[20px] leading-[1.7] tracking-normal text-[#1a1f1c] max-w-[620px]">
               PMRG Solution supports standard telecommunications protocols for MVNE
               integration. Industry-standard interfaces enable connections to most MVNEs
               including KPN, Vodafone, Odido, and international network enablers.

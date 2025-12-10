@@ -8,7 +8,9 @@ import shilpa from "../../../assets/TeamsPhoto/Shilpa_A.webp";
 import advait from "../../../assets/TeamsPhoto/advait-tiwari.webp";
 import rohit from "../../../assets/TeamsPhoto/photo_rohit_new.webp";
 import sonal from "../../../assets/TeamsPhoto/sonal-kamble.webp";
+import img from '../../../assets/Navbar/tm.jpeg'
 import HeroSection from "../HeroSection";
+import { useNavigate } from "react-router-dom";
 // Add this line to fix the error:
 // import chris from "../../../assets/chris.jpg"; 
 
@@ -23,13 +25,18 @@ export default function OurTeamPage() {
     { name: "Rohit Ghosh", img: rohit },
     { name: "Sonal Kamble", img: sonal },
   ];
+   const navigation =useNavigate();
+   const handleNavigation=()=>{
+    navigation('/contact');
+   }
 
   return (
+   
     <>
       <HeroSection {...ourteamsdata}/>
       <main className="w-full bg-white text-[#0f1a17] overflow-x-hidden">
         {/* Description section unchanged */}
-        <section className="w-full bg-white pt-36 pb-20">
+        <section className="w-full bg-white py-10 lg:py-15  ">
           <div className="max-w-[800px] mx-auto px-6 text-[#26302d]">
             <p className="font-pst text-[18px] leading-[1.7]">
               We believe a Business Support System (BSS) should have one clear purpose:
@@ -51,7 +58,7 @@ export default function OurTeamPage() {
         </section>
 
         {/* Team Grid - Optimized responsive breakpoints */}
-        <section className="w-full bg-white py-8">
+        <section className="w-full bg-white py-5 lg:py-5">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="mb-10 text-center">
               <span className="text-blue-600 font-pst uppercase tracking-[0.5px] text-[16px] block mb-2">
@@ -88,7 +95,7 @@ export default function OurTeamPage() {
 
         {/* Customer Success - COMMENT OUT UNTIL chris import added */}
         
-        <section className="w-full bg-white py-20">
+        <section className="w-full bg-white py-10 lg:py-15">
           <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h3 className="font-pst text-[48px] font-bold leading-[1.15] tracking-[-0.03em] mb-5">
@@ -105,7 +112,7 @@ export default function OurTeamPage() {
             <div className="rounded-[18px] overflow-hidden shadow-md">
               <div className="relative w-full pt-[105%]">
                 <img
-                  src=''
+                  src={img}
                   alt="customer success"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
@@ -116,7 +123,7 @@ export default function OurTeamPage() {
        
 
         {/* Join Team and other sections unchanged */}
-        <section className="w-full bg-white py-20">
+        <section className="w-full bg-white py-5 lg:py-10">
           <div className="max-w-[900px] mx-auto px-6 text-center">
             <h3 className="font-pst text-[48px] font-bold leading-[1.15] tracking-[-0.03em] mb-5">
               Join our dynamic team and grow with us
@@ -126,7 +133,7 @@ export default function OurTeamPage() {
               as their top priority. Every PMRG Solution team member is free to share ideas
               to make things smarter. Sounds like a fit? We'd love to get to know you!
             </p>
-            <button className="mt-10 bg-[#0b1c55] hover:bg-[#2a437e] text-white px-8 py-4 rounded-full font-semibold text-[18px] transition-all">
+            <button onClick={handleNavigation} className="mt-10 bg-[#0b1c55] hover:bg-[#2a437e] text-white px-8 py-4 rounded-full font-semibold text-[18px] transition-all">
               Check out our career opportunities!
             </button>
           </div>

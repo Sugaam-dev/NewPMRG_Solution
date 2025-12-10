@@ -68,6 +68,9 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
+  // double-tap detection for mobile submenu items (MVNOs, MNOs, etc.)
+  const lastSubTapRef = useRef({ time: 0, id: null });
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll);
@@ -254,7 +257,6 @@ const Navbar = () => {
 
         {/* Desktop social icons (≥1024px) */}
         <div className="hidden items-center gap-3 lg:flex">
-          {/* use <a> for true external links */}
           <a
             href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
             target="_blank"
@@ -325,7 +327,7 @@ const Navbar = () => {
               </Link>
             </div>
 
-            {/* Social icons mobile (external links as <a>) */}
+            {/* Social icons mobile */}
             <div className="flex items-center gap-2">
               <a
                 href="https://www.linkedin.com/in/pmrg-solution-llp-24532537a/"
@@ -362,7 +364,7 @@ const Navbar = () => {
 
           {/* Content area */}
           <div className="px-4 pb-6 pt-3 text-sm font-medium text-slate-900">
-            {/* Main list – first tap only opens submenu for dropdowns */}
+            {/* Main list – same as before (single tap to open submenu / navigate) */}
             {!mobileSubMenu && (
               <div className="space-y-1">
                 {menuItems.map((item) => (
@@ -371,10 +373,10 @@ const Navbar = () => {
                     className="flex w-full items-center justify-between rounded-lg px-1 py-3 text-left hover:bg-slate-50"
                     onClick={() => {
                       if (item.hasDropdown && megaMenuData[item.label]) {
-                        setMobileSubMenu(item.label); // open submenu only
+                        setMobileSubMenu(item.label);
                         setDefaultActiveForLabel(item.label);
                       } else if (item.href) {
-                        navigate(item.href); // simple links navigate
+                        navigate(item.href);
                         setMobileOpen(false);
                       }
                     }}
@@ -386,7 +388,7 @@ const Navbar = () => {
               </div>
             )}
 
-            {/* Submenu detail view */}
+            {/* Submenu detail view – MVNOs/MNOs double-tap to navigate */}
             {mobileSubMenu &&
               (() => {
                 const config = megaMenuData[mobileSubMenu];
@@ -420,12 +422,31 @@ const Navbar = () => {
                           activeItem && activeItem.id === item.id;
                         const Icon = item.icon;
 
+                        const handleSubItemTap = () => {
+                          const now = Date.now();
+                          const DOUBLE_TAP_DELAY = 350;
+                          const last = lastSubTapRef.current;
+
+                          const isSameItem = last.id === item.id;
+                          const isDoubleTap =
+                            isSameItem && now - last.time < DOUBLE_TAP_DELAY;
+
+                          if (isDoubleTap && item.href) {
+                            navigate(item.href);
+                            setMobileOpen(false);
+                            setMobileSubMenu(null);
+                            return;
+                          }
+
+                          // first tap or different item: just select
+                          setActiveItemId(item.id);
+                          lastSubTapRef.current = { time: now, id: item.id };
+                        };
+
                         return (
                           <button
                             key={item.id}
-                            onClick={() => {
-                              setActiveItemId(item.id);
-                            }}
+                            onClick={handleSubItemTap}
                             className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm ${
                               isActive ? "bg-blue-50" : "hover:bg-slate-50"
                             }`}

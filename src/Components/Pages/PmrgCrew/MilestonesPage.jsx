@@ -2,8 +2,13 @@ import React from "react";
 import milestoneImg from "../../../assets/provisioning.png"; // replace with your actual image
 import HeroSection from "../HeroSection";
 import milestonedata from "../../../data/milestonedata";
+import { useNavigate } from "react-router-dom";
 
 export default function MilestonesPage() {
+   const navigation =useNavigate();
+   const handleNavigation=()=>{
+    navigation('/contact');
+   }
   return (
     <>
 
@@ -11,7 +16,7 @@ export default function MilestonesPage() {
     <div className="w-full bg-white">
 
       {/* ------------------------- IMAGE + TEXT BLOCK (FIXED EXACTLY LIKE DESIGN) ------------------------- */}
-      <section className="relative z-10 px-6 md:px-24 lg:px-40 py-32 bg-white">
+      <section className="relative z-10 px-6 lg:px-20 py-10 lg:py-20">
         {/* <div className="flex flex-col lg:flex-row items-center lg:items-start gap-16 lg:gap-24"> */}
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
@@ -44,8 +49,8 @@ export default function MilestonesPage() {
       </section>
 
       {/* ------------------------- THREE HIGHLIGHT CARDS ------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 pb-24">
-        <div className="bg-[#F3F8E9] rounded-2xl p-10 grid md:grid-cols-3 gap-10">
+      <section className="px-6 lg:px-20 py-5 lg:py-10">
+        <div className="bg-[#F3F8E9] rounded-2xl p-5 lg:p-10 grid md:grid-cols-3 gap-10">
 
           {/* Card 1 */}
           <div>
@@ -56,7 +61,7 @@ export default function MilestonesPage() {
             <p className="text-[16px] leading-[1.7] text-gray-700">
               PMRG Solution’s platform supports latest mobile technologies
               including 5G service plans and billing, VoLTE and advanced voice
-              services, and eSIM provisioning and management. Recognition as
+              services, and e20 py-5 lg:py-10M provisioning and management. Recognition as
               forward-thinking OSS/BSS provider attracts partners seeking modern
               solutions.
             </p>
@@ -94,7 +99,7 @@ export default function MilestonesPage() {
       </section>
 
       {/* ------------------------- CLEVERENABLE PARTNERSHIP ------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 pb-32 text-center">
+      <section className="px-6 lg:px-20 text-center py-10">
         <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
           CleverEnable Partnership
         </h2>
@@ -107,8 +112,8 @@ export default function MilestonesPage() {
           to fragmented vendor approaches.
         </p>
 
-        <button className="bg-[#0B8A2F] hover:bg-[#0a7a29] text-white px-8 py-3 rounded-full text-[18px] font-medium transition">
-          CleverEnable MVNE
+        <button onClick={handleNavigation} className="bg-[#0B8A2F] hover:bg-[#0a7a29] text-white px-8 py-3 rounded-full text-[18px] font-medium transition">
+          PMRG Enable MVNE
         </button>
       </section>
 

@@ -1,15 +1,20 @@
+import { useNavigate } from "react-router-dom";
 import sunset from "../../../assets/develop.webp";
 import development from "../../../data/development";
 import HeroSection from "../HeroSection";
 
 export default function DevelopmentPhilosophyPage() {
+     const navigation =useNavigate();
+   const handleNavigation=()=>{
+    navigation('/contact');
+   }
   return (
     <>
     <HeroSection {...development}/>
     <main className="w-full overflow-x-hidden bg-white text-[#1a1a1a] font-sans">
 
       {/* Customer-Driven Development Section */}
-      <section className="w-full py-16 px-4 bg-white">
+      <section className="w-full py-5 lg:py-10 px-4 bg-white">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">Customer-Driven Development</h2>
           <p className="text-lg leading-relaxed text-gray-600">
@@ -22,7 +27,7 @@ export default function DevelopmentPhilosophyPage() {
       </section>
 
       {/* Development Practices Section (NEW DESIGN LIKE FIRST IMAGE) */}
-      <section className="w-full py-20 px-4 bg-[#ffffff]">
+      <section className="w-full py-5 lg:py-10 px-4 bg-[#ffffff]">
         <div className="max-w-[1200px] mx-auto bg-[#f4f9e9] rounded-3xl p-10 grid grid-cols-1 md:grid-cols-3 gap-12">
 
           {/* Agile Development */}
@@ -85,7 +90,7 @@ export default function DevelopmentPhilosophyPage() {
       </section>
 
       {/* Continuous Improvement Section */}
-      <section className="w-full py-20 px-4 bg-white">
+      <section className="w-full py-5 lg:py-10 px-4 bg-white">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">Continuous Improvement</h2>
           <p className="text-lg leading-relaxed text-gray-600">
@@ -98,7 +103,7 @@ export default function DevelopmentPhilosophyPage() {
       </section>
 
       {/* Experienced Team Section */}
-      <section className="w-full py-20 px-4 bg-white">
+      <section className="w-full py-5 lg:py-10 px-4 bg-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
           {/* Image */}
@@ -108,7 +113,7 @@ export default function DevelopmentPhilosophyPage() {
               src={sunset}
               alt="Network tower at sunset"
               // className="w-full h-[450px] rounded-xl"
-              className="w-full h-[600px] object-cover rounded-[32px]"
+              className="w-full h-auto object-contain rounded-[32px]"
             />
           </div>
 
@@ -126,7 +131,7 @@ export default function DevelopmentPhilosophyPage() {
               looking for new people to work and grow with us!
             </p>
 
-            <button className="bg-[#b8d920] text-[#1a1a1a] font-semibold py-3 px-6 rounded-full hover:bg-[#a3c41a] transition">
+            <button onClick={handleNavigation} className="bg-[#b8d920] text-[#1a1a1a] font-semibold py-3 px-6 rounded-full hover:bg-[#a3c41a] transition">
               Check out our career opportunities
             </button>
           </div>

@@ -1,145 +1,237 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import implImg1 from "../../../assets/implement.jpg";
 import implImg2 from "../../../assets/lunchsupport.jpg";
 import HeroSection from "../HeroSection";
 import implementationapproachdata from "../../../data/implementationapproachdata";
 
 export default function ImplementationApproach() {
-  return (
-    <> 
-    <HeroSection {...implementationapproachdata}/>
+  const [activeStep, setActiveStep] = useState(1);
+  const intervalRef = useRef(null);
+
+  const steps = [
+    {
+      id: 1,
+      title: "Discovery and Planning",
+      description:
+        "Implementation begins with thorough discovery to understand your business model, existing systems and data, regulatory requirements, timeline constraints, and success criteria. Detailed planning identifies tasks, dependencies, risks, and milestones, so expectations are realistic and aligned.",
+    },
+    {
+      id: 2,
+      title: "System Configuration",
+      description:
+        "System configuration tailors the platform to your specific requirements, including product catalog setup, workflows, and integration points. Branding and customization reflect your identity, turning a generic platform into your solution.",
+    },
+    {
+      id: 3,
+      title: "Data Migration",
+      description:
+        "For operators migrating from existing systems, data migration is critical. PMRG Solution supports migration through data mapping and transformation, migration tool development, validation ensuring accuracy, phased migration reducing risk, and parallel operation during transition.",
+    },
+    {
+      id: 4,
+      title: "Integration and Testing",
+      description:
+        "Comprehensive integration and testing ensures everything works together. End-to-end and performance testing validate real-world usage, while user acceptance testing confirms the solution meets expectations before launch.",
+    },
+  ];
+
+  // Auto-advance using setInterval - SIMPLEST APPROACH
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setActiveStep((prev) => (prev % steps.length) + 1);
+    }, 5000);
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, [steps.length]);
+
+  const handleStepClick = (stepId) => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+    setActiveStep(stepId);
     
-    <main className="w-full bg-white text-[#1a1f1c] overflow-hidden">
+    // Restart interval after manual click
+    setTimeout(() => {
+      intervalRef.current = setInterval(() => {
+        setActiveStep((prev) => (prev % steps.length) + 1);
+      }, 5000);
+    }, 100);
+  };
 
-      {/* =============================
-          IMPLEMENTATION SECTION
-      ============================== */}
-      <section className="w-full px-6 py-24">
-        <div className="max-w-[1250px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+  return (
+    <>
+      <HeroSection {...implementationapproachdata} />
 
-          {/* LEFT CONTENT */}
-          <div>
-            <h2 className="font-['PST_Mail_Sans'] text-[40px] md:text-[48px] leading-[1.15] font-bold mb-6">
-              Implementation
-            </h2>
+      <main className="w-full bg-white text-[#1a1f1c] overflow-hidden">
+        {/* IMPLEMENTATION SECTION */}
+        <section className="w-full px-6 py-5 lg:py-10 ">
+          <div className="max-w-[1250px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            {/* LEFT CONTENT */}
+            <div className="relative">
+              <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-bold mb-4 md:mb-6">
+                Implementation
+              </h2>
 
-            <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] text-[#2b2f2c] mb-10">
-              We guide you through the process of implementation and help you every step of the way.
-            </p>
+              <p className="text-[16px] md:text-[18px] leading-relaxed text-[#2b2f2c] mb-8 md:mb-10">
+                We guide you through the process of implementation and help you
+                every step of the way.
+              </p>
 
-            {/* LIST */}
-            <div className="space-y-8 text-[18px] font-['Mona_Sans'] leading-[1.7]">
+              {/* Steps */}
+              <div className="relative space-y-8 md:space-y-10">
+                {steps.map((step) => {
+                  const isActive = activeStep === step.id;
+                  return (
+                    <div key={step.id} className="flex items-start space-x-4">
+                      {/* Step circle */}
+                      <div className="flex-shrink-0 mt-1">
+                        <button
+                          onClick={() => handleStepClick(step.id)}
+                          className={`w-8 h-8 flex items-center justify-center rounded-full border-3 font-bold text-sm transition-all duration-300 ${
+                            isActive
+                              ? "bg-blue-500 border-blue-500 text-white shadow-lg"
+                              : "bg-white border-gray-300 text-gray-600 hover:bg-gray-50 hover:border-gray-400"
+                          }`}
+                          style={{ minHeight: '32px' }}
+                        >
+                          {step.id}
+                        </button>
+                        
+                        {/* Animated line - PURE CSS */}
+                        {isActive && (
+                          <div 
+                            className="w-1 bg-blue-500 rounded-full ml-3.5 mt-1 animate-grow-line"
+                            style={{ 
+                              height: '80px',
+                              animationDuration: '5s',
+                              animationPlayState: 'running'
+                            }}
+                          />
+                        )}
+                      </div>
 
-              {/* Step 1 */}
-              <div>
-                <p className="font-semibold mb-2 flex items-center gap-3">
-                  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-gray-400 text-[14px]">1</span>
-                  Discovery and Planning
-                </p>
+                      {/* Step content */}
+                      <div className="flex-1 pt-1">
+                        <p
+                          onClick={() => handleStepClick(step.id)}
+                          className={`font-bold text-base mb-3 cursor-pointer transition-colors duration-300 ${
+                            isActive ? "text-blue-600 text-lg" : "text-gray-800"
+                          }`}
+                        >
+                          {step.title}
+                        </p>
+
+                        {isActive && (
+                          <div className="text-sm leading-relaxed text-gray-700 pl-1 max-w-[90%] animate-slideIn">
+                            {step.description}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
+            </div>
 
-              {/* Step 2 */}
-              <div>
-                <p className="font-semibold mb-2 flex items-center gap-3">
-                  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-gray-400 text-[14px]">2</span>
-                  System Configuration
-                </p>
-              </div>
-
-              {/* Step 3 — Data Migration (expanded) */}
-              <div>
-                <p className="font-semibold mb-3 flex items-center gap-3 text-[#6ac93d]">
-                  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-[#6ac93d] bg-[#6ac93d] text-white text-[14px]">3</span>
-                  Data Migration
-                </p>
-
-                <div className="pl-6 border-l-[3px] border-[#6ac93d] text-[16px] leading-[1.7] text-[#2b2f2c] max-w-[500px]">
-                  For operators migrating from existing systems, data migration is critical. PMRG Solution supports 
-                  migration through data mapping and transformation, migration tool development, validation ensuring 
-                  accuracy, phased migration reducing risk, and parallel operation during transition. Clean data 
-                  migration prevents operational disruptions.
-                </div>
-              </div>
-
-              {/* Step 4 */}
-              <div>
-                <p className="font-semibold mb-2 flex items-center gap-3">
-                  <span className="w-6 h-6 flex items-center justify-center rounded-full border border-gray-400 text-[14px]">4</span>
-                  Integration and Testing
-                </p>
-              </div>
-
+            {/* RIGHT IMAGE */}
+            <div className="rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+              <img
+                src={implImg1}
+                alt="Implementation"
+                className="w-full h-auto  object-contain"
+              />
             </div>
           </div>
+        </section>
 
-          {/* RIGHT IMAGE */}
-          <div className="rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
-            <img src={implImg1} alt="Implementation" className="w-full h-full object-cover" />
-          </div>
-
-        </div>
-      </section>
-
-      {/* =============================
-          TRAINING & DOCUMENTATION
-      ============================== */}
-      <section className="w-full px-6 py-24 text-center">
-        <h2 className="font-['PST_Mail_Sans'] text-[40px] md:text-[48px] leading-[1.15] font-bold mb-6">
-          Training and Documentation
-        </h2>
-
-        <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] max-w-[850px] mx-auto text-[#2b2f2c]">
-          Successful adoption requires proper training and documentation. Operations team training covers daily tasks. 
-          Customer service training ensures support readiness. Administrator training enables system management. 
-          Comprehensive documentation provides ongoing reference. Well-trained teams ensure smooth operations from day one.
-        </p>
-      </section>
-
-      {/* =============================
-          LAUNCH SUPPORT
-      ============================== */}
-      <section className="w-full px-6 py-24">
-        <div className="max-w-[1250px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-
-          {/* LEFT IMAGE */}
-          <div className="rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
-            <img src={implImg2} alt="Launch Support" className="w-full h-full object-cover" />
-          </div>
-
-          {/* RIGHT TEXT */}
-          <div>
-            <h2 className="font-['PST_Mail_Sans'] text-[40px] md:text-[48px] leading-[1.15] font-bold mb-6">
-              Launch Support
+        {/* TRAINING & DOCUMENTATION */}
+        <section className="w-full px-6 py-5 lg:py-10 text-center">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-bold mb-4 md:mb-6">
+              Training and Documentation
             </h2>
-
-            <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] text-[#2b2f2c] max-w-[550px]">
-              PMRG Solution provides intensive support during launch period. On-site or remote support is 
-              available during go-live. Monitoring detects issues immediately. Rapid response resolves 
-              problems quickly. Post-launch reviews identify improvements. Strong launch support ensures 
-              successful transition to live operations.
+            <p className="text-[16px] md:text-[18px] leading-relaxed text-[#2b2f2c]">
+              Successful adoption requires proper training and documentation.
+              Operations team training covers daily tasks. Customer service
+              training ensures support readiness. Administrator training enables
+              system management. Comprehensive documentation provides ongoing
+              reference so teams can operate confidently from day one.
             </p>
           </div>
+        </section>
 
-        </div>
-      </section>
+        {/* LAUNCH SUPPORT */}
+        <section className="w-full px-6 py-5 lg:py-10">
+          <div className="max-w-[1250px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div className="rounded-[32px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)] order-2 lg:order-1">
+              <img
+                src={implImg2}
+                alt="Launch Support"
+                className="w-full h-auto object-contain"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-bold mb-4 md:mb-6">
+                Launch Support
+              </h2>
+              <p className="text-[16px] md:text-[18px] leading-relaxed text-[#2b2f2c] max-w-[550px]">
+                PMRG Solution provides intensive support during launch. On-site
+                or remote assistance is available during go-live, with close
+                monitoring to detect and resolve issues quickly. Post-launch
+                reviews identify improvements and ensure a smooth transition to
+                live operations.
+              </p>
+            </div>
+          </div>
+        </section>
 
-      {/* =============================
-          ONGOING PARTNERSHIP
-      ============================== */}
-      <section className="w-full px-6 py-24 text-center">
-        <h2 className="font-['PST_Mail_Sans'] text-[40px] md:text-[48px] leading-[1.15] font-bold mb-6">
-          Ongoing Partnership
-        </h2>
+        {/* ONGOING PARTNERSHIP */}
+        <section className="w-full px-6 py-5 lg:py-10 text-left lg:text-center">
+          <div className="max-w-[900px] mx-auto">
+            <h2 className="text-[32px] md:text-[40px] lg:text-[48px] leading-tight font-bold mb-4 md:mb-6">
+              Ongoing Partnership
+            </h2>
+            <p className="text-[16px] md:text-[18px] leading-relaxed text-[#2b2f2c]">
+              Implementation doesn't end at launch. PMRG Solution maintains an
+              ongoing partnership through regular check-ins, continuous
+              optimization, support for new requirements, and platform updates
+              and enhancements. The focus is on long-term success beyond the
+              initial rollout.
+            </p>
+          </div>
+        </section>
+      </main>
 
-        <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] max-w-[850px] mx-auto text-[#2b2f2c]">
-          Implementation doesn’t end at launch. PMRG Solution maintains ongoing partnership through 
-          regular check-ins, continuous optimization, support for new requirements, platform updates 
-          and enhancements, and long-term success focus. We’re invested in your success beyond initial launch.
-        </p>
-      </section>
-
-    </main></>
-    
-   
+      <style jsx>{`
+        @keyframes grow-line {
+          from {
+            height: 0;
+          }
+          to {
+            height: 80px;
+          }
+        }
+        @keyframes slideIn {
+          from {
+            opacity: 0;
+            transform: translateX(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        .animate-grow-line {
+          animation: grow-line 5s ease-out forwards;
+        }
+        .animate-slideIn {
+          animation: slideIn 0.7s ease-out forwards;
+        }
+      `}</style>
+    </>
   );
 }

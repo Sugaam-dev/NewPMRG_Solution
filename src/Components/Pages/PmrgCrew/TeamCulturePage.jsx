@@ -3,9 +3,15 @@ import skiTrip from "../../../assets/Ski-foto.jpg"; // replace with your actual 
 import cultureImg from "../../../assets/ourculture.webp"; // replace with your actual image
 import HeroSection from "../HeroSection";
 import teamculturedata from "../../../data/teamculturedata";
+import { useNavigate } from "react-router-dom";
 
 
 export default function TeamCulturePage() {
+   const navigation =useNavigate();
+   const handleNavigation=()=>{
+    navigation('/contact');
+   }
+
   return (
    <>
    <HeroSection {...teamculturedata}/>
@@ -16,15 +22,15 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* ANNUAL SKI TRIP SECTION */}
       {/* --------------------------------------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 py-24">
+      <section className="px-6 md:px-16 lg:px-20 py-5 lg:py-10">
         <div className="flex flex-col lg:flex-row items-center gap-14">
           
           {/* Image */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full">
             <img
               src={skiTrip}
               alt="Ski Trip"
-              className="rounded-[32px] w-full h-100 object-cover shadow-lg"
+              className="rounded-[32px] w-full h-auto object-contain"
             />
           </div>
 
@@ -64,7 +70,7 @@ export default function TeamCulturePage() {
         </p>
       </section> */}
 
-      <section className="px-6 md:px-16 lg:px-32 py-10 text-center">
+      <section className="px-6 md:px-16 lg:px-20 py-5 text-center">
         <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
           Team Events
         </h2>
@@ -83,8 +89,8 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* THREE HIGHLIGHT CARDS */}
       {/* --------------------------------------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 pt-12 pb-28">
-        <div className="bg-[#F3F8E9] p-14 rounded-3xl grid md:grid-cols-3 gap-16">
+      <section className="px-6 md:px-16 lg:px-20">
+        <div className="bg-[#F3F8E9] p-5 rounded-3xl grid md:grid-cols-3 gap-16">
 
           {/* CARD 1 */}
           <div>
@@ -143,7 +149,7 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* TEAM GROWTH SECTION */}
       {/* --------------------------------------------------------- */}
-      <section className="px-6 md:px-16 lg:px-32 py-20 text-center">
+      <section className="px-6 md:px-16 lg:px-20 py-5 lg:py-10 text-center">
         <h2 className="text-[36px] font-bold tracking-[-0.03em] leading-[1.15] mb-6">
           Team Growth
         </h2>
@@ -161,7 +167,7 @@ export default function TeamCulturePage() {
       {/* --------------------------------------------------------- */}
       {/* JOIN OUR CULTURE SECTION */}
       {/* --------------------------------------------------------- */}
-     <section className="px-6 md:px-16 lg:px-32 py-24">
+     <section className="px-6 md:px-16 lg:px-20 py-5 lg:py-10">
   <div className="flex flex-col lg:flex-row items-center gap-16">
 
     {/* TEXT BLOCK */}
@@ -177,7 +183,7 @@ export default function TeamCulturePage() {
         experiences. If this resonates, explore our career opportunities!
       </p>
 
-      <button className="bg-[#4CA30D] text-white px-8 py-4 rounded-full text-[18px] font-semibold shadow-md hover:bg-[#3d8a0e] transition">
+      <button onClick={handleNavigation} className="bg-[#4CA30D] text-white px-8 py-4 rounded-full text-[18px] font-semibold shadow-md hover:bg-[#3d8a0e] transition">
         Check out our career opportunities!
       </button>
     </div>
