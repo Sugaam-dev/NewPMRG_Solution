@@ -13,7 +13,7 @@ export default function CompliancePage() {
       {/* =============================
           SECTION: TELECOM REGULATIONS
       ============================== */}
-      <section className="px-6 md:px-20 py-10 bg-white text-black">
+      <section className="px-6 md:px-20 py-5 bg-white text-black">
         <h2
           className="text-3xl md:text-5xl font-bold text-center mb-10"
           style={{
