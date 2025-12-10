@@ -59,16 +59,19 @@ export default function PMRGEnableIntegration() {
                 "
               >
 
-                <div
-                  className="
-                    grid 
-                    md:grid-cols-3 
-                    gap-10 
-                    md:gap-20 
-                    lg:gap-28 
-                    text-left
-                  "
-                >
+              <div
+  className="
+    grid
+    sm:grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-3
+    gap-10
+    md:gap-16
+    lg:gap-28
+    text-left
+  "
+>
+
 
                   {/* ===================== BOX 1 ===================== */}
                   <div className="flex flex-col">
