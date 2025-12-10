@@ -1,7 +1,7 @@
-import heroImg from "../assets/clevermobi.png";
+import heroImg from "../assets/Navbar/mvnos.png";
 
 const mvnosData = {
-  image: 'https://www.pmrgsolution.com/img/AI_Img2.jpeg',
+  image: heroImg,
   title: "Complete OSS/BSS for",
   highlight: " Virtual  Operators",
   description:

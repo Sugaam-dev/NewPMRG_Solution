@@ -1,5 +1,5 @@
 import sunset from "../../../assets/sunset.jpg";
-import mvnosData from "../../../data/mvnosData copy";
+import mvnosData from "../../../data/mvnosData";
 
 import HeroSection from "../HeroSection";
 

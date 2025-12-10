@@ -33,7 +33,7 @@ export default function MVNEConnectivity() {
               </h3>
 
               <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
-                Starting a mobile operator business from scratch in the Netherlands? CleverMobi helps you launch successfully. 
+                Starting a mobile operator business from scratch in the Netherlands? PMRG Solution helps you launch successfully. 
                 We offer our OSS/BSS software exclusively combined with CleverEnable's Mobile Core Network from our sister company.
                 This integrated solution provides everything needed to launch your MVNO quickly and efficiently. 
                 For additional information or inquiries, contact us via email or phone.
@@ -58,9 +58,9 @@ export default function MVNEConnectivity() {
 
               <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
                 Already working with an MVNE but want to change your OSS/BSS software partner?
-                CleverMobi integrates seamlessly with existing network infrastructure. 
+                PMRG Solution integrates seamlessly with existing network infrastructure. 
                 We can connect our software with KPN's, Vodafone's, or other MVNEs' networks.
-                Migration from your current BSS platform to CleverMobi happens smoothly without disrupting operations or losing customer data.
+                Migration from your current BSS platform to PMRG Solution happens smoothly without disrupting operations or losing customer data.
               </p>
             </div>
 
@@ -78,7 +78,7 @@ export default function MVNEConnectivity() {
               </h3>
 
               <p className="font-['Mona_Sans'] text-[16px] leading-[1.7]">
-                Based outside the Netherlands? No problem. CleverMobi integrates with any MVNE regardless of location.
+                Based outside the Netherlands? No problem. PMRG Solution integrates with any MVNE regardless of location.
                 Our standard protocols and flexible integration approach support MVNEs across Europe, South America, and beyond.
                 Geographic location doesn't limit our ability to provide excellent OSS/BSS solutions for your mobile operations.
               </p>
@@ -132,7 +132,7 @@ export default function MVNEConnectivity() {
             </h2>
 
             <p className="font-['Mona_Sans'] text-[20px] leading-[1.7] tracking-normal text-[#1a1f1c] max-w-[620px]">
-              CleverMobi supports standard telecommunications protocols for MVNE
+              PMRG Solution supports standard telecommunications protocols for MVNE
               integration. Industry-standard interfaces enable connections to most MVNEs
               including KPN, Vodafone, Odido, and international network enablers.
               Protocols for provisioning, usage collection, and service management work

@@ -22,7 +22,7 @@ export default function TMForumPage() {
 
             <img
               src={teamImg}
-              alt="CleverMobi Team"
+              alt="PMRG Solution Team"
               className="
                 absolute inset-0 w-full h-full object-cover color-transparent
               "
@@ -39,7 +39,7 @@ export default function TMForumPage() {
             </h2>
 
             <p className="font-['Mona_Sans'] text-[20px] leading-[1.6] tracking-[-0.02em] max-w-[650px]">
-              CleverMobi’s development team combines software engineering expertise with
+              PMRG Solution’s development team combines software engineering expertise with
               telecommunications domain knowledge. Developers understand billing complexity,
               provisioning requirements, and regulatory constraints. This dual expertise produces
               software that works elegantly for mobile operator use cases rather than generic

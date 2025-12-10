@@ -111,7 +111,7 @@ const HeroSection = ({
                 <div className="shape-float3" />
               </div>
             )}
-            <div className="image-container relative z-30 mx-auto flex w-full max-w-4xl overflow-hidden rounded-[32px] bg-white shadow-2xl lg:rounded-[56px]">
+            <div className="image-container relative z-30 mx-auto flex w-full max-w-4xl overflow-hidden rounded-[32px] lg:rounded-[56px]">
               <img
                 src={image}
                 alt={title}

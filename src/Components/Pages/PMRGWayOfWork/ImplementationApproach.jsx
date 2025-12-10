@@ -54,7 +54,7 @@ export default function ImplementationApproach() {
                 </p>
 
                 <div className="pl-6 border-l-[3px] border-[#6ac93d] text-[16px] leading-[1.7] text-[#2b2f2c] max-w-[500px]">
-                  For operators migrating from existing systems, data migration is critical. CleverMobi supports 
+                  For operators migrating from existing systems, data migration is critical. PMRG Solution supports 
                   migration through data mapping and transformation, migration tool development, validation ensuring 
                   accuracy, phased migration reducing risk, and parallel operation during transition. Clean data 
                   migration prevents operational disruptions.
@@ -113,7 +113,7 @@ export default function ImplementationApproach() {
             </h2>
 
             <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] text-[#2b2f2c] max-w-[550px]">
-              CleverMobi provides intensive support during launch period. On-site or remote support is 
+              PMRG Solution provides intensive support during launch period. On-site or remote support is 
               available during go-live. Monitoring detects issues immediately. Rapid response resolves 
               problems quickly. Post-launch reviews identify improvements. Strong launch support ensures 
               successful transition to live operations.
@@ -132,7 +132,7 @@ export default function ImplementationApproach() {
         </h2>
 
         <p className="font-['Mona_Sans'] text-[18px] leading-[1.7] max-w-[850px] mx-auto text-[#2b2f2c]">
-          Implementation doesn’t end at launch. CleverMobi maintains ongoing partnership through 
+          Implementation doesn’t end at launch. PMRG Solution maintains ongoing partnership through 
           regular check-ins, continuous optimization, support for new requirements, platform updates 
           and enhancements, and long-term success focus. We’re invested in your success beyond initial launch.
         </p>

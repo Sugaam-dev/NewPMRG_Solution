@@ -1,4 +1,4 @@
-import heroImg from "../assets/clevermobi.png";
+import heroImg from "../assets/Navbar/mnos.png";
 
 const mnosData = {
   image: heroImg,

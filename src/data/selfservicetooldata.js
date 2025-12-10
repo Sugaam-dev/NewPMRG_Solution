@@ -1,5 +1,5 @@
 // src/data/heroData.js
-import heroImg from "../assets/clevermobi.png";
+import heroImg from "../assets/Navbar/tool.jpeg";
 
 const selfservicetooldata = {
   image: heroImg,
@@ -7,8 +7,7 @@ const selfservicetooldata = {
   // highlight: "mobile operators",
   description:
     "CleverMobi’s comprehensive self-service capabilities empower customers to manage accounts independently. Reduced support volume lowers costs while improved customer control increases satisfaction. Self-service tools benefit both customers and operators.",
-  buttonLabel: "Get started",
-  buttonHref: "/get-started",
+
 };
 
 export default selfservicetooldata;

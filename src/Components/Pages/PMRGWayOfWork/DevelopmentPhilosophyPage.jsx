@@ -13,7 +13,7 @@ export default function DevelopmentPhilosophyPage() {
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">Customer-Driven Development</h2>
           <p className="text-lg leading-relaxed text-gray-600">
-            CleverMobi's roadmap is shaped by real operator needs, not theoretical requirements.
+            PMRG Solution's roadmap is shaped by real operator needs, not theoretical requirements.
             We listen to MVNO and MNO partners identifying pain points and opportunities. Feature
             development addresses actual business challenges our customers face. Regular feedback
             loops ensure we're building valuable capabilities that deliver tangible benefits.
@@ -54,7 +54,7 @@ export default function DevelopmentPhilosophyPage() {
             <h3 className="text-2xl font-semibold mb-3">Quality First</h3>
 
             <p className="text-gray-700 leading-relaxed">
-              Quality is non-negotiable at CleverMobi. Comprehensive automated testing catches issues
+              Quality is non-negotiable at PMRG Solution. Comprehensive automated testing catches issues
               early. Code reviews ensure maintainability and standards compliance. Performance testing
               validates scalability. Security assessments identify vulnerabilities. Quality gates prevent
               substandard code from reaching production. Investment in quality prevents costly problems
@@ -74,7 +74,7 @@ export default function DevelopmentPhilosophyPage() {
             <h3 className="text-2xl font-semibold mb-3">Modern Technology Stack</h3>
 
             <p className="text-gray-700 leading-relaxed">
-              CleverMobi uses current, well-supported technologies chosen for reliability and performance.
+              PMRG Solution uses current, well-supported technologies chosen for reliability and performance.
               Private Cloud-native architecture provides scalability. Microservices design enables independent
               component evolution. API-first approach ensures integration flexibility. Modern stack ensures
               platform remains supportable and competitive long-term.
@@ -89,7 +89,7 @@ export default function DevelopmentPhilosophyPage() {
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">Continuous Improvement</h2>
           <p className="text-lg leading-relaxed text-gray-600">
-            Development never stops with initial launch. CleverMobi continuously enhances the platform
+            Development never stops with initial launch. PMRG Solution continuously enhances the platform
             based on operational learnings, customer feedback, technology evolution, and competitive
             developments. Regular improvements keep the platform current and competitive. Customers benefit
             from ongoing innovation without major upgrade projects.
@@ -117,7 +117,7 @@ export default function DevelopmentPhilosophyPage() {
             <h2 className="text-3xl font-semibold mb-4">Experienced Team</h2>
 
             <p className="text-lg leading-relaxed text-gray-600 mb-6">
-              CleverMobi's development team combines software engineering expertise with telecommunications
+              PMRG Solution's development team combines software engineering expertise with telecommunications
               domain knowledge. Developers understand billing complexity, provisioning requirements, and
               regulatory constraints. This dual expertise produces software that works elegantly for mobile
               operator use cases rather than generic solutions requiring extensive customization.

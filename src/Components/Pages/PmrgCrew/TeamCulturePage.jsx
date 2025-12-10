@@ -35,7 +35,7 @@ export default function TeamCulturePage() {
             </h2>
 
             <p className="text-[18px] leading-[1.7] text-gray-700 max-w-xl">
-              Every year, the CleverMobi team embarks on an annual ski trip to the mountains.
+              Every year, the PMRG Solution team embarks on an annual ski trip to the mountains.
               This week-long adventure combines alpine skiing, team bonding, and relaxation
               away from work pressures. Whether experienced skiers or beginners, everyone
               participates and supports each other. Evening gatherings feature good food,
@@ -56,7 +56,7 @@ export default function TeamCulturePage() {
         </h2>
 
         <p className="text-[20px] leading-[1.7] max-w-3xl mx-auto text-gray-700">
-          Beyond the annual ski trip, CleverMobi organizes regular social events throughout
+          Beyond the annual ski trip, PMRG Solution organizes regular social events throughout
           the year. Team drinks after work celebrate project completions or just provide
           opportunities to unwind together. Dinners bring the team together for good food
           and conversation. These events make sure we stay connected with each other and
@@ -70,7 +70,7 @@ export default function TeamCulturePage() {
         </h2>
 
         <p className="text-[20px] leading-[1.7] max-w-3xl mx-auto text-gray-700">
-          Beyond the annual ski trip, CleverMobi organizes regular social events throughout
+          Beyond the annual ski trip, PMRG Solution organizes regular social events throughout
           the year. Team drinks after work celebrate project completions or just provide
           opportunities to unwind together. Dinners bring the team together for good food
           and conversation. These events make sure we stay connected with each other and
@@ -95,7 +95,7 @@ export default function TeamCulturePage() {
             </h3>
 
             <p className="text-[16px] leading-[1.7] text-gray-700">
-              When CleverMobi achieves milestones or partners succeed, we celebrate together.
+              When PMRG Solution achieves milestones or partners succeed, we celebrate together.
               Major operator launches, reaching platform milestones, or technical achievements
               are recognized with team celebrations. These moments acknowledge hard work and
               shared success. Celebrating together reinforces that everyone contributes to
@@ -112,7 +112,7 @@ export default function TeamCulturePage() {
             </h3>
 
             <p className="text-[16px] leading-[1.7] text-gray-700">
-              While dedicated to delivering excellent software and service, CleverMobi values
+              While dedicated to delivering excellent software and service, PMRG Solution values
               work-life balance. Team events and fun activities demonstrate that work is important
               but so is enjoying life. Flexible working arrangements accommodate personal needs.
               Reasonable expectations prevent burnout. Happy, balanced team members perform better
@@ -149,11 +149,11 @@ export default function TeamCulturePage() {
         </h2>
 
         <p className="text-[20px] max-w-4xl mx-auto leading-[1.7] text-gray-700">
-          As CleverMobi grows, maintaining strong culture remains priority. New team members
+          As PMRG Solution grows, maintaining strong culture remains priority. New team members
           are welcomed warmly and integrated into traditions. Ski trips and events scale to
           include everyone. Culture evolves while preserving core values of collaboration,
           excellence, and enjoying the journey together. Growth strengthens rather than
-          dilutes what makes CleverMobi special.
+          dilutes what makes PMRG Solution special.
         </p>
       </section>
 
@@ -171,7 +171,7 @@ export default function TeamCulturePage() {
       </h2>
 
       <p className="text-[20px] leading-[1.8] text-gray-700 max-w-[620px] mb-10">
-        Talented professionals seeking more than just jobs are invited to join CleverMobi.
+        Talented professionals seeking more than just jobs are invited to join PMRG Solution.
         We offer challenging software development work, collaborative team environment,
         opportunities for growth and learning, and culture that values people and shared
         experiences. If this resonates, explore our career opportunities!

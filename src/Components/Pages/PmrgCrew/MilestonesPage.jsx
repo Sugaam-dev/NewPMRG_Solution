@@ -32,7 +32,7 @@ export default function MilestonesPage() {
             </h2>
 
             <p className="text-[20px] leading-[1.7] font-normal text-gray-700 max-w-[620px]">
-              CleverMobi launched its modern OSS/BSS platform built from scratch
+              PMRG Solution launched its modern OSS/BSS platform built from scratch
               without legacy constraints. The platform now serves hundreds of
               thousands of mobile customers. This growth validates our
               architecture, reliability, and value proposition. Scaling while
@@ -54,7 +54,7 @@ export default function MilestonesPage() {
               Technology Leadership
             </h3>
             <p className="text-[16px] leading-[1.7] text-gray-700">
-              CleverMobi’s platform supports latest mobile technologies
+              PMRG Solution’s platform supports latest mobile technologies
               including 5G service plans and billing, VoLTE and advanced voice
               services, and eSIM provisioning and management. Recognition as
               forward-thinking OSS/BSS provider attracts partners seeking modern
@@ -69,8 +69,8 @@ export default function MilestonesPage() {
               Customer Satisfaction
             </h3>
             <p className="text-[16px] leading-[1.7] text-gray-700">
-              High customer satisfaction reflects CleverMobi’s quality and
-              support. Operators choose CleverMobi for modern technology, stay
+              High customer satisfaction reflects PMRG Solution’s quality and
+              support. Operators choose PMRG Solution for modern technology, stay
               for reliable service and responsive support. Long-term
               partnerships demonstrate value delivery beyond launch.
             </p>
@@ -85,7 +85,7 @@ export default function MilestonesPage() {
             <p className="text-[16px] leading-[1.7] text-gray-700">
               Regular platform enhancements demonstrate commitment to
               innovation. Performance improvements and technology updates keep
-              CleverMobi at the forefront of OSS/BSS capabilities without
+              PMRG Solution at the forefront of OSS/BSS capabilities without
               disruptive major upgrades.
             </p>
           </div>

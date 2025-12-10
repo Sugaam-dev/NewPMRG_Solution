@@ -123,7 +123,7 @@ export default function OurTeamPage() {
             </h3>
             <p className="font-mona text-[20px] leading-[1.7] font-normal max-w-[850px] mx-auto">
               We are a (tech)-enthusiastic close group of colleagues who have innovation
-              as their top priority. Every CleverMobi team member is free to share ideas
+              as their top priority. Every PMRG Solution team member is free to share ideas
               to make things smarter. Sounds like a fit? We'd love to get to know you!
             </p>
             <button className="mt-10 bg-[#0b1c55] hover:bg-[#2a437e] text-white px-8 py-4 rounded-full font-semibold text-[18px] transition-all">
