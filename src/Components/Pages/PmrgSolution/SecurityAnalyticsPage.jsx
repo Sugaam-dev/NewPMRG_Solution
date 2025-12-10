@@ -14,7 +14,7 @@ export default function SecurityAnalyticsPage() {
     
 
       {/* ===================== COMPREHENSIVE SECURITY ===================== */}
-      <section className="px-8 md:px-20 py-24 grid md:grid-cols-2 gap-12 items-center">
+      <section className="px-8 md:px-20 py-10 grid md:grid-cols-2 gap-12 items-center">
        <div className="flex justify-center w-full">
             <div className="w-[90%] max-w-[500px] rounded-[32px] overflow-hidden shadow-lg">
                 <img
@@ -44,7 +44,7 @@ export default function SecurityAnalyticsPage() {
       </section>
 
       {/* ===================== DATA PRIVACY ===================== */}
-      <section className="px-8 md:px-20 py-24 text-center">
+      <section className="px-8 md:px-20 py-5 text-center">
         <h2 className="mb-5 text-4xl font-bold leading-tight">Data Privacy</h2>
 
         <p className="max-w-4xl mx-auto text-lg leading-relaxed font-normal">
@@ -159,10 +159,9 @@ export default function SecurityAnalyticsPage() {
 
 
 
-           <section className="relative px-8 md:px-20 py-24 text-center overflow-hidden">
+           <section className="relative px-8 md:px-20 py-5 text-center overflow-hidden">
 
-                    {/* BACKGROUND BLOB SHAPE */}
-                    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-[#e8ebe4] rounded-full opacity-70 -z-10"></div>
+                  
 
                     {/* TITLE + DESCRIPTION */}
                     <h2 className="mb-5 text-4xl font-bold leading-tight">
@@ -180,16 +179,16 @@ export default function SecurityAnalyticsPage() {
                     {/* DASHBOARD IMAGES GRID */}
                     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                        <div className="rounded-xl shadow-md overflow-hidden bg-white">
-                        <img src={dashboardsImg} className="w-full h-[600px] object-cover" alt="Dashboard" />
+                        <div className="rounded-xl h-auto overflow-hidden bg-white">
+                        <img src={dashboardsImg} className="w-full h-auto object-contain" alt="Dashboard" />
                         </div>
 
-                        <div className="rounded-xl shadow-md overflow-hidden bg-white">
-                        <img src={dashboardsImg} className="w-full h-[600px] object-cover" alt="Dashboard" />
+                        <div className="rounded-xl h-auto overflow-hidden bg-white">
+                        <img src={dashboardsImg} className="w-full h-auto object-contain" alt="Dashboard" />
                         </div>
 
-                        <div className="rounded-xl shadow-md overflow-hidden bg-white">
-                        <img src={dashboardsImg} className="w-full h-[600px] object-cover" alt="Dashboard" />
+                        <div className="rounded-xl h-auto overflow-hidden bg-white">
+                        <img src={dashboardsImg} className="w-full h-auto object-contain" alt="Dashboard" />
                         </div>
 
                         {/* <div className="rounded-xl shadow-md overflow-hidden bg-white">

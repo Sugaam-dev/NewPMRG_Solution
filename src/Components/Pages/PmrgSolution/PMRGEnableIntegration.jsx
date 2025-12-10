@@ -28,7 +28,7 @@ export default function PMRGEnableIntegration() {
         {/* COMPLETE INTEGRATED SOLUTION SECTION */}
         {/* ========================================================= */}
 
-        <section className="py-24 bg-white">
+        <section className="py-10 bg-white">
           <div className="max-w-[1600px] mx-auto px-10">
 
             {/* Heading */}
@@ -121,7 +121,7 @@ export default function PMRGEnableIntegration() {
         {/* RAPID SERVICE LAUNCH SECTION */}
         {/* ========================================================= */}
 
-        <section className="py-24 bg-white">
+        <section className="py-5 bg-white">
           <div className="text-center max-w-4xl mx-auto px-6">
 
             <h2 className="text-5xl font-bold leading-tight font-['PST Mail Sans',Helvetica,Arial,sans-serif]">
@@ -141,15 +141,15 @@ export default function PMRGEnableIntegration() {
         {/* COMBINED EXPERTISE SECTION */}
         {/* ========================================================= */}
 
-        <section className="py-20 bg-white">
-            <div className="max-w-[1700px] mx-auto px-10 grid md:grid-cols-2 gap-20 items-center">
+        <section className="py-10 bg-white">
+            <div className="max-w-[1700px] mx-auto px-5 grid md:grid-cols-2 gap-20 items-center">
 
               {/* LEFT IMAGE */}
               <div className="w-full">
                 <img
                   src={meetingImage}
                   alt="team meeting"
-                  className="rounded-[35px] shadow-xl w-full h-[520px] object-cover"
+                  className="rounded-[35px] shadow-xl w-full h-auto object-cover"
                 />
               </div>
 
@@ -168,9 +168,9 @@ export default function PMRGEnableIntegration() {
                   support across all dimensions.
                 </p>
 
-                <button className="mt-10 bg-[#6BBE1E] hover:bg-[#5CAA19] text-white px-10 py-4 rounded-full font-semibold shadow-xl w-fit">
+                {/* <button className="mt-10 bg-[#6BBE1E] hover:bg-[#5CAA19] text-white px-10 py-4 rounded-full font-semibold shadow-xl w-fit">
                   PMRGEnable MVNE
-                </button>
+                </button> */}
 
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function PMRGEnableIntegration() {
         {/* ALTERNATIVE INTEGRATION OPTIONS SECTION */}
         {/* ========================================================= */}
 
-        <section className="py-24 bg-white">
+        <section className="py-5 bg-white">
             <div className="text-center max-w-[1600px] mx-auto px-10">
 
               {/* Heading */}

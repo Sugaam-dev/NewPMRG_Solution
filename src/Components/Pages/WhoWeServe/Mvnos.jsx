@@ -102,7 +102,7 @@ export default function Mvnos() {
       </section>
 
       {/* Seamless MVNE Integration Section – FIXED TO MATCH FIRST IMAGE */}
-      <section className="w-full py-24 px-4 bg-white">
+      <section className="w-full  bg-white pb-20 px-6 md:px-8 lg:px-30 ">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
           {/* IMAGE */}
@@ -110,7 +110,7 @@ export default function Mvnos() {
             <img
               src={sunset}
               alt="Network tower at sunset"
-              className="w-full h-[600px] object-cover rounded-[32px]"
+              className="w-full h-auto object-cover rounded-[32px]"
             />
           </div>
 
@@ -120,14 +120,14 @@ export default function Mvnos() {
               Seamless MVNE<br />Integration
             </h2>
 
-            <p className="text-[20px] text-[#555] leading-[1.8] mb-12 max-w-[550px]">
+            <p className="text-[20px] text-[#555] leading-[1.8] mb-2 max-w-[550px]">
               PMRG-Solution integrates seamlessly with MVNEs like CleverEnable for complete end-to-end 
               operations. Provisioning happens instantly when customers sign up or change plans. 
               Usage data flows continuously from network to billing. This integration eliminates 
               data synchronization headaches common with separate systems.
             </p>
 
-            <button
+            {/* <button
               className="
                 bg-[#8dc100]
                 text-white
@@ -143,14 +143,14 @@ export default function Mvnos() {
               "
             >
               CleverEnable MVNE
-            </button>
+            </button> */}
           </div>
 
         </div>
       </section>
 
       {/* Scale Confidently Section */}
-      <section className="w-full bg-[#fafbf8] py-16 px-4">
+      <section className="w-full bg-[#fafbf8] pb-5 px-6 md:px-8 lg:px-30">
         <div className="max-w-[900px] mx-auto text-center">
           <h2 className="text-[32px] font-semibold font-['PST Mail Sans'] mb-6">
             Scale Confidently

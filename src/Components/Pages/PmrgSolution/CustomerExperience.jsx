@@ -54,7 +54,7 @@ export default function CustomerExperience() {
 
       {/* INTUITIVE CUSTOMER PORTAL */}
      {/* INTUITIVE CUSTOMER PORTAL */}
-               <section className="px-6 lg:px-24 py-16 md:py-2 text-center">
+               <section className="px-6 lg:px-24 py-5 md:py-2 text-center">
 
                   <h2
                     className="text-[48px] leading-[1.15] font-bold mb-8"
@@ -163,7 +163,7 @@ export default function CustomerExperience() {
 
       {/* SUPPORT SECTION */}
      {/* SUPPORT SECTION — EXACT MATCH TO FIRST SCREENSHOT */}
-                  <section className="px-6 lg:px-24 py-32">
+                  <section className="px-6 lg:px-24 py-13">
                     <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 
                       {/* LEFT IMAGE */}
