@@ -149,7 +149,7 @@ export default function SpecializedMarkets() {
       {/* ======================================
           FIXED — INTERNATIONAL OPERATIONS
       ======================================= */}
-      <section className="px-6 py-24 bg-white">
+      <section className="px-6 py-5 bg-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-[1fr_500px] gap-20 items-center">
 
           {/* LEFT TEXT */}
@@ -176,7 +176,7 @@ export default function SpecializedMarkets() {
       {/* ======================================
           FIXED — INTEGRATION FLEXIBILITY (PERFECT MATCH)
       ======================================= */}
-      <section className="px-6 py-28 bg-white text-center">
+      <section className="px-6 py-16 bg-white text-center">
         <div className="max-w-[750px] mx-auto">
 
           {/* HEADING — PST MAIL SANS */}

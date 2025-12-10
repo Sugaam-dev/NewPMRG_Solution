@@ -13,7 +13,7 @@ export default function CompliancePage() {
       {/* =============================
           SECTION: TELECOM REGULATIONS
       ============================== */}
-      <section className="px-6 md:px-20 py-20 bg-white text-black">
+      <section className="px-6 md:px-20 py-10 bg-white text-black">
         <h2
           className="text-3xl md:text-5xl font-bold text-center mb-10"
           style={{
@@ -134,7 +134,7 @@ export default function CompliancePage() {
       {/* =============================
       SECTION: RECORD RETENTION
 ============================== */}
-<section className="px-6 md:px-20 pt-24 pb-10 text-center">
+<section className="px-6 md:px-20 pt-10 pb-5 text-center">
 
   <h2
    className="font-bold mb-8 leading-[1.15]"
@@ -172,7 +172,7 @@ style={{
 {/* =============================
       SECTION: REGULATORY REPORTING
 ============================== */}
-<section className="px-6 md:px-20 py-24 grid md:grid-cols-2 gap-16 items-center">
+<section className="px-6 md:px-20 py-5 grid md:grid-cols-2 gap-16 items-center">
 
   {/* IMAGE LEFT */}
   <div className="flex justify-center">

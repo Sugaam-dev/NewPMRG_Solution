@@ -157,7 +157,7 @@ export default function Mnos() {
       {/*         MIGRATION SUPPORT        */}
       {/* ================================ */}
 
-      <section className="w-full py-16 px-4">
+      <section className="w-full pb-10 px-6 md:px-8 lg:px-30">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
 
           {/* IMAGE */}
@@ -165,7 +165,7 @@ export default function Mnos() {
             <img
               src={sunset}
               alt="Migration Support"
-               className="w-full h-[600px] object-cover rounded-[32px]"
+               className="w-full h-auto object-cover rounded-[32px]"
             />
           </div>
 

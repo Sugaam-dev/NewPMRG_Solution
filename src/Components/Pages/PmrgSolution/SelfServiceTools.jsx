@@ -46,7 +46,7 @@ export default function SelfServiceTools() {
       <div className="w-full bg-white text-gray-900">
 
         {/* ================= ACCOUNT MANAGEMENT ================= */}
-        <section className="px-6 lg:px-24 py-20">
+        <section className="px-6 lg:px-24 py-10">
           <div className="max-w-screen-xl mx-auto text-center">
 
             {/* Heading */}
@@ -130,7 +130,7 @@ export default function SelfServiceTools() {
 
         {/* ================= SUBSCRIPTION MANAGEMENT ================= */}
        {/* ================= SUBSCRIPTION MANAGEMENT (PERFECT ALIGNMENT) ================= */}
-                <section className="px-6 lg:px-24 py-10 lg:py-20">
+                <section className="px-6 lg:px-10 py-5 lg:py-10">
                 <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                     {/* LEFT IMAGE — same vertical alignment as screenshot */}
@@ -162,7 +162,7 @@ export default function SelfServiceTools() {
 
         {/* ================= TROUBLE RESOLUTION ================= */}
           {/* ================= TROUBLE RESOLUTION (Perfect Match) ================= */}
-                    <section className="px-6 lg:px-24 py-20">
+                    <section className="px-6 lg:px-24 py-5">
                     <div className="max-w-screen-xl mx-auto text-center">
 
                         <SectionHeading className="mb-6">

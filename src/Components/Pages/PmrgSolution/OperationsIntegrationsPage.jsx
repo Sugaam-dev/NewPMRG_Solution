@@ -12,7 +12,7 @@ export default function OperationsIntegrationsPage() {
     <div className="w-full font-[Mona Sans] text-[#0b1f1a]">
 
       {/* ========================= BILLING OPERATIONS ========================= */}
-                           <section className="px-8 md:px-20 py-24 grid md:grid-cols-2 gap-16 place-items-center">
+                           <section className="px-8 md:px-20 py-10 grid md:grid-cols-2 gap-16 place-items-center">
 
                         {/* IMAGE BLOCK */}
                         <div className="flex justify-center">
@@ -46,7 +46,7 @@ export default function OperationsIntegrationsPage() {
 
 
       {/* ========================= PROVISIONING AUTOMATION ========================= */}
-    <section className="px-8 md:px-20 py-20 text-center">
+    <section className="px-8 md:px-20 py-5 text-center">
                 <h2 className="text-4xl font-bold leading-tight mb-6">
                     Provisioning Automation
                 </h2>
@@ -117,7 +117,7 @@ export default function OperationsIntegrationsPage() {
 
 
       {/* ========================= PRE-BUILT INTEGRATIONS ========================= */}
-      <section className="px-8 md:px-20 py-24 text-center">
+      <section className="px-8 md:px-20 py-10 text-center">
         <h2 className="text-4xl font-bold leading-tight mb-5">
           Pre-Built Integrations
         </h2>
@@ -137,7 +137,7 @@ export default function OperationsIntegrationsPage() {
       </section>
 
       {/* ========================= INTEGRATION SUPPORT ========================= */}
-      <section className="px-8 md:px-20 py-24 text-center">
+      <section className="px-8 md:px-20 py-5 text-center">
         <h2 className="text-4xl font-bold leading-tight mb-5">
           Integration Support
         </h2>

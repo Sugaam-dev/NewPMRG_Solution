@@ -13,9 +13,7 @@
         |-- abcd.jpg
         |-- business.png
         |-- business1.png
-        |-- chris.jpg
         |-- cleverenable.webp
-        |-- clevermobi.png
         |-- combined.jpg
         |-- crm-integration.png
         |-- crm.svg
@@ -26,11 +24,7 @@
         |-- implement.jpg
         |-- invoiceing.png
         |-- invoicing.png
-        |-- Karsten.jpg
         |-- kelly-quote-services.jpg
-        |-- Kelly.webp
-        |-- kok.jpg
-        |-- lily.jpg
         |-- logos
             |-- amd-logo.png
             |-- catchuplogo.webp
@@ -42,11 +36,7 @@
             |-- veselmini.jpg
             |-- vyakrute-logo.png
         |-- lunchsupport.jpg
-        |-- Maarten.jpg
-        |-- Maina.jpg
         |-- mnos.jpg
-        |-- Morris.jpg
-        |-- Mouradboustani.jpg
         |-- Navbar
             |-- approach.jpeg
             |-- compliance.jpeg
@@ -62,6 +52,7 @@
             |-- tool.jpeg
         |-- ourculture.webp
         |-- p.jpeg
+        |-- pmrghome.webp
         |-- PMRGlogo.png
         |-- projects
             |-- project-1.webp
@@ -71,10 +62,8 @@
             |-- project-5.webp
             |-- project-6.webp
         |-- provisioning.png
-        |-- rob.jpg
         |-- security.png
         |-- self.jpeg
-        |-- selfcare.png
         |-- Ski-foto.jpg
         |-- sunset.jpg
         |-- TeamsPhoto
@@ -87,7 +76,6 @@
             |-- Shilpa_A.webp
             |-- sonal-kamble.webp
             |-- udesh.jpeg
-        |-- tim.jpg
     |-- Components
         |-- Pages
             |-- Careers
@@ -144,7 +132,7 @@
         |-- milestonedata.js
         |-- mnosData.js
         |-- mvneconnectivitydata.js
-        |-- mvnosData copy.js
+        |-- mvnosData.js
         |-- operationsintegrationdata.js
         |-- ourteamsdata.js
         |-- platformhighlightsdata.js

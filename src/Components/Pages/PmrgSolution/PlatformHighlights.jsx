@@ -17,7 +17,7 @@ export default function PlatformHighlights() {
       <div className="w-full overflow-hidden">
 
         {/* ------------------ WHITE BACKGROUND CONTENT ------------------ */}
-        <div className="w-full bg-white pt-20 pb-32">
+        <div className="w-full bg-white pt-20 pb-9">
 
           {/* ------------------ RAPID PRODUCT LAUNCH ------------------ */}
           <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
@@ -54,7 +54,7 @@ export default function PlatformHighlights() {
           </div>
 
           {/* ------------------ FLEXIBLE PRODUCT CATALOG ------------------ */}
-          <div className="max-w-6xl mx-auto text-center mt-40 px-6">
+          <div className="max-w-6xl mx-auto text-center  mt-10 px-6">
 
             <h2
               className="text-[48px] font-semibold mb-6"
@@ -75,7 +75,7 @@ export default function PlatformHighlights() {
             </p>
 
             {/* ------------------ CARD GRID (PERFECT MATCH STYLE) ------------------ */}
-            <div className="bg-[#F2F7E9] rounded-[40px] p-14 mt-20 grid grid-cols-1 md:grid-cols-3 gap-16 shadow-sm">
+            <div className="bg-[#F2F7E9] rounded-[40px] p-5 mt-20 grid grid-cols-1 md:grid-cols-3 gap-16 shadow-sm">
 
               {/* CARD 1 */}
               <div className="text-left">
@@ -152,7 +152,7 @@ export default function PlatformHighlights() {
           </div>
 
           {/* ------------------ PROVEN RELIABILITY (UPDATED TO MATCH PERFECT DESIGN) ------------------ */}
-          <div className="max-w-6xl mx-auto px-6 mt-40 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div className="max-w-6xl mx-auto px-6 mt-20 grid grid-cols-1 md:grid-cols-2  items-center ">
 
             {/* LEFT CONTENT */}
             <div>
