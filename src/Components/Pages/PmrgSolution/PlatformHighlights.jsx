@@ -45,7 +45,7 @@ export default function PlatformHighlights() {
                 style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
               >
                 Launch new pricing plans, products, or features in hours instead of
-                weeks or months. CleverMobi’s flexible product catalog and automated
+                weeks or months. PMRG Solution’s flexible product catalog and automated
                 workflows eliminate lengthy deployment cycles. Create promotional
                 campaigns effortlessly and test market responses quickly. Speed to
                 market becomes competitive advantage rather than frustration.
@@ -70,7 +70,7 @@ export default function PlatformHighlights() {
               Define unlimited pricing plans, bundle combinations, and service
               offerings without platform constraints. Support simple prepaid plans,
               complex postpaid subscriptions, hybrid models, and innovative pricing
-              structures. CleverMobi adapts to your product strategy rather than
+              structures. PMRG Solution adapts to your product strategy rather than
               forcing compromises based on platform limitations.
             </p>
 
@@ -167,12 +167,12 @@ export default function PlatformHighlights() {
                 className="text-gray-700 leading-[1.7] text-[20px]"
                 style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
               >
-                Despite modern architecture, CleverMobi delivers proven reliability
+                Despite modern architecture, PMRG Solution delivers proven reliability
                 supporting thousands of customers across multiple mobile operators.
                 Robust error handling and strict data validation prevent issues.
                 Comprehensive monitoring detects problems quickly. Automated
                 recovery mechanisms minimize disruption. Innovation meets
-                dependability — CleverMobi combines performance with stability.
+                dependability — PMRG Solution combines performance with stability.
               </p>
             </div>
 

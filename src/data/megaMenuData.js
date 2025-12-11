@@ -31,7 +31,7 @@ export const megaMenuData = {
   "Who we serve": {
     title: "OSS/BSS Solutions for Mobile Operators",
     description:
-      "PMRG delivers comprehensive OSS/BSS platforms for mobile operators at every stage and market segment.",
+      "PMRG Solution delivers comprehensive OSS/BSS platforms for mobile operators at every stage and market segment.",
     items: [
       {
         id: "mvnos",
@@ -66,7 +66,7 @@ export const megaMenuData = {
     ],
   },
 
-  PmrgSolutions: {
+  "PMRG Solution": {
     title: "Complete OSS/BSS Platform Capabilities",
     description:
       "Modern modular platform covering charging, billing, customer care, analytics, and integrations.",
@@ -144,7 +144,7 @@ export const megaMenuData = {
     ],
   },
 
-  "Pmrg Way of Work": {
+  "PMRG Way of Work": {
     title: "Our Approach to OSS/BSS Delivery",
     description:
       "Modern development practices, close customer collaboration, and continuous improvement.",
@@ -192,7 +192,7 @@ export const megaMenuData = {
     ],
   },
 
-  PmrgCrew: {
+  "Team PMRG": {
     title: "The Team Behind PMRG",
     description:
       "Passionate software engineers and telecom professionals building modern OSS/BSS solutions.",

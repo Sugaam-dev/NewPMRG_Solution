@@ -96,7 +96,7 @@ export default function Mnos() {
           <div
             className="
               flex flex-col md:flex-row gap-8
-              bg-[#f4f9ed] p-10 rounded-[32px]
+              bg-[#f4f9ed] p-5 rounded-[32px]
             "
           >
 
@@ -158,10 +158,10 @@ export default function Mnos() {
       {/* ================================ */}
 
       <section className="w-full pb-10 px-6 md:px-8 lg:px-30">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-5">
 
           {/* IMAGE */}
-         <div className="w-full">
+         <div className="w-full order-2">
             <img
               src={sunset}
               alt="Migration Support"
@@ -170,12 +170,12 @@ export default function Mnos() {
           </div>
 
           {/* RIGHT TEXT COLUMN */}
-          <div className="flex flex-col justify-center">
-            <h3 className="text-[48px] font-['PST Mail Sans'] font-bold text-[#0b2a18] mb-6">
+          <div className="flex flex-col justify-center order-1">
+            <h3 className="text-[48px] font-bold text-[#0b2a18] mb-6">
               Migration Support
             </h3>
 
-            <p className="text-[20px] font-['Mona Sans'] text-[#2d3e36] leading-[1.7]">
+            <p className="text-[20px]  text-[#2d3e36] leading-[1.7]">
               Migrating from legacy BSS platforms is complex but manageable with proper planning and execution. CleverMobi’s experienced team supports the entire migration process including detailed planning and risk mitigation, phased migration approaches minimizing disruption, data migration and validation, and parallel operation during transition periods ensuring continuity.
             </p>
           </div>

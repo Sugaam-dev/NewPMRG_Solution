@@ -1,19 +1,20 @@
 // src/pages/SelfCarePortal.jsx
 import React from "react";
 import self from '../../../assets/self.jpeg'
-import { useNavigate } from "react-router-dom";
+
 const SelfCarePortal = () => {
-    const navigate =useNavigate();
-const navi=()=>{
-    navigate('/contact')
-}
+  
+const openWhatsApp = () => {
+  window.open("https://wa.me/7722017100", "_blank");
+};
+
   return (
-    <main className="w-full bg-white text-slate-900 pb-10 pt-6 md:pt-16 lg:pt-16 ">
+    <main className="w-full bg-white text-slate-900 pb-10 pt-6 lg:pt-10  ">
       {/* Hero - image LEFT, text RIGHT */}
-      <section className="w-full px-6 md:px-8 lg:px-30">
+      <section className="w-full px-6 md:px-8 lg:px-30 ">
         <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] items-center">
           {/* LEFT: image */}
-          <div className="order-1 md:order-1 rounded-3xl overflow-hidden shadow-xl bg-blue-900">
+          <div className="order-2 md:order-1 rounded-3xl overflow-hidden shadow-xl bg-blue-900">
             <div className="relative w-full pt-[70%]">
               <img
                 src={self}
@@ -26,7 +27,7 @@ const navi=()=>{
           </div>
 
           {/* RIGHT: text */}
-          <div className="order-2 md:order-2">
+          <div className="order-1 md:order-2">
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-500 mb-2">
               PMRG Solution · Self‑Care Portal
             </p>
@@ -101,7 +102,7 @@ const navi=()=>{
               systems and tailor it to your customers or citizens.
             </p>
           </div>
-          <button onClick={navi} className="mt-2 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-900 hover:bg-blue-100 transition-colors">
+          <button onClick={openWhatsApp} className="mt-2 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-900 hover:bg-blue-100 transition-colors">
             Book a demo
           </button>
         </div>

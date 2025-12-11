@@ -32,7 +32,7 @@ export default function OperationsIntegrationsPage() {
                             </h2>
 
                             <p className="text-lg leading-relaxed text-[#0b1f1a]">
-                            CleverMobi automates billing operations from usage collection through
+                            PMRG Solution automates billing operations from usage collection through
                             payment reconciliation. Automated invoice generation on flexible schedules,
                             multiple invoice formats and delivery methods, payment processing across
                             multiple channels, automated dunning with intelligent escalation, revenue
@@ -91,7 +91,7 @@ export default function OperationsIntegrationsPage() {
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-white">Partner and Reseller Management</h3>
                     <p className="text-gray-300 leading-[1.7] flex-1">
-                        For operators using indirect channels, CleverMobi supports partner operations. Partner portal access for account management,
+                        For operators using indirect channels, PMRG Solution supports partner operations. Partner portal access for account management,
                         commission calculation and payment, revenue sharing workflows, partner performance analytics, 
                         and multi-tier partner hierarchies. Channel management capabilities enable indirect sales models.
                     </p>
@@ -106,7 +106,7 @@ export default function OperationsIntegrationsPage() {
                     </div>
                     <h3 className="text-2xl font-bold mb-4 text-white">Open API Architecture</h3>
                     <p className="text-gray-300 leading-[1.7] flex-1">
-                    CleverMobi's comprehensive REST APIs enable extensive integration. Well-documented endpoints covering all platform functionality,
+                    PMRG Solution's comprehensive REST APIs enable extensive integration. Well-documented endpoints covering all platform functionality,
                         standard authentication and security, webhook support for event notifications, rate limiting and usage quotas,
                         and versioning supporting backward compatibility. Open APIs prevent vendor lock-in and enable custom development.
                     </p>
@@ -123,7 +123,7 @@ export default function OperationsIntegrationsPage() {
         </h2>
 
         <p className="max-w-4xl mx-auto text-lg leading-relaxed mb-16">
-          Beyond open APIs, CleverMobi offers pre-built integrations with common systems. Payment gateway connections for major providers, 
+          Beyond open APIs, PMRG Solution offers pre-built integrations with common systems. Payment gateway connections for major providers, 
           accounting system integration for financial data, CRM platform connections for customer data, MVNE integration especially with
            CleverEnable, and communication platform integration for SMS and email. Pre-built integrations accelerate deployment.
         </p>
@@ -143,10 +143,10 @@ export default function OperationsIntegrationsPage() {
         </h2>
 
         <p className="max-w-4xl mx-auto text-lg leading-relaxed">
-          CleverMobi’s team supports complex integration projects including
+          PMRG Solution’s team supports complex integration projects including
           architecture consultation, custom connector development, testing and
           validation, documentation and training, and ongoing integration
-          maintenance. Integration expertise ensures CleverMobi fits seamlessly
+          maintenance. Integration expertise ensures PMRG Solution fits seamlessly
           into your ecosystem.
         </p>
       </section>

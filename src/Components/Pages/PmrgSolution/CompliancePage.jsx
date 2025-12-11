@@ -29,7 +29,7 @@ export default function CompliancePage() {
             fontFamily: "Mona Sans, Helvetica, Arial, sans-serif",
           }}
         >
-          CleverMobi supports telecommunications regulatory requirements
+          PMRG Solution supports telecommunications regulatory requirements
           including transparent pricing and contract information, service
           quality reporting capabilities, number portability support and
           documentation, and regulatory reporting functionality. Platform
@@ -65,7 +65,7 @@ export default function CompliancePage() {
         className="leading-7 text-[17px]"
         style={{ fontFamily: "Mona Sans, Helvetica, Arial, sans-serif" }}
       >
-        GDPR and privacy regulations require specific capabilities built into CleverMobi. Customer consent management and tracking,
+        GDPR and privacy regulations require specific capabilities built into PMRG Solution. Customer consent management and tracking,
          data subject rights including access and deletion, data retention policies and automated enforcement, privacy 
         impact assessment support, and data processing agreements meeting requirements. Privacy compliance prevents costly violations.
       </p>
@@ -153,7 +153,7 @@ style={{
       fontFamily: "Mona Sans, Helvetica, Arial, sans-serif",
     }}
   >
-    Regulations require retaining records for specified periods. CleverMobi manages
+    Regulations require retaining records for specified periods. PMRG Solution manages
     retention automatically with configurable retention policies by record type,
     automated archival of aged records, secure storage meeting regulations, and
     retrieval capabilities for audits or legal requests. Automated retention ensures
@@ -201,7 +201,7 @@ style={{
         fontFamily: "Mona Sans, Helvetica, Arial, sans-serif",
       }}
     >
-      Many jurisdictions require periodic regulatory reports. CleverMobi
+      Many jurisdictions require periodic regulatory reports. PMRG Solution
       supports reporting requirements with standard report templates for
       common filings, data export for external reporting tools, audit
       support with comprehensive records, and documentation of compliance
@@ -230,7 +230,7 @@ style={{
             fontFamily: "Mona Sans, Helvetica, Arial, sans-serif",
           }}
         >
-          Telecommunications regulations evolve continuously. CleverMobi monitors
+          Telecommunications regulations evolve continuously. PMRG Solution monitors
           regulatory changes affecting mobile operators, implements required
           platform updates, communicates changes impacting operations, and
           ensures continued compliance as regulations evolve. Regulatory

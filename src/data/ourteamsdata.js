@@ -6,7 +6,7 @@ const ourteamsdata = {
   title: "Passionate software developers",
   // highlight: "mobile operators",
   description:
-    "CleverMobi's team combines deep software engineering expertise with telecommunications domain knowledge. Our professionals bring decades of combined experience from software development, mobile billing, and MVNO operations to deliver exceptional platform quality.",
+    "PMRG Solution's team combines deep software engineering expertise with telecommunications domain knowledge. Our professionals bring decades of combined experience from software development, mobile billing, and MVNO operations to deliver exceptional platform quality.",
 // showAnimation: false
 };
 

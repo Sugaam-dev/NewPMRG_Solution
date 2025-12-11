@@ -18,20 +18,21 @@ import sonal from "../../../assets/TeamsPhoto/sonal-kamble.webp";
 import udesh from "../../../assets/TeamsPhoto/udesh.jpeg";
 
 const members = [
-  { name: "Pratima Mishra", img: pratima },
-  { name: "Rekha Ghosh", img: rekha },
-  { name: "Bhadrayu Panda", img: bhadrayu },
-  { name: "Pamir Nayak", img: pamir },
-  { name: "Shilpa Amminabhavi", img: shilpa },
-  { name: "Advait Tiwari", img: advait },
-  { name: "Rohit Ghosh", img: rohit },
-  { name: "Sonal Kamble", img: sonal },
-   { name: "Udesh", img: udesh },
+  { name: "Pratima Mishra", img: pratima, designation: "Joint Director" },
+  { name: "Rekha Ghosh", img: rekha, designation: "Joint Director" },
+  { name: "Bhadrayu Panda", img: bhadrayu, designation: "Senior Developer" },
+  { name: "Pamir Nayak", img: pamir, designation: "Web Developer" },
+  { name: "Shilpa Amminabhavi", img: shilpa, designation: "Senior Developer" },
+  { name: "Advait Tiwari", img: advait, designation: "AI Lead" },
+  { name: "Rohit Ghosh", img: rohit, designation: "Web Developer" },
+  { name: "Sonal Kamble", img: sonal, designation: "Creative Designer" },
+  { name: "Udesh", img: udesh, designation: "Developer" },
 ];
+
 
 const TeamCarousel = () => {
   return (
-    <section className="w-full bg-white pb-15">
+    <section className="w-full bg-white  ">
       <div className="max-w-[1120px] mx-auto px-6">
        
 
@@ -71,9 +72,15 @@ const TeamCarousel = () => {
                     loading="lazy"
                   />
                 </div>
-                <p className="font-pst font-semibold text-[16px] text-slate-900 text-center">
-                  {m.name}
-                </p>
+              <p className="font-pst font-semibold text-[16px] text-slate-900 text-center">
+  {m.name}
+</p>
+{m.designation && (
+  <p className="mt-1 text-[13px] text-gray-500 text-center">
+    {m.designation}
+  </p>
+)}
+
               </div>
             </SwiperSlide>
           ))}

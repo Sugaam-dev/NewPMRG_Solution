@@ -3,7 +3,7 @@ import React from "react";
 import erp from'../../../assets/erp.jpg'
 const Erp = () => {
   return (
-    <main className="w-full bg-white text-slate-900 lg:pt-15 pb-15">
+    <main className="w-full bg-white text-slate-900 lg:pt-15 lg:pb-15">
       {/* Full-width hero */}
       <section className="w-full px-6 md:px-8 lg:px-30">
         <div className="grid gap-8 md:grid-cols-[1.2fr_1fr] items-center">

@@ -193,7 +193,7 @@ export default function CustomerExperience() {
                           Customer service representatives access complete customer information enabling efficient support. 
                           Full account history, usage details, payment records, and service configurations are immediately available.
                            Representatives make changes that take effect instantly. 
-                          Integration between support tools and CleverMobi eliminates frustrating “let me check another system” experiences.
+                          Integration between support tools and PMRG Solution eliminates frustrating “let me check another system” experiences.
                         </p>
                       </div>
 

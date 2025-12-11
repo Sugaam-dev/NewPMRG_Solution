@@ -69,7 +69,7 @@ export default function SpecializedMarkets() {
 
 
     <HeroSection {...specializedData}/>
-        <main className="font-['Mona_Sans'] bg-white text-[#2d3e36]">
+        <main className=" bg-white text-[#2d3e36]">
 
       {/* ======================================
           FIXED — B2B SECTION 
@@ -84,7 +84,7 @@ export default function SpecializedMarkets() {
 
           {/* RIGHT TEXT */}
           <div className="flex flex-col justify-center">
-            <h2 className="font-['PST_Mail_Sans'] text-[52px] font-bold leading-[1.15] mb-6">
+            <h2 className=" text-[52px] font-bold leading-[1.15] mb-6">
               B2B Mobile Services
             </h2>
 
@@ -109,7 +109,7 @@ export default function SpecializedMarkets() {
           {/* CARD 1 */}
           <div className="bg-[#0f3226] border border-[#1b4435] rounded-[18px] p-10 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
             <div className="mb-4"><IconIoT /></div>
-            <h3 className="font-['PST_Mail_Sans'] text-[22px] font-semibold leading-[1.3] mb-4">
+            <h3 className=" text-[22px] font-semibold leading-[1.3] mb-4">
               IoT Connectivity<br />Management
             </h3>
             <p className="text-[16px] leading-[1.75] text-white/80">
@@ -122,7 +122,7 @@ export default function SpecializedMarkets() {
           {/* CARD 2 */}
           <div className="bg-[#0f3226] border border-[#1b4435] rounded-[18px] p-10 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
             <div className="mb-4"><IconModel /></div>
-            <h3 className="font-['PST_Mail_Sans'] text-[22px] font-semibold leading-[1.3] mb-4">
+            <h3 className=" text-[22px] font-semibold leading-[1.3] mb-4">
               Custom Business<br />Models
             </h3>
             <p className="text-[16px] leading-[1.75] text-white/80">
@@ -134,7 +134,7 @@ export default function SpecializedMarkets() {
           {/* CARD 3 */}
           <div className="bg-[#0f3226] border border-[#1b4435] rounded-[18px] p-10 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
             <div className="mb-4"><IconWholesale /></div>
-            <h3 className="font-['PST_Mail_Sans'] text-[22px] font-semibold leading-[1.3] mb-4">
+            <h3 className=" text-[22px] font-semibold leading-[1.3] mb-4">
               Wholesale & MVNO<br />Enablement
             </h3>
             <p className="text-[16px] leading-[1.75] text-white/80">
@@ -154,7 +154,7 @@ export default function SpecializedMarkets() {
 
           {/* LEFT TEXT */}
           <div>
-            <h2 className="font-['PST_Mail_Sans'] text-[52px] font-bold leading-[1.15] mb-6">
+            <h2 className=" text-[52px] font-bold leading-[1.15] mb-6">
               International<br />Operations
             </h2>
 
@@ -180,12 +180,12 @@ export default function SpecializedMarkets() {
         <div className="max-w-[750px] mx-auto">
 
           {/* HEADING — PST MAIL SANS */}
-          <h2 className="font-['PST_Mail_Sans'] text-[52px] font-bold leading-[1.15] mb-6">
+          <h2 className=" text-[52px] font-bold leading-[1.15] mb-6">
             Integration Flexibility
           </h2>
 
           {/* PARAGRAPH — MONA SANS */}
-          <p className="font-['Mona_Sans'] text-[20px] font-normal leading-[1.7] tracking-normal text-[#2d3e36]">
+          <p className=" text-[20px] font-normal leading-[1.7] tracking-normal text-[#2d3e36]">
             Specialized operations often require unique integrations. PMRG-Solution’s open API
             architecture connects with industry-specific systems, custom applications, legacy
             infrastructure requiring continued operation, and partner ecosystems. Integration

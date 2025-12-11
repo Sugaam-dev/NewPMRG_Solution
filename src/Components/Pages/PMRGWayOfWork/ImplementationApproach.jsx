@@ -35,26 +35,21 @@ export default function ImplementationApproach() {
     },
   ];
 
-  // Auto-advance using setInterval - SIMPLEST APPROACH
+  // Auto-advance
   useEffect(() => {
     intervalRef.current = setInterval(() => {
       setActiveStep((prev) => (prev % steps.length) + 1);
     }, 5000);
 
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [steps.length]);
 
   const handleStepClick = (stepId) => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
+    if (intervalRef.current) clearInterval(intervalRef.current);
     setActiveStep(stepId);
-    
-    // Restart interval after manual click
+
     setTimeout(() => {
       intervalRef.current = setInterval(() => {
         setActiveStep((prev) => (prev % steps.length) + 1);
@@ -86,9 +81,12 @@ export default function ImplementationApproach() {
                 {steps.map((step) => {
                   const isActive = activeStep === step.id;
                   return (
-                    <div key={step.id} className="flex items-start space-x-4">
-                      {/* Step circle */}
-                      <div className="flex-shrink-0 mt-1">
+                    <div
+                      key={step.id}
+                      className="flex items-stretch space-x-4"
+                    >
+                      {/* Step circle + line */}
+                      <div className="flex flex-col items-center flex-shrink-0">
                         <button
                           onClick={() => handleStepClick(step.id)}
                           className={`w-8 h-8 flex items-center justify-center rounded-full border-3 font-bold text-sm transition-all duration-300 ${
@@ -96,21 +94,14 @@ export default function ImplementationApproach() {
                               ? "bg-blue-500 border-blue-500 text-white shadow-lg"
                               : "bg-white border-gray-300 text-gray-600 hover:bg-gray-50 hover:border-gray-400"
                           }`}
-                          style={{ minHeight: '32px' }}
+                          style={{ minHeight: "32px" }}
                         >
                           {step.id}
                         </button>
-                        
-                        {/* Animated line - PURE CSS */}
+
+                        {/* Line fills full text height */}
                         {isActive && (
-                          <div 
-                            className="w-1 bg-blue-500 rounded-full ml-3.5 mt-1 animate-grow-line"
-                            style={{ 
-                              height: '80px',
-                              animationDuration: '5s',
-                              animationPlayState: 'running'
-                            }}
-                          />
+                          <div className="flex-1 w-[3px] bg-blue-500 rounded-full mt-2 animate-grow-line" />
                         )}
                       </div>
 
@@ -142,7 +133,7 @@ export default function ImplementationApproach() {
               <img
                 src={implImg1}
                 alt="Implementation"
-                className="w-full h-auto  object-contain"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
@@ -209,10 +200,12 @@ export default function ImplementationApproach() {
       <style jsx>{`
         @keyframes grow-line {
           from {
-            height: 0;
+            transform: scaleY(0);
+            transform-origin: top;
           }
           to {
-            height: 80px;
+            transform: scaleY(1);
+            transform-origin: top;
           }
         }
         @keyframes slideIn {

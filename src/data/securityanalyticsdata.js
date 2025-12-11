@@ -5,7 +5,7 @@ const securityanalyticsdata = {
   title: "Protection and Insights",
   // highlight: "mobile operators",
   description:
-    "CleverMobi combines robust security protecting customer data and business operations with powerful analytics providing insights driving growth. Security and analytics are fundamental platform capabilities rather than afterthoughts or add-ons.",
+    "PMRG Solution combines robust security protecting customer data and business operations with powerful analytics providing insights driving growth. Security and analytics are fundamental platform capabilities rather than afterthoughts or add-ons.",
 
 };
 

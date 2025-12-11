@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { megaMenuData } from "../../../data/megaMenuData";
-import logo from "../../../assets/PMRGlogo.png";
+import logo from "../../../assets/PMRGLogo.png";
 
 import {
   ChevronDown,
@@ -19,9 +19,9 @@ import {
 const menuItems = [
   { label: "Home", hasDropdown: false, href: "/" },
   { label: "Who we serve", hasDropdown: true },
-  { label: "PmrgSolutions", hasDropdown: true },
-  { label: "Pmrg Way of Work", hasDropdown: true },
-  { label: "PmrgCrew", hasDropdown: true },
+  { label: "PMRG Solution", hasDropdown: true },
+  { label: "PMRG Way of Work", hasDropdown: true },
+  { label: "Team PMRG", hasDropdown: true },
   { label: "Contact", hasDropdown: false, href: "/contact" },
 ];
 
@@ -206,13 +206,13 @@ const Navbar = () => {
             <img
               src={logo}
               alt="PMRG Solution"
-              className="h-12 w-auto md:h-16"
+              className="h-16 w-auto md:h-18"
             />
           </Link>
         </div>
 
         {/* Desktop nav (≥1024px) */}
-        <div className="relative hidden flex-1 items-center justify-center gap-6 text-sm font-medium lg:flex">
+        <div className="relative hidden flex-1 items-center justify-center gap-5  text-sm font-medium lg:flex">
           {menuItems.map((item) => {
             const isOpen = openMenu === item.label;
 
@@ -333,7 +333,7 @@ const Navbar = () => {
                 <img
                   src={logo}
                   alt="PMRG Solution"
-                  className="h-10 w-auto"
+                  className="h-16 w-auto"
                 />
               </Link>
             </div>

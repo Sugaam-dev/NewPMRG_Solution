@@ -4,10 +4,10 @@ import implement from '../../../assets/implement.jpg'
 function Teams() {
   return (
     <>
-      <section className="w-full bg-white pt-24 pb-20">
+      <section className="w-full bg-white pt-5 lg:pt-10 pb-5 lg:pb-15">
       <div className="max-w-[1120px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* LEFT IMAGE */}
-        <div className="rounded-[32px] overflow-hidden shadow-md">
+        <div className="order-2 rounded-[32px] overflow-hidden shadow-md">
           <div className="relative w-full pt-[100%] lg:pt-[80%]">
             <img
               src={implement}
@@ -19,7 +19,7 @@ function Teams() {
         </div>
 
         {/* RIGHT TEXT */}
-        <div className="text-[#111827]">
+        <div className="text-[#111827] order-1">
           <p className="text-[16px] font-medium text-blue-600 mb-3">
             Our team
           </p>
@@ -33,7 +33,7 @@ function Teams() {
           </h2>
 
           <p className="font-pst lg:text-lg leading-[1.7] text-[#4b5563] max-w-[520px]">
-            At CleverMobi, we believe a flexible, robust BSS is essential for
+            At PMRG Solution, we believe a flexible, robust BSS is essential for
             telecom success. Our passionate experts simplify business
             processes, deliver flexible pricing and discounts, and provide
             proven carrier‑grade solutions. We gladly share our industry
@@ -56,7 +56,7 @@ function Teams() {
 
           <p className="font-mona lg:text-lg leading-[1.7] font-normal max-w-[780px] mx-auto text-[#4b5563]">
             We are a (tech)-enthusiastic close group of colleagues who have
-            innovation as their top priority. Every CleverMobi team member is
+            innovation as their top priority. Every PMRG Solution team member is
             free to share ideas to make things smarter. Sounds like a fit?
             We’d love to get to know you!
           </p>

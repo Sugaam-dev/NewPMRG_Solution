@@ -8,6 +8,7 @@ import shilpa from "../../../assets/TeamsPhoto/Shilpa_A.webp";
 import advait from "../../../assets/TeamsPhoto/advait-tiwari.webp";
 import rohit from "../../../assets/TeamsPhoto/photo_rohit_new.webp";
 import sonal from "../../../assets/TeamsPhoto/sonal-kamble.webp";
+import udesh from "../../../assets/TeamsPhoto/udesh.jpeg";
 import img from '../../../assets/Navbar/tm.jpeg'
 import HeroSection from "../HeroSection";
 import { useNavigate } from "react-router-dom";
@@ -16,14 +17,15 @@ import { useNavigate } from "react-router-dom";
 
 export default function OurTeamPage() {
   const team = [
-    { name: "Pratima Mishra", img: pratima },
-    { name: "Rekha Ghosh", img: rekha },
-    { name: "Bhadrayu Panda", img: bhadrayu },
-    { name: "Pamir Nayak", img: pamir },
-    { name: "Shilpa Amminabhavi", img: shilpa },
-    { name: "Advait Tivari", img: advait },
-    { name: "Rohit Ghosh", img: rohit },
-    { name: "Sonal Kamble", img: sonal },
+  { name: "Pratima Mishra", img: pratima, designation: "Joint Director" },
+  { name: "Rekha Ghosh", img: rekha, designation: "Joint Director" },
+  { name: "Bhadrayu Panda", img: bhadrayu, designation: "Senior Developer" },
+  { name: "Pamir Nayak", img: pamir, designation: "Web Developer" },
+  { name: "Shilpa Amminabhavi", img: shilpa, designation: "Senior Developer" },
+  { name: "Advait Tiwari", img: advait, designation: "AI Lead" },
+  { name: "Rohit Ghosh", img: rohit, designation: "Web Developer" },
+  { name: "Sonal Kamble", img: sonal, designation: "Creative Designer" },
+  { name: "Udesh", img: udesh, designation: "Developer" },
   ];
    const navigation =useNavigate();
    const handleNavigation=()=>{
@@ -87,6 +89,9 @@ export default function OurTeamPage() {
                   <div className="mt-3 font-pst text-[15px] font-semibold">
                     {member.name}
                   </div>
+                   <p className="mt-1 text-[13px] text-gray-500 text-center">
+    {member.designation}
+  </p>
                 </div>
               ))}
             </div>

@@ -48,7 +48,7 @@ export default function SecurityAnalyticsPage() {
         <h2 className="mb-5 text-4xl font-bold leading-tight">Data Privacy</h2>
 
         <p className="max-w-4xl mx-auto text-lg leading-relaxed font-normal">
-          Customer data privacy is paramount and built into CleverMobi. GDPR
+          Customer data privacy is paramount and built into PMRG Solution. GDPR
           compliance with appropriate data handling, customer consent management
           and preferences, data retention policies and automatic purging,
           privacy-by-design principles throughout platform, and data processing
@@ -65,7 +65,7 @@ export default function SecurityAnalyticsPage() {
           </h2>
 
           <p className="max-w-3xl mx-auto text-lg leading-relaxed font-normal text-gray-300">
-            Telecommunications fraud costs operators significantly. CleverMobi
+            Telecommunications fraud costs operators significantly. PMRG Solution
             includes fraud detection capabilities monitoring unusual usage
             patterns, identifying suspicious account activities, detecting
             payment fraud attempts, alerting operators to potential fraud, and

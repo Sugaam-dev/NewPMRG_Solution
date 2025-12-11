@@ -60,13 +60,10 @@ function Footer() {
 
         {/* Bottom row */}
         <div className="px-10 lg:px-24 pb-8 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-400">
-          <p className="flex items-center gap-1 text-center md:text-left">
-            Tech innovation from Eindhoven
-            <span className="w-3 h-3 rounded-full border border-blue-500" />
-          </p>
+        
 
           <Link
-            to="/privacy"
+            to=""
             className="hover:text-blue-400 transition-colors"
           >
             Privacy statement

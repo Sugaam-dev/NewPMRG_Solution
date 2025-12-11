@@ -15,7 +15,7 @@ const ContactPage = () => {
           We'd like to hear from you
         </h1>
         <p className="max-w-2xl lg:text-lg text-slate-200 leading-relaxed px-4">
-          Discover how CleverMobi can transform your business. Reach out with your questions or requests,
+          Discover how PMRG Solution can transform your business. Reach out with your questions or requests,
           and our experts will swiftly assist you.
         </p>
       </div>
@@ -79,16 +79,7 @@ const ContactPage = () => {
                 </p>
               </div>
 
-              {/* Postal address */}
-              <div className="space-y-2 text-sm leading-relaxed pt-4">
-                <div className="flex items-center gap-2 text-blue-600 font-medium">
-                  <MapPin className="w-4 h-4" />
-                  <span>Postal address</span>
-                </div>
-                <p className="text-[#111827]">
-               E2-103, Sr No-296,Revell Orchid, Porwal Pune City, Pune-411047.
-                </p>
-              </div>
+             
             </div>
 
             {/* Right: embedded map */}
@@ -107,47 +98,9 @@ const ContactPage = () => {
           {/* BOTTOM ROW: company card + image */}
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Company details card */}
-            <div className="bg-[#f0f2e6] rounded-3xl px-10 py-8 text-sm leading-relaxed w-full">
-              <div className="grid grid-cols-2 gap-10 mb-6">
-                <div>
-                  <h3 className="font-semibold mb-1">Company details</h3>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-[#6b7280] mb-1">
-                    Company name
-                  </p>
-                  <p className="font-medium text-[#111827]">
-                    PMRG-Solution
-                  </p>
-                </div>
-              </div>
+           
 
-              <div className="grid grid-cols-2 gap-10">
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-[#6b7280] mb-1">
-                    CoC number
-                  </p>
-                  <p className="text-[#111827]">xxxxx</p>
-                </div>
-                <div>
-                  <p className="text-xs uppercase tracking-wide text-[#6b7280] mb-1">
-                    VAT number
-                  </p>
-                  <p className="text-[#111827]">xxxxxxxxxx</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Right image */}
-            <div className="flex justify-end">
-              <div className="w-full max-w-sm rounded-3xl overflow-hidden shadow-md">
-                <img
-                  src={tm}
-                  alt="Team at work"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>

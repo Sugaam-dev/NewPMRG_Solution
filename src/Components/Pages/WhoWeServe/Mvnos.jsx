@@ -102,11 +102,11 @@ export default function Mvnos() {
       </section>
 
       {/* Seamless MVNE Integration Section – FIXED TO MATCH FIRST IMAGE */}
-      <section className="w-full  bg-white pb-20 px-6 md:px-8 lg:px-30 ">
+      <section className="w-full  bg-white pb-20 px-6 md:px-8 lg:px-30 pt-5">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
           {/* IMAGE */}
-          <div className="w-full">
+          <div className="w-full order-2">
             <img
               src={sunset}
               alt="Network tower at sunset"
@@ -115,9 +115,9 @@ export default function Mvnos() {
           </div>
 
           {/* TEXT BLOCK */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center order-1">
             <h2 className="text-[40px] font-semibold leading-tight mb-6 text-[#111]">
-              Seamless MVNE<br />Integration
+              Seamless MVNE Integration
             </h2>
 
             <p className="text-[20px] text-[#555] leading-[1.8] mb-2 max-w-[550px]">

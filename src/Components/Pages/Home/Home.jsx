@@ -18,7 +18,7 @@ function Home() {
 <Crm/>
 <Erp/>
 <SelfCarePortal/>
-<BusinessInsights/>
+{/* <BusinessInsights/> */}
    <ProjectsCarousel/>
       <Teams/>
       <TestimonialCarousel/>

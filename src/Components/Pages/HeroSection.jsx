@@ -11,6 +11,7 @@ const HeroSection = ({
   showAnimation = true,
 }) => {
   return (
+    //  <section className="relative overflow-hidden bg-gradient-to-br from-[#030712] via-[#020617] to-[#0b1f6b] pt-16 md:pt-10">
     <section className="relative overflow-hidden bg-gradient-to-br from-[#0b1f6b] via-[#020617] to-[#030712] pt-16 md:pt-10">
       <style jsx>{`
         .hero-shapes {
@@ -54,13 +55,13 @@ const HeroSection = ({
           .hero-shapes { 
             width: clamp(260px, 88vw, 360px); 
             height: clamp(210px, 68vw, 300px); 
-            right: -10px; bottom: -50px; 
+            right: -10px; bottom: -90px; 
           }
           .container { 
             flex-direction: column !important; 
             align-items: stretch !important;
             gap: 3rem !important; 
-            padding: 2rem 1rem !important;
+            padding: 3rem 1rem !important;
           }
           .image-section { 
             order: 1 !important; 

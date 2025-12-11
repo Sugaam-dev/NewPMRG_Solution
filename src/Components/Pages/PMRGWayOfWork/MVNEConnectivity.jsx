@@ -131,7 +131,7 @@ export default function MVNEConnectivity() {
               Standard MVNE<br />Protocols
             </h2>
 
-            <p className=" text-[20px] leading-[1.7] tracking-normal text-[#1a1f1c] max-w-[620px]">
+            <p className=" text-[16px] leading-[1.7] tracking-normal text-[#1a1f1c] max-w-[620px]">
               PMRG Solution supports standard telecommunications protocols for MVNE
               integration. Industry-standard interfaces enable connections to most MVNEs
               including KPN, Vodafone, Odido, and international network enablers.

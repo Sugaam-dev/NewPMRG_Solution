@@ -6,7 +6,7 @@ const selfservicetooldata = {
   title: "Empower Customer Independence",
   // highlight: "mobile operators",
   description:
-    "CleverMobi’s comprehensive self-service capabilities empower customers to manage accounts independently. Reduced support volume lowers costs while improved customer control increases satisfaction. Self-service tools benefit both customers and operators.",
+    "PMRG Solution’s comprehensive self-service capabilities empower customers to manage accounts independently. Reduced support volume lowers costs while improved customer control increases satisfaction. Self-service tools benefit both customers and operators.",
 
 };
 
