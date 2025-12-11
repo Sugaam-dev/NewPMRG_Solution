@@ -152,4 +152,5 @@
         |-- PTSans-Regular.ttf
     |-- index.css
     |-- main.jsx
+|-- vercel.json
 |-- vite.config.js
