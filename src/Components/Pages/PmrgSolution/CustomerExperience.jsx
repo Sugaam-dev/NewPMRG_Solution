@@ -74,11 +74,13 @@ export default function CustomerExperience() {
                     design reduces support calls and improves satisfaction.
                   </p>
 
-                  <img
-                    src={PortalPhone}
-                    alt="Customer Portal"
-                    className="rounded-xl w-full max-w-4xl mx-auto shadow-lg"
-                  />
+           <div className="mx-auto max-w-md md:max-w-lg lg:max-w-xl">
+  <img
+    src={PortalPhone}
+    alt="Customer Portal"
+    className="w-full h-56 md:h-64 lg:h-72 object-cover rounded-xl shadow-lg"
+  />
+</div>
                 </section>
 
 
