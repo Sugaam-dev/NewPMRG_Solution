@@ -1,8 +1,8 @@
 // src/data/heroData.js
-
+import heroImg from '../assets/Navbar/operation.png'
 
 const operationsintegrationdata = {
-  // image: heroImg,
+  image: heroImg,
   title: "Streamlined Operations and Ecosystem Connectivity",
   // highlight: "mobile operators",
   description:

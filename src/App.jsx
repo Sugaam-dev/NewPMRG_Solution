@@ -65,7 +65,7 @@ function App() {
           <Route path="pmrg-solution/security-analytics" element={<SecurityAnalyticsPage/>}/>
           <Route path="pmrg-solution/operations-integrations" element={<OperationsIntegrationsPage/>}/>
           <Route path="pmrg-solution/compliance" element={<CompliancePage/>}/>
-          <Route path="pmrg-solution/pmrg-enable-integration" element={<PMRGEnableIntegration/>}/>
+          <Route path="pmrg-solution/pmrg-solution-integration" element={<PMRGEnableIntegration/>}/>
 
 
           <Route path="pmrg-way-of-work/developmentphilosophy" element={<DevelopmentPhilosophyPage/>}/>

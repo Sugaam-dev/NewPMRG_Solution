@@ -1,5 +1,5 @@
 // src/data/heroData.js
-import heroImg from "../assets/Navbar/mvne.png";;
+import heroImg from "../assets/Navbar/mvne.webp";;
 
 const pmrgenableintegrationdata = {
   image: heroImg,

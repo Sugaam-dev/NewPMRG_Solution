@@ -7,7 +7,7 @@ const ContactPage = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <div className="pt-40 pb-40 text-center flex flex-col items-center justify-center bg-gradient-to-br from-[#0b1f6b] via-[#040b2d] to-[#071028]">
+      <div className="pt-40 pb-40 text-center flex flex-col items-center justify-center bg-gradient-to-br from-[#020410] via-[#0f172a] to-[#172554]">
         <span className="text-sm uppercase tracking-[0.2em] text-[#a3bffa] mb-2">
           contact
         </span>

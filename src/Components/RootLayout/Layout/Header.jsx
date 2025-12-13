@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { megaMenuData } from "../../../data/megaMenuData";
-import logo from "../../../assets/PMRGLogo.png";
+import logo from "../../../assets/PMRGlogo.png";
 
 import {
   ChevronDown,
@@ -128,7 +128,7 @@ const Navbar = () => {
       config.items[0];
 
     return (
-      <div className="flex flex-col p-3 md:min-h-[260px] md:flex-row">
+      <div className="flex flex-col p-3 md:min-h-[260px] md:flex-row md:items-start">
         {/* Left: description */}
         <div className="w-full border-b border-slate-100 p-6 md:w-[35%] md:border-b-0 md:border-r md:p-8">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.15em] text-blue-700">
@@ -159,11 +159,11 @@ const Navbar = () => {
 
         {/* Right: image + text */}
         <div className="flex w-full flex-col md:w-[30%]">
-          <div className="flex-1 overflow-hidden md:rounded-r-3xl">
+          <div className="overflow-hidden md:rounded-r-3xl">
             <img
               src={activeItem.image}
               alt={activeItem.heading}
-              className="h-full w-full object-cover"
+              className="w-full h-auto object-contain"
             />
           </div>
           <div className="border-t border-slate-100 bg-white px-6 py-4 md:border-t-0">
@@ -198,21 +198,27 @@ const Navbar = () => {
     >
       <nav
         ref={desktopNavRef}
-        className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 md:px-8 md:py-4"
+        className="mx-auto flex w-full max-w-7xl items-center justify-between px-2 py-2 md:px-4 md:py-2"
       >
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <Link to="/">
-            <img
-              src={logo}
-              alt="PMRG Solution"
-              className="h-16 w-auto md:h-18"
-            />
-          </Link>
-        </div>
+     {/* Logo */}
+<div className="flex items-center gap-3">
+  <Link to="/">
+    <img
+      src={logo}
+      alt="PMRG Solution"
+      className={
+        (scrolled
+          ? "h-18 md:h-20"
+          : "h-23 md:h-27") +
+        " w-auto transition-all duration-300 ease-out"
+      }
+    />
+  </Link>
+</div>
+
 
         {/* Desktop nav (≥1024px) */}
-        <div className="relative hidden flex-1 items-center justify-center gap-5  text-sm font-medium lg:flex">
+        <div className="relative hidden flex-1 items-center justify-center gap-5 text-sm font-medium lg:flex">
           {menuItems.map((item) => {
             const isOpen = openMenu === item.label;
 

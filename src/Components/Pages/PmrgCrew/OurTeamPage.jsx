@@ -11,7 +11,7 @@ import sonal from "../../../assets/TeamsPhoto/sonal-kamble.webp";
 import udesh from "../../../assets/TeamsPhoto/udesh.jpeg";
 import img from '../../../assets/Navbar/tm.jpeg'
 import HeroSection from "../HeroSection";
-import { useNavigate } from "react-router-dom";
+
 // Add this line to fix the error:
 // import chris from "../../../assets/chris.jpg"; 
 
@@ -27,9 +27,9 @@ export default function OurTeamPage() {
   { name: "Sonal Kamble", img: sonal, designation: "Creative Designer" },
   { name: "Udesh", img: udesh, designation: "Developer" },
   ];
-   const navigation =useNavigate();
+  
    const handleNavigation=()=>{
-    navigation('/contact');
+window.open("https://wa.me/7722017100", "_blank");
    }
 
   return (

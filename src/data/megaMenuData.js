@@ -21,11 +21,11 @@ import highlight from "../assets/Navbar/platform.jpeg";
 import experience from "../assets/Navbar/experience.jpeg";
 import tool from "../assets/Navbar/tool.jpeg";
 import security from "../assets/Navbar/security.jpeg";
-import compliance from "../assets/Navbar/compliance.jpeg";
-import mvne from "../assets/Navbar/mvne.png";
+import compliance from "../assets/Navbar/compailance.webp";
+import mvne from "../assets/Navbar/mvne.webp";
 import Approach from "../assets/Navbar/approach.jpeg";
 import tm from "../assets/Navbar/tm.jpeg";
-import operation from "../assets/Navbar/operation.jpeg";
+import operation from "../assets/Navbar/operation.png";
 
 export const megaMenuData = {
   "Who we serve": {
@@ -136,7 +136,7 @@ export const megaMenuData = {
         label: "MVNE Integration",
         icon: Heart,
         active: false,
-        href: "/pmrg-solution/pmrg-enable-integration", // fixed leading slash
+        href: "/pmrg-solution/pmrg-solution-integration", // fixed leading slash
         image: mvne,
         heading: "MVNE Integration",
         text: "Deep integration capabilities for Mobile Virtual Network Enablers.",

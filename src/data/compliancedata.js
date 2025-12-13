@@ -1,5 +1,5 @@
 // src/data/heroData.js
-import heroImg from "../assets/Navbar/compliance.jpeg";
+import heroImg from "../assets/Navbar/compailance.webp";
 const compliancedata = {
   image: heroImg,
   title: "Meeting Regulatory Requirements",

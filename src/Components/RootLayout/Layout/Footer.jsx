@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="      bg-gradient-to-br from-[#0b1f6b] via-[#050f39] to-[#0b1b47] text-slate-100">
+    <footer className="     bg-gradient-to-br from-[#020410] via-[#0f172a] to-[#172554] text-slate-100">
       {/* Make footer taller */}
       <div className="min-h-[260px] flex flex-col justify-between">
         {/* Top row: logo + nav */}
