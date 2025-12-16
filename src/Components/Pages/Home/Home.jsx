@@ -1,32 +1,32 @@
-import React from 'react'
-import HeroSection from '../HeroSection'
-import heroData  from '../../../data/heroData'
-import PmrgFeaturs from './PmrgFeaturs'
-import Crm from './Crm'
-import BusinessInsights from './BusinessInsights'
-import Teams from './Teams'
-import TestimonialCarousel from './TestimonialCarousel'
-import ProjectsCarousel from './ProjectsCarousel'
-import Erp from './Erp'
-import SelfCarePortal from './SelfCarePortal'
+import React, { Suspense } from 'react';
+import HeroSection from '../HeroSection';
+import heroData from '../../../data/heroData';
+
+const PmrgFeaturs = React.lazy(() => import('./PmrgFeaturs'));
+const Crm = React.lazy(() => import('./Crm'));
+const Erp = React.lazy(() => import('./Erp'));
+const SelfCarePortal = React.lazy(() => import('./SelfCarePortal'));
+const ProjectsCarousel = React.lazy(() => import('./ProjectsCarousel'));
+const Teams = React.lazy(() => import('./Teams'));
+const TestimonialCarousel = React.lazy(() => import('./TestimonialCarousel'));
+// const BusinessInsights = React.lazy(() => import('./BusinessInsights'));
 
 function Home() {
   return (
     <>
-   <HeroSection {...heroData} />
-<PmrgFeaturs/>
-<Crm/>
-<Erp/>
-<SelfCarePortal/>
-{/* <BusinessInsights/> */}
-   <ProjectsCarousel/>
-      <Teams/>
-      <TestimonialCarousel/>
-   
+      <HeroSection {...heroData} />
+      <Suspense fallback={null}>
+        <PmrgFeaturs />
+        <Crm />
+        <Erp />
+        <SelfCarePortal />
+        {/* <BusinessInsights /> */}
+        <ProjectsCarousel />
+        <Teams />
+        <TestimonialCarousel />
+      </Suspense>
     </>
-  
-
-  )
+  );
 }
 
-export default Home
+export default Home;
