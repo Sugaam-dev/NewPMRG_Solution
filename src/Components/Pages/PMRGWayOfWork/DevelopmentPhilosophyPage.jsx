@@ -121,7 +121,7 @@ export default function DevelopmentPhilosophyPage() {
               </p>
               <button
                 onClick={handleNavigation}
-                className="bg-slate-900 text-white font-semibold py-3 px-6 rounded-full hover:bg-slate-800 transition"
+                className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-3 pb-3 pl-10 pr-10 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
               >
                 Check out our career opportunities
               </button>

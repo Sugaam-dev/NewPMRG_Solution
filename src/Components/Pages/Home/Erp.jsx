@@ -1,6 +1,6 @@
 // src/pages/ErpPage.jsx
 import React from "react";
-import erp from'../../../assets/erp.jpg'
+import erp from'../../../assets/erp.jpeg'
 const Erp = () => {
   return (
     <main className="w-full bg-white text-slate-900 lg:pt-15 lg:pb-15">

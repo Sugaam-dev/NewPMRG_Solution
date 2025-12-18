@@ -9,6 +9,10 @@ import "swiper/css/navigation";
 import { testimonial } from "../../../data/testimonial.js";
 
 const TestimonialCarousel = () => {
+
+  const whatsapp=()=>{
+    window.open("https://wa.me/7722017100", "_blank");
+  }
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-[1120px] mx-auto px-6">
@@ -79,6 +83,9 @@ const TestimonialCarousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div  className=" flex justify-center text-center mt-10" >
+<button onClick={whatsapp} className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-2 pb-2 pl-20 pr-20 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50">know more</button>
       </div>
     </section>
   );

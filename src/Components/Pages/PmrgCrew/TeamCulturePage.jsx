@@ -74,7 +74,7 @@ export default function TeamCulturePage() {
 
               <button
                 onClick={openWhatsApp}
-                className="bg-gradient-to-r from-sky-500 to-blue-600 text-white px-8 py-4 rounded-full text-[18px] font-semibold shadow-md hover:from-sky-600 hover:to-blue-700 transition"
+                className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-3 pb-3 pl-10 pr-10 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
               >
                 Check out our career opportunities!
               </button>

@@ -11,12 +11,15 @@ import { projects } from "../../../data/projects.js";
 const buildWhatsAppLink = (number, message) => {
   if (!number) return "#";
   const encoded = encodeURIComponent(
-    message || "Hi, I’m interested in your services."
+    message || "Hi, I'm interested in your recent projects. Can you share more details?"
   );
   return `https://wa.me/${number}?text=${encoded}`;
 };
 
 const ProjectsCarousel = () => {
+  // Common WhatsApp number for "know more" button (update with your number)
+  const WHATSAPP_NUMBER = "919876543210"; // Replace with your actual number
+
   return (
     <section className="w-full bg-white py-8">
       <div className="max-w-[1120px] mx-auto px-6">
@@ -92,7 +95,7 @@ const ProjectsCarousel = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center mt-3 px-4 py-1.5 rounded-full text-xs font-medium bg-sky-500 text-white hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-300 transition-colors"
+                        className="inline-flex items-center mt-3 px-4 py-1.5 rounded-full text-xs font-medium bg-sky-500 text-white hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-300 transition-all duration-300 hover:scale-105"
                       >
                         Read more
                       </a>
@@ -103,6 +106,19 @@ const ProjectsCarousel = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      
+      {/* Know more button - WhatsApp redirect */}
+      <div className="flex justify-center text-center mt-10">
+        <a
+          href={buildWhatsAppLink(WHATSAPP_NUMBER)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-2 pb-2 pl-20 pr-20 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+          aria-label="Know more about our projects"
+        >
+          <span className="relative z-10">know more</span>
+        </a>
       </div>
     </section>
   );

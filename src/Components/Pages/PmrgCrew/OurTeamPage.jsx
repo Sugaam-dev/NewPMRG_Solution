@@ -138,7 +138,7 @@ window.open("https://wa.me/7722017100", "_blank");
               as their top priority. Every PMRG Solution team member is free to share ideas
               to make things smarter. Sounds like a fit? We'd love to get to know you!
             </p>
-            <button onClick={handleNavigation} className="mt-10 bg-[#0b1c55] hover:bg-[#2a437e] text-white px-8 py-4 rounded-full font-semibold text-[18px] transition-all">
+            <button onClick={handleNavigation} className="mt-10 group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-3 pb-3 pl-10 pr-10 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50">
               Check out our career opportunities!
             </button>
           </div>

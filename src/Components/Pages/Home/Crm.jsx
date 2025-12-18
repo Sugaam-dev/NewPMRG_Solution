@@ -1,5 +1,5 @@
 import React from "react";
-import crm from '../../../assets/crm.svg'
+import crm from '../../../assets/crm.jpeg'
 const Crm = () => {
   return (
     <main className="w-full bg-white text-slate-900 pb-10 pt-6 md:pt-16 lg:pt-16">
