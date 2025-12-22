@@ -1,11 +1,10 @@
 // DigitalTransformationPage.jsx
 import React from "react";
 import { Smartphone, Zap, Cloud, ArrowRight, CheckCircle } from "lucide-react";
-import digital from "../../../assets/digital-transformation.jpg"
+import digital from "../../../assets/digital-transformation.jpg";
+
 const DigitalTransformationPage = () => {
-
-    const WHATSAPP_NUMBER = "7722017100"; 
-
+  const WHATSAPP_NUMBER = "7722017100";
 
   const whatsappMessage = () => {
     const message = encodeURIComponent(
@@ -18,17 +17,19 @@ const DigitalTransformationPage = () => {
   return (
     <section className="bg-white text-slate-900">
       {/* Top area */}
-      <div className="px-6 py-16 md:px-16 lg:px-24 text-center">
+      <div className="px-6 py-6 md:px-10 lg:px-24 text-center">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">
           Digital Transformation Services
         </h2>
 
         <p className="mx-auto max-w-2xl lg:text-lg text-slate-500">
-          PMRG Solution modernizes your business operations with custom web applications, intelligent process automation, 
-          secure cloud infrastructure, and seamless system integrations that drive efficiency and growth.
+          PMRG Solution modernizes your business operations with custom web applications,
+          intelligent process automation, secure cloud infrastructure, and seamless
+          integrations between your existing tools so teams work faster, with fewer errors,
+          and your customers get a smooth digital experience across every touchpoint.
         </p>
 
-        {/* Cards strip - Enhanced */}
+        {/* Cards strip */}
         <div className="mt-10 rounded-2xl bg-blue-50 px-6 py-8 md:px-12 md:py-10 grid gap-6 md:grid-cols-3 text-left">
           <div>
             <Smartphone className="h-6 w-6 text-blue-600" />
@@ -36,7 +37,9 @@ const DigitalTransformationPage = () => {
               Modern Web Apps
             </h3>
             <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-              Fully responsive websites, customer portals, and admin dashboards with modern UI/UX and API integrations.
+              Fully responsive websites, portals, and internal tools with modern UI/UX,
+              role-based access, and APIs that connect smoothly with your CRM, ERP,
+              and third‑party services.
             </p>
           </div>
 
@@ -46,7 +49,9 @@ const DigitalTransformationPage = () => {
               Process Automation
             </h3>
             <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-              Eliminate manual work with workflow automation, approval systems, notifications, and CRM/ERP integrations.
+              Replace manual spreadsheets and emails with automated workflows, approvals,
+              notifications, and rule-based actions so your team focuses on high‑value work
+              instead of repetitive tasks.
             </p>
           </div>
 
@@ -56,23 +61,28 @@ const DigitalTransformationPage = () => {
               Cloud Migration
             </h3>
             <p className="mt-1 text-sm text-slate-500 leading-relaxed">
-              Secure AWS/Azure cloud infrastructure with auto-scaling, backup systems, and 99.9% uptime guarantees.
+              Move from legacy servers to secure AWS/Azure cloud setups with backups,
+              monitoring, and scaling so your applications stay fast, reliable, and ready
+              for future growth.
             </p>
           </div>
         </div>
 
-        {/* Enhanced gradient buttons - vice versa */}
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <button onClick={whatsappMessage} className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-2 pb-2 pl-20 pr-20 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50">
-            Get Started <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+        {/* CTA button */}
+        <div className="mt-10 flex justify-center">
+          <button
+            onClick={whatsappMessage}
+            className="group inline-flex items-center bg-gradient-to-br from-[#0e1540] via-[#06256e] to-[#1d3fae] text-white pt-2 pb-2 pl-20 pr-20 rounded-4xl font-medium transform transition-all duration-300 hover:from-[#1d3fae] hover:via-[#2563eb] hover:to-[#4f46e5] hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25 active:scale-95 focus:outline-none focus:ring-4 focus:ring-blue-500/50"
+          >
+            Get Started
+            <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </button>
-         
         </div>
       </div>
 
-      {/* Bottom area - Enhanced with 4 points */}
-      <div className="px-6 py-16 md:px-16 lg:px-24">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 md:grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
+      {/* Bottom area */}
+      <div className="px-6 py-6 md:px-10 lg:px-24">
+        <div className="mx-auto flex max-w-6xl flex-col  gap-12 md:grid md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           {/* Left text column */}
           <div className="flex h-full items-center">
             <div>
@@ -81,7 +91,9 @@ const DigitalTransformationPage = () => {
               </h2>
 
               <p className="lg:text-lg text-slate-500 max-w-md leading-relaxed mb-8">
-                We discover your needs, design digital solutions, build modern systems, and optimize for continuous growth.
+                We discover your needs, design digital solutions, build modern systems,
+                and continuously optimize them so your business keeps improving, not just
+                at launch but over the long term.
               </p>
 
               {/* 4 Process Points */}
@@ -89,29 +101,52 @@ const DigitalTransformationPage = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Discovery & Planning</h4>
-                    <p className="text-sm text-slate-500 mt-1">Business analysis, roadmap creation, and stakeholder alignment</p>
+                    <h4 className="font-semibold text-slate-900">
+                      Discovery & Planning
+                    </h4>
+                    <p className="text-sm text-slate-500 mt-1">
+                      Understand current systems, pain points, and goals, then create a
+                      clear, phased roadmap aligned with your business priorities.
+                    </p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Experience Design</h4>
-                    <p className="text-sm text-slate-500 mt-1">Wireframes, prototypes, and customer journey optimization</p>
+                    <h4 className="font-semibold text-slate-900">
+                      Experience Design
+                    </h4>
+                    <p className="text-sm text-slate-500 mt-1">
+                      Map customer and internal user journeys, then design simple,
+                      intuitive screens and flows that reduce friction at every step.
+                    </p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Development & Integration</h4>
-                    <p className="text-sm text-slate-500 mt-1">Full-stack implementation with existing system integration</p>
+                    <h4 className="font-semibold text-slate-900">
+                      Development & Integration
+                    </h4>
+                    <p className="text-sm text-slate-500 mt-1">
+                      Implement secure, scalable backends and frontends, integrate with
+                      your existing tools, and ensure data flows correctly between systems.
+                    </p>
                   </div>
                 </div>
+
                 <div className="flex items-start gap-3">
                   <CheckCircle className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                   <div>
-                    <h4 className="font-semibold text-slate-900">Launch & Optimization</h4>
-                    <p className="text-sm text-slate-500 mt-1">Deployment, monitoring, and continuous performance improvement</p>
+                    <h4 className="font-semibold text-slate-900">
+                      Launch & Optimization
+                    </h4>
+                    <p className="text-sm text-slate-500 mt-1">
+                      Go live with monitoring, collect feedback and usage data, and apply
+                      regular improvements to stability, speed, and user experience.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -120,23 +155,28 @@ const DigitalTransformationPage = () => {
               <div className="grid grid-cols-2 gap-6 pt-6 border-t border-slate-200">
                 <div className="text-center p-4">
                   <div className="text-3xl font-bold text-blue-600">40%</div>
-                  <div className="text-sm text-slate-500 mt-1 font-medium">Faster Delivery</div>
+                  <div className="text-sm text-slate-500 mt-1 font-medium">
+                    Faster Delivery
+                  </div>
                 </div>
                 <div className="text-center p-4">
                   <div className="text-3xl font-bold text-emerald-600">-60%</div>
-                  <div className="text-sm text-slate-500 mt-1 font-medium">Manual Work</div>
+                  <div className="text-sm text-slate-500 mt-1 font-medium">
+                    Manual Work
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right image card */}
-          <div className="rounded-2xl overflow-hidden shadow-md">
-       
-      
-            <img className="w-full h-full object-cover" src={digital} alt="digital transformation" />
-            </div>
-      
+          {/* Right image card – image from top */}
+          <div className="rounded-2xl overflow-hidden shadow-md h-[260px] md:h-[320px] lg:h-[360px] w-full">
+            <img
+              className="w-full h-full object-cover object-top"
+              src={digital}
+              alt="digital transformation"
+            />
+          </div>
         </div>
       </div>
     </section>
