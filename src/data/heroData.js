@@ -4,7 +4,7 @@ const heroData = {
   image:heroImg,
   title: "Business software for",
   highlight: "Telecom operators",
-  description: "PMRG Solution introduces a cutting-edge Business Support System (BSS) built exclusively for mobile operators. Free from legacy constraints, it empowers you to launch price plans in minutes, effortlessly design any discount or campaign, and accelerate your growth and innovation.",
+  description: "PMRG Solution introduces a cutting-edge, AI-enabled Business Support System (BSS) built exclusively for mobile operators. Free from legacy constraints, it empowers you to use AI-assisted tools to launch price plans in minutes, effortlessly design any discount or campaign, and accelerate your growth and innovation.",
   showAnimation: true  // ✅ Animation ON
 };
 export default heroData;

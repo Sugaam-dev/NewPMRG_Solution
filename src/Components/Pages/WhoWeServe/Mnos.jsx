@@ -20,9 +20,9 @@ export default function Mnos() {
             <p className="text-base sm:text-lg lg:text-xl text-[#2d3e36] leading-[1.7] max-w-[950px] mx-auto">
               Many MNOs operate on decades-old BSS platforms with accumulated technical
               debt, limited flexibility, and high maintenance costs. PMRG Solution
-              provides a modern alternative built from scratch. Migrate from legacy
-              systems to gain agility, reduce costs, and enable innovation previously
-              impossible with outdated infrastructure.
+              provides a modern, AI-enabled alternative built from scratch. Migrate from legacy
+              systems to gain agility, reduce costs, and leverage AI-driven insights that enable
+              innovation previously impossible with outdated infrastructure.
             </p>
           </div>
 
@@ -38,8 +38,9 @@ export default function Mnos() {
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
                 PMRG Solution natively supports modern technologies including 5G plans,
-                VoLTE, and eSIM provisioning. Legacy platforms struggle with these
-                technologies through complex workarounds.
+                VoLTE, and eSIM provisioning, augmented with AI-powered orchestration and
+                intelligent automation. Legacy platforms struggle with these technologies
+                through complex workarounds.
               </p>
             </div>
 
@@ -53,8 +54,8 @@ export default function Mnos() {
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
                 Modern architecture dramatically improves operational efficiency.
-                Automated workflows reduce manual work and errors. Self-service tools
-                lower support load.
+                AI-driven automated workflows reduce manual work and errors, while
+                predictive analytics and intelligent self-service tools lower support load.
               </p>
             </div>
 
@@ -68,7 +69,8 @@ export default function Mnos() {
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
                 PMRG Solution lets operators launch new pricing plans, bundles, or
-                promotions in hours rather than weeks or months.
+                promotions in hours rather than weeks or months, using AI-assisted
+                configuration and real-time performance optimization.
               </p>
             </div>
           </div>
@@ -95,10 +97,10 @@ export default function Mnos() {
             <p className="text-base sm:text-lg lg:text-xl text-[#2d3e36] leading-[1.7]">
               Migrating from legacy BSS platforms is complex but manageable with proper
               planning and execution. PMRG Solution’s experienced team supports the
-              entire migration process including detailed planning and risk mitigation,
-              phased migration approaches minimizing disruption, data migration and
-              validation, and parallel operation during transition periods ensuring
-              continuity.
+              entire migration process including AI-assisted impact analysis and risk
+              mitigation, phased migration approaches minimizing disruption, intelligent
+              data migration and validation, and parallel operation during transition
+              periods ensuring continuity.
             </p>
           </div>
         </div>

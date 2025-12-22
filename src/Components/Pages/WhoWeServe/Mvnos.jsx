@@ -18,11 +18,9 @@ export default function Mvnos() {
             </h2>
 
             <p className="text-base sm:text-lg lg:text-xl  leading-[1.7]">
-              MVNOs need to reach market fast to compete effectively. PMRG-Solution
-              enables rapid deployment with pre-configured workflows, proven best
-              practices, and seamless MVNE integration. Launch new mobile services in
-              weeks instead of months with complete billing and customer management
-              ready from day one.
+            MVNOs need to reach market fast to compete effectively. PMRG-Solution enables rapid, AI-assisted deployment with 
+            pre-configured workflows, proven best practices, and seamless MVNE integration. Launch new mobile services in weeks
+             instead of months with AI-optimized billing and customer management ready from day one.
             </p>
           </div>
 
@@ -38,11 +36,10 @@ export default function Mvnos() {
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
                 Consumer MVNO success requires product flexibility and speed.
-                PMRG-Solution lets you create new pricing plans in minutes, design
-                powerful discount campaigns effortlessly, and launch promotions in
-                hours instead of weeks. Test market responses quickly and adapt
-                offerings based on customer feedback without technical barriers.
-              </p>
+                PMRG-Solution lets you create new pricing plans in minutes using AI-assisted configuration, design powerful discount campaigns
+                effortlessly, and launch promotions in hours instead of weeks. 
+                AI-driven insights help test market responses quickly and adapt offerings based on customer feedback without technical barriers.
+               </p>
             </div>
 
             {/* Feature 2 */}
@@ -54,11 +51,7 @@ export default function Mvnos() {
                 Efficient Billing Operations
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
-                Billing complexity can overwhelm growing MVNOs. PMRG-Solution
-                streamlines operations with smart invoicing, automated payment
-                handling, and intelligent dunning processes. Near real-time usage
-                data ensures transparency so your team focuses on growth rather than
-                reconciliation.
+                Billing complexity can overwhelm growing MVNOs. PMRG-Solution streamlines operations with AI-powered smart invoicing, automated payment handling, and intelligent, AI-driven dunning processes. Near real-time usage data, enhanced by AI-based anomaly detection and insights, ensures transparency so your team focuses on growth rather than reconciliation.
               </p>
             </div>
 
@@ -72,9 +65,9 @@ export default function Mvnos() {
               </h3>
               <p className="text-sm sm:text-base text-slate-700 leading-[1.7]">
                 Comprehensive customer management tools handle the complete lifecycle
-                from signup through service delivery and support. Self-service
-                portals empower customers to manage accounts independently, while
-                agents get complete information for fast, consistent support.
+                from signup through service delivery and support. AI-enabled self-service
+                portals empower customers to manage accounts independently, while AI-assisted
+                agent tools provide unified customer insights for fast, consistent support.
               </p>
             </div>
           </div>
@@ -99,10 +92,10 @@ export default function Mvnos() {
               </h2>
               <p className="text-base sm:text-lg lg:text-xl text-slate-700 leading-[1.8] max-w-[550px]">
                 PMRG-Solution integrates seamlessly with MVNEs for complete
-                end-to-end operations. Provisioning happens instantly when customers
-                sign up or change plans, and usage data flows continuously from
-                network to billing. This integration eliminates data synchronization
-                headaches common with separate systems.
+                end-to-end operations. AI-assisted provisioning happens instantly when customers
+                sign up or change plans, and AI-enhanced usage analytics ensure data flows
+                continuously from network to billing. This integration eliminates data
+                synchronization headaches common with separate systems.
               </p>
             </div>
           </div>
@@ -115,11 +108,7 @@ export default function Mvnos() {
               Scale Confidently
             </h2>
             <p className="text-base sm:text-lg lg:text-xl  leading-[1.7]">
-              As your MVNO grows, PMRG-Solution scales effortlessly. The platform
-              handles thousands of customers with the same efficiency as hundreds.
-              Automated processes prevent operational bottlenecks, so you can add
-              new products, channels, or markets without platform limitations
-              constraining your ambitions.
+             As your MVNO grows, PMRG-Solution scales effortlessly with AI-driven automation and intelligence. The platform handles thousands of customers with the same efficiency as hundreds. AI-powered automated processes prevent operational bottlenecks, so you can add new products, channels, or markets without platform limitations constraining your ambitions.
             </p>
           </div>
         </section>

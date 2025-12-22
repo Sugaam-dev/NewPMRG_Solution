@@ -17,8 +17,9 @@ const Erp = () => {
             <p className="lg:text-lg text-slate-500  leading-relaxed">
               At PMRG Solution we design and implement ERP systems that bring
               finance, sales, inventory, HR, and projects into a single
-              platform. Your teams work on one source of truth, with real‑time
-              data and streamlined workflows instead of scattered spreadsheets.
+              platform. AI-powered analytics, forecasting, and intelligent automation give
+              your teams one source of truth, with real-time insights and streamlined
+              workflows instead of scattered spreadsheets.
             </p>
           </div>
 

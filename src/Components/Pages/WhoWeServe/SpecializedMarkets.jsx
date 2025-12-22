@@ -22,11 +22,9 @@ export default function SpecializedMarkets() {
       </h2>
       <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
         Business customers require different capabilities than consumers.
-        PMRG-Solution handles multi-user corporate accounts, hierarchical
-        organizational structures, customized billing and invoicing, bulk
-        management and provisioning, and corporate-specific reporting.
-        Enterprise sales cycles and contract complexity are supported through
-        flexible configuration matching B2B business models.
+        PMRG-Solution handles multi-user corporate accounts and hierarchical organizational structures with AI-assisted configuration,
+        customized billing and invoicing, bulk management and provisioning, and AI-enhanced corporate reporting.
+        Enterprise sales cycles and contract complexity are supported through intelligent, flexible configuration matching B2B business models.
       </p>
     </div>
 
@@ -56,10 +54,9 @@ export default function SpecializedMarkets() {
                 Management
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-slate-100/80">
-                IoT services differ fundamentally from consumer mobile.
-                PMRG-Solution supports millions of low-data device connections,
-                specialized rating for machine-to-machine communication, device
-                lifecycle management, and API-based provisioning.
+               IoT services differ fundamentally from consumer mobile.
+               PMRG-Solution supports millions of low-data device connections with AI-assisted scalability, 
+               specialized rating for machine-to-machine communication, AI-driven device lifecycle management, and API-based provisioning.
               </p>
             </div>
 
@@ -74,9 +71,9 @@ export default function SpecializedMarkets() {
                 Models
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-slate-100/80">
-                Specialized operators often use non-standard models.
-                PMRG-Solution adapts to unusual rating, billing cycles, custom
-                product structures, and partner ecosystems.
+               Specialized operators often use non-standard models.
+               PMRG-Solution adapts to unusual rating and billing cycles with AI-assisted configuration, custom product structures, 
+               and AI-enabled partner ecosystem management.
               </p>
             </div>
 
@@ -92,7 +89,7 @@ export default function SpecializedMarkets() {
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-slate-100/80">
                 Supports wholesale billing, revenue sharing, multi-tenant
-                operations, and partner management — all on one platform.
+                operations, and partner management — enhanced with AI-driven automation and insights, all on one platform.
               </p>
             </div>
           </div>
@@ -109,11 +106,9 @@ export default function SpecializedMarkets() {
       </h2>
       <p className="text-base sm:text-lg lg:text-xl leading-relaxed">
         Operating across multiple countries introduces complexity.
-        PMRG-Solution handles multi-currency billing and payments,
-        country-specific tax and regulatory requirements, localized customer
-        communications, and international roaming management. Expand
-        geographically without rebuilding business support systems for each
-        market.
+        PMRG-Solution handles multi-currency billing and payments with AI-assisted automation, country-specific tax and regulatory requirements, 
+        AI-enabled compliance checks, localized customer communications, and international roaming management. 
+        Expand geographically with AI-driven adaptability without rebuilding business support systems for each market.
       </p>
     </div>
 
@@ -137,11 +132,9 @@ export default function SpecializedMarkets() {
             </h2>
             <p className="text-base sm:text-lg lg:text-xl leading-relaxed tracking-normal text-[#2d3e36]">
               Specialized operations often require unique integrations.
-              PMRG-Solution’s open API architecture connects with
-              industry-specific systems, custom applications, legacy
-              infrastructure requiring continued operation, and partner
-              ecosystems. Integration flexibility ensures PMRG-Solution fits
-              your environment rather than forcing ecosystem changes.
+              PMRG-Solution’s open, AI-enhanced API architecture connects with industry-specific systems, custom applications, legacy infrastructure
+              requiring continued operation, and partner ecosystems. 
+              AI-assisted integration orchestration and monitoring ensure PMRG-Solution fits your environment rather than forcing ecosystem changes.
             </p>
           </div>
         </section>

@@ -16,8 +16,9 @@ const Crm = () => {
             <p className="lg:text-lg text-slate-500  leading-relaxed">
               PMRG Solution builds CRM platforms that keep all your customer
               information—leads, deals, emails, calls, and support requests—in
-              one place. Sales, marketing, and service teams see the same 360°
-              view, so every interaction feels consistent and personal.
+              one place. AI-powered insights and recommendations give sales,
+              marketing, and service teams the same 360° view, so every interaction
+              feels consistent and personal.
             </p>
           </div>
 
