@@ -13,7 +13,7 @@ import {
   X,
   Linkedin,
   Instagram,
-  Github,
+  Facebook
 } from "lucide-react";
 
 const menuItems = [
@@ -293,7 +293,7 @@ const Navbar = () => {
             <Instagram size={18} />
           </Link>
           <Link
-            to="https://github.com/Sugaam-dev"
+            to="https://www.facebook.com/people/Sugaam-In/pfbid0HhcfaJKdYPe48X2aDhFwyPhuzRswGH9VxjY6VcUoMFvjHgG1VBeGBowipK5nVFiml/"
             target="_blank"
             rel="noreferrer"
             className={`rounded-full p-2 transition-colors ${
@@ -302,7 +302,7 @@ const Navbar = () => {
                 : "text-white hover:bg-white/10"
             }`}
           >
-            <Github size={18} />
+            <Facebook size={18} />
           </Link>
         </div>
 
@@ -361,11 +361,11 @@ const Navbar = () => {
                 <Instagram size={18} className="text-blue-600" />
               </Link>
               <Link
-                to="https://github.com/Sugaam-dev"
+                to="https://www.facebook.com/people/Sugaam-In/pfbid0HhcfaJKdYPe48X2aDhFwyPhuzRswGH9VxjY6VcUoMFvjHgG1VBeGBowipK5nVFiml/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Github size={18} className="text-blue-600" />
+                <Facebook size={18} className="text-blue-600" />
               </Link>
             </div>
 

@@ -9,7 +9,7 @@ const SelfCarePortal = React.lazy(() => import('./SelfCarePortal'));
 const ProjectsCarousel = React.lazy(() => import('./ProjectsCarousel'));
 const Teams = React.lazy(() => import('./Teams'));
 const TestimonialCarousel = React.lazy(() => import('./TestimonialCarousel'));
-// const BusinessInsights = React.lazy(() => import('./BusinessInsights'));
+const DigitalTransformationPage = React.lazy(() => import('./DigitalTransformationPage'));
 
 function Home() {
   return (
@@ -20,7 +20,7 @@ function Home() {
         <Crm />
         <Erp />
         <SelfCarePortal />
-        {/* <BusinessInsights /> */}
+        <DigitalTransformationPage />
         <ProjectsCarousel />
         <Teams />
         <TestimonialCarousel />
