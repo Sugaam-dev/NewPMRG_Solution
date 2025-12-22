@@ -11,20 +11,24 @@
     |-- App.jsx
     |-- assets
         |-- abcd.jpg
+        |-- bssoss.png
         |-- business.png
         |-- business1.png
-        |-- cleverenable.webp
         |-- combined.jpg
         |-- crm-integration.png
-        |-- crm.svg
-        |-- develop.webp
-        |-- erp.jpg
+        |-- crm.jpeg
+        |-- crmm.svg
+        |-- culture.jpg
+        |-- digital-transformation.jpg
+        |-- erp.jpeg
+        |-- erpp.jpg
         |-- experience.jpeg
         |-- geen-foto-mobi.png
         |-- implement.jpg
         |-- invoiceing.png
         |-- invoicing.png
         |-- kelly-quote-services.jpg
+        |-- lifeatPmrg.webp
         |-- logos
             |-- amd-logo.png
             |-- catchuplogo.webp
@@ -37,21 +41,23 @@
             |-- vyakrute-logo.png
         |-- lunchsupport.jpg
         |-- mnos.jpg
+        |-- mvn.webp
         |-- Navbar
             |-- approach.jpeg
-            |-- compliance.jpeg
+            |-- compailance.webp
             |-- experience.jpeg
             |-- market.png
             |-- mnos.png
-            |-- mvne.png
+            |-- mvne.webp
             |-- mvnos.png
-            |-- operation.jpeg
+            |-- operation.png
             |-- platform.jpeg
             |-- security.jpeg
             |-- tm.jpeg
             |-- tool.jpeg
         |-- ourculture.webp
         |-- p.jpeg
+        |-- PMRG.png
         |-- pmrghome.webp
         |-- PMRGlogo.png
         |-- projects
@@ -62,6 +68,7 @@
             |-- project-5.webp
             |-- project-6.webp
         |-- provisioning.png
+        |-- RapidLaunchImage.webp
         |-- security.png
         |-- self.jpeg
         |-- Ski-foto.jpg
@@ -86,6 +93,7 @@
             |-- Home
                 |-- BusinessInsights.jsx
                 |-- Crm.jsx
+                |-- DigitalTransformationPage.jsx
                 |-- Erp.jsx
                 |-- Home.jsx
                 |-- PmrgFeaturs.jsx
@@ -116,10 +124,10 @@
                 |-- Mvnos.jsx
                 |-- SpecializedMarkets.jsx
         |-- RootLayout
+            |-- FloatingWhatsAppButton.jsx
             |-- Layout
                 |-- Footer.jsx
                 |-- Header.jsx
-                |-- Navbar.css
             |-- RootLayout.jsx
             |-- ScroolToTop.jsx
     |-- data

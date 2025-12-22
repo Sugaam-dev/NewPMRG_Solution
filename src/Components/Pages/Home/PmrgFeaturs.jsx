@@ -1,5 +1,7 @@
 import React from "react";
-import { Bell, CreditCard, WalletCards } from "lucide-react";
+import { Bell, CreditCard, WalletCards,  RadioTower, Building2, Landmark } from "lucide-react";
+
+
 import p from'../../../assets/p.jpeg'
 const PmrgFeaturs = () => {
   return (
@@ -82,6 +84,69 @@ const PmrgFeaturs = () => {
           </div>
         </div>
       </div>
+      {/* industries  */}
+      
+
+
+
+{/* industries */}
+<div className="px-6 py-14 md:py-16 md:px-16 lg:px-24 text-center">
+  <h3 className="text-3xl font-bold tracking-tight text-slate-900 mb-2">
+    Built for multiple industries
+  </h3>
+
+  <p className="mx-auto max-w-xl text-sm sm:text-base lg:text-lg text-slate-500 mb-8">
+    A flexible billing and payments platform designed to scale across diverse operational
+    and regulatory environments.
+  </p>
+
+  <div className="mt-6 sm:mt-8 rounded-2xl bg-blue-50 px-4 py-6 sm:px-6 md:px-10 md:py-8 grid gap-6 sm:gap-8 md:grid-cols-3 text-left">
+    
+    {/* TELCO */}
+    <div className="flex flex-col">
+      <RadioTower className="h-6 w-6 text-blue-600 mb-3" />
+      <h4 className="lg:text-lg font-semibold text-slate-900 mb-2">
+        Telecommunications (TELCO)
+      </h4>
+      <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+        Ideal for subscription-based telecom services handling high-volume billing,
+        recurring invoices, automated dunning, and real-time payment reconciliation
+        across prepaid and postpaid customers.
+      </p>
+    </div>
+
+    {/* Enterprises */}
+    <div className="flex flex-col">
+      <Building2 className="h-6 w-6 text-blue-600 mb-3" />
+      <h4 className="lg:text-lg font-semibold text-slate-900 mb-2">
+        Enterprises
+      </h4>
+      <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+        Designed for large enterprises managing complex invoicing cycles, multiple
+        payment methods, customer credits, and compliance-ready financial automation
+        at scale.
+      </p>
+    </div>
+
+    {/* Government */}
+    <div className="flex flex-col">
+      <Landmark className="h-6 w-6 text-blue-600 mb-3" />
+      <h4 className="lg:text-lg font-semibold text-slate-900 mb-2">
+        Government &amp; Public Sector
+      </h4>
+      <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
+        Enables transparent, auditable billing for public services with automated
+        payment reminders, citizen notifications, and policy-driven invoicing
+        aligned with regulatory standards.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
     </section>
   );
 };
