@@ -141,7 +141,7 @@ const Erp = () => {
               {/* ERP video (replace src path with your ERP video) */}
               <video
                 ref={videoRef}
-                src="../video/erpvideo.mp4"
+                src="../video/erpvideo.mp4" 
                 poster={erp}
                 className="absolute inset-0 w-full h-full object-cover z-10"
                 playsInline
